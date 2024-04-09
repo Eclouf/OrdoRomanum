@@ -1,6 +1,7 @@
 # -*- encoding:utf-8 -*-
 import toga
 from views.GUI.pages.MainPage import MainPage
+from views.GUI.pages.SettingsPage import SettingsPage
 from views.GUI.utils.AbstractPage import Page
 
 
@@ -12,7 +13,7 @@ class TogaApp(toga.App):
     # Create page instances
     self.pages = {
        'main': MainPage(app=self),
-       'settings': None
+       'settings': SettingsPage(app=self)
     }
 
     # Set active page

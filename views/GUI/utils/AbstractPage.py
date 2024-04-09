@@ -13,7 +13,7 @@ Page = TypeVar('Page', bound='AbstractPage')
 class AbstractPage(ABC):
   def __init__(self, app) -> None:
     super().__init__()
-    self.__app = app  # __var indicates the property is protected (accessible only by children, not outside)
+    self._app = app  # __var indicates the property is protected (accessible only by children, not outside)
     self.container: Widget = self.build()
 
   # Method call to build the toga container of the page

@@ -12,8 +12,8 @@ class MainPage(AbstractPage):
     self.temporal_ctrl = TemporalCtrl()
 
   def build(self) -> toga.Widget:
-    self.label_title = toga.Label('Page principale')
-    self.label_fest = toga.Label('Fête de ?')
+    self.label_title = toga.Label('Page principale', style=Pack(padding=(10,20,10), font_style='italic'))
+    self.label_fest = toga.Label('Fête de ?', style=Pack(padding=(10,20,10)))
     self.display_fest_btn = toga.Button('Afficher la fête du jour', on_press=self.show_fest_callback, style=Pack(padding=(20,20,10)))
     self.go_to_settings_btn = toga.Button('Aller aux paramètres', on_press=self.go_to_settings_callback, style=Pack(padding=(10,20,20)))
 
@@ -32,4 +32,4 @@ class MainPage(AbstractPage):
     self.label_fest.text = self.temporal_ctrl.getFestName()
   
   def go_to_settings_callback(self, event=None):
-    self.__app.go_to_page('settings')
+    self._app.go_to_page('settings')
