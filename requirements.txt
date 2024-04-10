@@ -1,10 +1,2 @@
-gbulb==0.6.4
-greenlet==3.0.3
-pycairo==1.26.0
-PyGObject==3.48.2
 SQLAlchemy==2.0.29
 toga==0.4.2
-toga-core==0.4.2
-toga-gtk==0.4.2
-travertino==0.3.0
-typing_extensions==4.11.0
