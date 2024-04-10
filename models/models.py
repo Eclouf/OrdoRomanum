@@ -1,11 +1,12 @@
 # -*- encoding:utf-8 -*-
 from config import ENV
 from sqlalchemy import create_engine
-from sqlalchemy.orm import Session
-from sqlalchemy.orm import DeclarativeBase
+from sqlalchemy.orm import sessionmaker
+from models.utils.base import Base
 
-class Base(DeclarativeBase):
-  pass
+# All schemas has to be imported here to create table in database
+from models.schemas import ColorsSchema, TemporalSchema
+
 
 """
   singleton pattern: https://refactoring.guru/fr/design-patterns/singleton/python/example
@@ -19,7 +20,12 @@ class SingletonModel(type):
       cls._instances[cls] = instance
     return cls._instances[cls]
 
+"""
+  Singleton Model class. Use to initialize the database
+  Difference between normal inheritance vs metaclass inheritance: https://medium.com/@saimun92/difference-between-a-normal-class-inheritance-and-a-metaclass-inheritance-in-python-7bfa26a055ba
+"""
 class Model(metaclass=SingletonModel):
-  engine = create_engine("sqlite://", echo=True if ENV == 'dev' else False)
-  session = Session(engine)
+  engine = create_engine("sqlite:///models/ordo.db", echo=True if ENV == 'dev' else False)
+  Session = sessionmaker(bind=engine)
+  session = Session()
   Base.metadata.create_all(engine)
