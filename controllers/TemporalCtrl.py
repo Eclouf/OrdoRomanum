@@ -1,5 +1,5 @@
 # -*- encoding:utf-8 -*-
-from models.temporal.TemporalDAO import TemporalDAO
+from models.DAO.TemporalDAO import TemporalDAO
 
 """
   Temporal controller.
