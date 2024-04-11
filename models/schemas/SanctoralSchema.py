@@ -8,6 +8,8 @@ from models.utils.base import Base
 class SanctoralSchema(Base):
   __tablename__ = "sanctoral"
   id: Mapped[int] = mapped_column(Integer, primary_key=True)
+  index_month: Mapped[int] = mapped_column(Integer)
+  index_day: Mapped[int] = mapped_column(Integer)
   title: Mapped[str] = mapped_column(String)
   color: Mapped[str] = mapped_column(String)
   office: Mapped[str] = mapped_column(String)

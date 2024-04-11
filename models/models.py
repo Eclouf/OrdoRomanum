@@ -5,8 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from models.utils.base import Base
 
 # All schemas has to be imported here to create table in database
-from models.schemas import ColorsSchema, TemporalSchema
-
+from models.schemas import ColorsSchema, TemporalSchema, SanctoralSchema, ExceptionsSchema
 
 """
   singleton pattern: https://refactoring.guru/fr/design-patterns/singleton/python/example
