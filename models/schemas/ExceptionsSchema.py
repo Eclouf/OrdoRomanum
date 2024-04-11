@@ -1,7 +1,8 @@
 # -*- encoding:utf-8 -*-
+from typing import Optional
 from sqlalchemy.orm import Mapped, mapped_column
-from sqlalchemy import Integer, String, ARRAY
-from models.utils.base import Base
+from sqlalchemy import Integer, String, ARRAY, ForeignKey
+from models.models import Base
 
 class ExecpetionsSchema(Base):
   __tablename__ = "execptions"
