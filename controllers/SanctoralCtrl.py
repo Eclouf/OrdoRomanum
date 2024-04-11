@@ -7,7 +7,7 @@ from models.DAO.SanctoralDAO import SanctoralDAO
 """
 class SanctoralCtrl():
   def __init__(self):
-    self.SanctoralDAO = SanctoralDAO
+    self.sanctoralDAO = SanctoralDAO
 
   def getAllFest(self):
     pass
