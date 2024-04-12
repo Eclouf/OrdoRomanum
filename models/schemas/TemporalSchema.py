@@ -16,3 +16,6 @@ class TemporalSchema(Base):
   degree: Mapped[str] = mapped_column(String)
   ferie: Mapped[Optional[str]] = mapped_column(String)
   rank: Mapped[int] = mapped_column(Integer)
+
+  def __repr__(self) -> str:
+    return f"TemporalSchema(id={self.id!r}, title={self.title!r}, color={self.color!r}, office={self.office!r}, mass={self.mass!r}, note={self.note!r}, degree={self.degree!r}, ferie={self.ferie!r}, rank={self.rank!r})"

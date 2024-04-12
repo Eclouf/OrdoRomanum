@@ -2,6 +2,7 @@
 import toga
 from toga.style import Pack
 from toga.constants import COLUMN
+from controllers.ColorsCtrl import ColorsCtrl
 from controllers.TemporalCtrl import TemporalCtrl
 from views.GUI.utils.AbstractPage import AbstractPage
 
@@ -10,6 +11,11 @@ class MainPage(AbstractPage):
   def __init__(self, app):
     super().__init__(app)
     self.temporal_ctrl = TemporalCtrl()
+
+    # test
+    print('test colors query')
+    self.colors_ctrl = ColorsCtrl()
+    self.colors_ctrl.tests()
 
   def build(self) -> toga.Widget:
     self.label_title = toga.Label('Page principale', style=Pack(padding=(10,20,10), font_style='italic'))

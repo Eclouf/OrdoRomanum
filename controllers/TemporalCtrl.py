@@ -7,7 +7,7 @@ from models.DAO.TemporalDAO import TemporalDAO
 """
 class TemporalCtrl():
   def __init__(self):
-    self.temporalDAO = TemporalDAO
+    self.temporal_dao = TemporalDAO()
 
   def getAllFest(self):
     pass
