@@ -49,6 +49,7 @@ On ajoute les modifications, on commit et on envoie sur la branche distante : `g
 
 - **POO** : Programmation Orientée Objet, principe mettant en oeuvre des classes. Ce sont des entitées composées de variables et de diverses fonctions pour interagir sur ces variables. On parle d'objet lorsqu'on instantie une classe, c'est-à-dire lorsqu'on déclare une classe dans une variable <https://www.pythoncheatsheet.org/cheatsheet/oop-basics>
 - **MVC** : model-vue-controller, le model gère les données persistantes, le controller gère la logique métier (le coeur du projet), et la vue gère l'interaction avec l'utilisateur (GUI par exemple)
+- **principe KISS** : Acronyme pour "Keep It Stupid Simple" ou "Ne complique pas les choses". L'idée est d'éviter d'ajouter inutilement de la complexité autant que possible. Personnellement, je préconise de concevoir les choses simplement, en maîtrisant le code déjà écrit. Lorsqu'on identifie un moyen de résoudre un problème, notamment dans la *répétition inutile de code* et *les fichiers/fonctions à 1000 lignes de code incompréhensibles parce que le cerveau explose*, on applique et on itère ainsi de suite. (création de classe abstraite, héritage, séparation du code en plusieurs fonctions, en controller, etc.). Dans la structure que j'ai faite, rien n'est figé et est sujet à changement.
 
 ## Design patterns
 
@@ -60,3 +61,8 @@ Liste des design patterns les plus connus en Python : <https://refactoring.guru/
 ## Cheatsheet Python
 
 Aide-mémoire pour le langage Python, une documentation concise expliquant les principaux concepts sur Python : <https://www.pythoncheatsheet.org/>
+
+## Logiciels tiers
+
+- [**GitAhead**](https://gitahead.github.io/gitahead.com/) : un client Git qui peut aider visuellement à mieux comprendre le fonctionnement.
+- [**DBeaver**](https://dbeaver.io/) : un logiciel d'administration de base de donnée relationnelle SQL.
