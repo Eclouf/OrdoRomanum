@@ -142,3 +142,5 @@ def calculer_dates_liturgiques(annee):
 
 # calculer_dates_liturgiques(2023)
 # calculer tous les dimanche après la pentecote et après l'epiphanie
+paques = calculer_paques(9999)
+print(paques)
