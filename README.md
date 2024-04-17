@@ -21,4 +21,3 @@ To give the traditional Roman liturgical ordo (1962) for a given date. This incl
   
 ## Acknowledgements      
 - [BenoitEirik](https://github.com/BenoitEirik)
-- 
