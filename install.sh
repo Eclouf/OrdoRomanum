@@ -1,5 +1,7 @@
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate    # For macos
+venv\Scripts\activate.bat   # For windows
+venv\Scripts\activate       # For windows whit powershell
 
 while test $# -gt 0
 do
