@@ -9,7 +9,7 @@ import pandas as pd # type: ignore
 festA = {'office':'office of A','rank':8500, 'occ':'F1U', 'con':'jio2'}
 festB = {'office':'office of B','rank':150, 'occ':'D1', 'con':'F1'}
 
-class Competition():
+class CompetitionCtrl():
     def __init__(self):
         self.__only__ = ['f1', 'f2', 'f3', 'f4', 'F2', 'F3', 'jio2']
         self.__ordinate__ = ['D1', 'D2', 'f1', 'f2', 'f3', 'f4', 'F1', 'F2', 'F3', 'jio2']
@@ -60,5 +60,5 @@ class Competition():
         else:
             pass
 
-test = Competition()
+test = CompetitionCtrl()
 test.search(festA, festB)

@@ -1,6 +1,5 @@
 # -*- encoding:utf-8 -*-
 import toga
-from controllers.controllers import Controllers
 from views.GUI.pages.MainPage import MainPage
 from views.GUI.pages.SettingsPage import SettingsPage
 from views.GUI.utils.AbstractPage import Page
@@ -8,9 +7,6 @@ from views.GUI.utils.AbstractPage import Page
 
 class TogaApp(toga.App):
   def startup(self):
-    # Init controllers
-    Controllers()
-    
     self.main_window = toga.MainWindow()
     self.current_page_container = toga.Box()
 

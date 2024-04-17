@@ -4,6 +4,6 @@
     translation management
 """
 
-class Translation():
+class TranslationCtrl():
     def __init__(self):
         pass

@@ -1,6 +1,5 @@
 # -*- encoding:utf-8 -*-
 import pandas as pd 
-from controllers.TranslationCtrl import Translation
 
 """
     test for the table of occurence 
@@ -10,7 +9,7 @@ from controllers.TranslationCtrl import Translation
 festA = {'title':'Fest of A','office':'office of A','rank':8500, 'occ':'F3U'}
 festB = {'title':'Fest of B','office':'office of B','rank':150, 'occ':'F2U'}
 
-class Occurence():
+class OccurenceCtrl():
     def __init__(self):
         self.__only__ = ['O2', 'O1', 'V1', 'f3C', 'f3A', 'f2', 'f1', 'D2', 'D1']
         self.__ordinate__ = ['F1U', 'F1P', 'F2U', 'F2P', 'F3U', 'F3P', 'V2', 'V3']
@@ -98,6 +97,6 @@ class Occurence():
         
         return result
     
-test = Occurence()
+test = OccurenceCtrl()
 office = test.search(festA, festB)
 print(office)
