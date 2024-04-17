@@ -1,6 +1,6 @@
 # -*- encoding:utf-8 -*-
 from sqlalchemy import select
-from models.models import Model
+from models.models import Models
 
 """
   Class to interact with Temporal table in the database making CRUD and extended oprations
@@ -8,16 +8,4 @@ from models.models import Model
 """
 class TemporalDAO:
   def __init__(self) -> None:
-    self.model = Model()
-
-  def createFest():
-    pass
-
-  def retrieveFest():
-    pass
-
-  def updateFest():
-    pass
-
-  def deleteFest():
-    pass
+    self.models = Models()

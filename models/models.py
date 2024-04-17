@@ -23,8 +23,9 @@ class SingletonModel(type):
   Singleton Model class. Use to initialize the database
   Difference between normal inheritance vs metaclass inheritance: https://medium.com/@saimun92/difference-between-a-normal-class-inheritance-and-a-metaclass-inheritance-in-python-7bfa26a055ba
 """
-class Model(metaclass=SingletonModel):
-  engine = create_engine("sqlite:///models/ordo.db", echo=True if ENV == 'dev' else False)
-  Session = sessionmaker(bind=engine)
-  session = Session()
-  Base.metadata.create_all(engine)
+class Models(metaclass=SingletonModel):
+  def __init__(self) -> None:
+    self.engine = create_engine("sqlite:///models/ordo.db", echo=True if ENV == 'dev' else False)
+    Session = sessionmaker(bind=self.engine)
+    self.session = Session()
+    Base.metadata.create_all(self.engine)

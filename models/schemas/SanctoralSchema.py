@@ -21,4 +21,4 @@ class SanctoralSchema(Base):
   con: Mapped[str] = mapped_column(String)
 
   def __repr__(self) -> str:
-    return f"SanctoralSchema(id={self.id!r}, title={self.title!r}, color={self.color!r}"
+    return f"SanctoralSchema(id={self.id!r}, index_month={self.index_month!r}, index_day={self.index_day!r}, title={self.title!r}, color={self.color!r}, office={self.office!r}, mass={self.mass!r}, note={self.note!r}, degree={self.degree!r}, rank={self.rank!r})"
