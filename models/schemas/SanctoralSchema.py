@@ -1,7 +1,7 @@
 # -*- encoding:utf-8 -*-
 from typing import Optional
-from sqlalchemy.orm import Mapped, mapped_column
-from sqlalchemy import Integer, String
+from sqlalchemy.orm import Mapped, mapped_column  
+from sqlalchemy import Integer, String 
 from models.utils.base import Base
 
 
@@ -17,6 +17,8 @@ class SanctoralSchema(Base):
   note: Mapped[str] = mapped_column(String)
   degree: Mapped[str] = mapped_column(String)
   rank: Mapped[int] = mapped_column(Integer)
+  occ: Mapped[int] = mapped_column(String)
+  con: Mapped[str] = mapped_column(String)
 
   def __repr__(self) -> str:
     return f"SanctoralSchema(id={self.id!r}, title={self.title!r}, color={self.color!r}"

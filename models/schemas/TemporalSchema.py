@@ -14,5 +14,7 @@ class TemporalSchema(Base):
   mass: Mapped[str] = mapped_column(String)
   note: Mapped[str] = mapped_column(String)
   degree: Mapped[str] = mapped_column(String)
-  ferie: Mapped[Optional[str]] = mapped_column(String)
+  feria: Mapped[Optional[str]] = mapped_column(String)
   rank: Mapped[int] = mapped_column(Integer)
+  occ: Mapped[int] = mapped_column(String)
+  con: Mapped[str] = mapped_column(String)
