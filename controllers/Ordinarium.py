@@ -8,7 +8,7 @@ class Ordination():
     def __init__(self):
         cm = ControllerManager()
         occurence_ctrl = cm.get_occurrence_ctrl()
-        competition_ctrl = cm.get_competition_ctrl()
+        competition_ctrl = cm.get_contents_ctrl()
         """
         Morand :
         - Dorénavant, si tu veux importer un controller, fais-le en passant toujours par les fonctions de ControllerManager(), comme je l'ai fait au-dessus
