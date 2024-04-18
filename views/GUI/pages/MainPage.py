@@ -1,6 +1,6 @@
 # -*- encoding:utf-8 -*-
 import toga
-from toga.style import Pack
+from toga.style.pack import Pack
 from toga.constants import COLUMN
 
 from controllers.ControllerManager import ControllerManager
@@ -10,7 +10,7 @@ from views.GUI.utils.AbstractPage import AbstractPage
 class MainPage(AbstractPage):
   def __init__(self, app):
     super().__init__(app)
-    cm = ControllerManager()
+    cm = ControllerManager
     self.temporal_ctrl = cm.get_temporal_ctrl()
     self.colors_ctrl = cm.get_colors_ctrl()
 
@@ -36,7 +36,7 @@ class MainPage(AbstractPage):
 
   # Function executed when btn is clicked
   def show_fest_callback(self, event=None):
-    self.label_fest.text = self.temporal_ctrl.getFestName()
+    self.label_fest.text = self.temporal_ctrl.get_fest_name()
   
   def go_to_settings_callback(self, event=None):
     self._app.go_to_page('settings')

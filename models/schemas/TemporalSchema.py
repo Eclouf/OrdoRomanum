@@ -2,7 +2,7 @@
 from typing import Optional
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import Integer, String
-from models.utils.base import Base
+from models.utils.Base import Base
 
 
 class TemporalSchema(Base):

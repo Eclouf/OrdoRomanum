@@ -22,8 +22,8 @@ class Ordination():
         Tu peux enlever ce commentaire après si tu veux.
         """
         
-    def office():
+    def office(self):
         pass
     
-    def mass():
+    def mass(self):
         pass

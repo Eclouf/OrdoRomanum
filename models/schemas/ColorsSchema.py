@@ -1,7 +1,7 @@
 # -*- encoding:utf-8 -*-
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import Integer, String
-from models.utils.base import Base
+from models.utils.Base import Base
 
 class ColorsSchema(Base):
   __tablename__ = "colors"

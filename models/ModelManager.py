@@ -1,18 +1,15 @@
 # -*- encoding:utf-8 -*-
-from typing import TypeVar
 from config import ENV
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models.DAO.SanctoralDAO import SanctoralDAO
 from models.DAO.ColorsDAO import ColorsDAO
 from models.DAO.TemporalDAO import TemporalDAO
-from models.utils.base import Base
+from models.utils.Base import Base
 from models.utils.Singleton import Singleton
 
 # All schemas has to be imported here to create table in database
 from models.schemas import ColorsSchema, TemporalSchema, SanctoralSchema, ExceptionsSchema
-
-TypeModelManager = TypeVar('TypeModelManager', bound='ModelManager')
 
 
 """

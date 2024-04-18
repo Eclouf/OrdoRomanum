@@ -7,4 +7,8 @@ from models.utils.AbstractDAO import AbstractDAO
   https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
 """
 class SanctoralDAO(AbstractDAO):
-  pass
+  def get_by_id(self):
+    pass
+  
+  def get_all(self):
+    pass

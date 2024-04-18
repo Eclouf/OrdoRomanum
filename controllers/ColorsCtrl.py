@@ -1,12 +1,12 @@
 # -*- encoding:utf-8 -*-
-from models.ModelManager import TypeModelManager
+from models.ModelManager import ModelManager
 
 
 """
   Colors controller.
 """
 class ColorsCtrl:
-  def __init__(self, model: TypeModelManager) -> None:
+  def __init__(self, model: ModelManager) -> None:
     self.dao = model.get_colors_dao()
 
   def tests(self):

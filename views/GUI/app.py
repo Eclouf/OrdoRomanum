@@ -23,7 +23,7 @@ class TogaApp(toga.App):
 
   def go_to_page(self, page_name: str):
       # get the page wanted
-      page: TypePage = self.pages.get(page_name)
+      self.page: TypePage = self.pages.get(page_name)
 
       # replace the current page by the new one
-      self.main_window.content = page.container
+      self.main_window.content = self.page.container
