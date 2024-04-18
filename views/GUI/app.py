@@ -2,7 +2,7 @@
 import toga
 from views.GUI.pages.MainPage import MainPage
 from views.GUI.pages.SettingsPage import SettingsPage
-from views.GUI.utils.AbstractPage import Page
+from views.GUI.utils.AbstractPage import TypePage
 
 
 class TogaApp(toga.App):
@@ -23,7 +23,7 @@ class TogaApp(toga.App):
 
   def go_to_page(self, page_name: str):
       # get the page wanted
-      page: Page = self.pages.get(page_name)
+      page: TypePage = self.pages.get(page_name)
 
       # replace the current page by the new one
       self.main_window.content = page.container

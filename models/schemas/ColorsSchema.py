@@ -1,6 +1,6 @@
 # -*- encoding:utf-8 -*-
 from sqlalchemy.orm import Mapped, mapped_column
-from sqlalchemy import Integer, String, ARRAY
+from sqlalchemy import Integer, String
 from models.utils.base import Base
 
 class ColorsSchema(Base):

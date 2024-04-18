@@ -1,7 +1,7 @@
 # -*- encoding:utf-8 -*-
 from sqlalchemy.orm import Mapped, mapped_column
-from sqlalchemy import Integer, String, ARRAY, ForeignKey
-from models.models import Base
+from sqlalchemy import Integer, String
+from models.utils.base import Base
 
 class ExceptionsSchema(Base):
   __tablename__ = "exceptions"

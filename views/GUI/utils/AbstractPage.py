@@ -1,10 +1,10 @@
 # -*- encoding:utf-8 -*-
 from abc import ABC, abstractmethod
 from toga import Widget
-from typing import Type, TypeVar
+from typing import TypeVar
 
 
-Page = TypeVar('Page', bound='AbstractPage')
+TypePage = TypeVar('TypePage', bound='AbstractPage')
 
 """
   Abstract class used to define base structure for class pages

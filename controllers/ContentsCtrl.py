@@ -1,6 +1,7 @@
 # -*- encoding:utf-8 -*-
 import pandas as pd # type: ignore
 
+
 """
     test for the table of contents 
     determining the structure of the vepres based on the second vepres of the day and the first vepres of the following day.
@@ -9,7 +10,7 @@ import pandas as pd # type: ignore
 festA = {'title':'Fest of A','office':'office of A','rank':8500, 'occ':'F1U', 'con':'jio2'}
 festB = {'title':'Fest of B','office':'office of B','rank':150, 'occ':'D1', 'con':'F1'}
 
-class ContentsCtrl():
+class ContentsCtrl:
     def __init__(self):
         self.__only__ = ['f1', 'f2', 'f3', 'f4', 'F2', 'F3', 'jio2']
         self.__ordinate__ = ['D1', 'D2', 'f1', 'f2', 'f3', 'f4', 'F1', 'F2', 'F3', 'jio2']

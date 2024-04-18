@@ -1,5 +1,4 @@
 # -*- encoding:utf-8 -*-
-from typing import Optional
 from sqlalchemy.orm import Mapped, mapped_column  
 from sqlalchemy import Integer, String 
 from models.utils.base import Base
