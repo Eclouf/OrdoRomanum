@@ -4,7 +4,9 @@ from controllers.ControllerManager import ControllerManager
 """
     Ordination of the office and mass for the given day.
 """
-class Ordination():
+
+
+class Ordination:
     def __init__(self):
         cm = ControllerManager()
         occurence_ctrl = cm.get_occurrence_ctrl()
@@ -21,9 +23,9 @@ class Ordination():
           
         Tu peux enlever ce commentaire après si tu veux.
         """
-        
+
     def office(self):
         pass
-    
+
     def mass(self):
         pass

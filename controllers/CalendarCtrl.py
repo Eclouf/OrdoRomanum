@@ -8,7 +8,7 @@ class CalendarRom():
     def __init__(self):
         pass
     
-    def liturgical_year(year):
+    def liturgical_year(self, year):
         a = year % 19
         b = year // 100
         c = year % 100
