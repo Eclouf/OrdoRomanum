@@ -9,23 +9,22 @@ from controllers.ControllerManager import ControllerManager
 class Ordination:
     def __init__(self):
         cm = ControllerManager()
-        occurence_ctrl = cm.get_occurrence_ctrl()
-        competition_ctrl = cm.get_contents_ctrl()
-        """
-        Morand :
-        - Dorénavant, si tu veux importer un controller, fais-le en passant toujours par les fonctions de ControllerManager(), comme je l'ai fait au-dessus
-          cela permet d'éviter d'instantier plusieurs fois un controller (donc sauvegarde de mémoire!). Et du coup tu peux instantier autant de fois qu'il le faut
-          la class ControllerManager puisqu'il n'a que des méthodes statiques (NB : méthode = fonction d'une classe).
-        
-        - La logique des controllers doit être exécuté depuis une page (MainPage par exemple car s'est la première qui s'exécute au démarrage), dans le __init__.
-          C'est de là que tu peux tester tes fonctions/classes. Tu peux virer le code où je mets 'test colors query' et mettre ton code ici pour tester.
-          Bien que je comprenne que tu test en instantiant directement les classes dans leur fichier, mieux vaut le faire en dehors (après tu fait comme tu veux)
-          
-        Tu peux enlever ce commentaire après si tu veux.
-        """
+        self.occurence_ctrl = cm.get_occurrence_ctrl()
+        self.contents_ctrl = cm.get_contents_ctrl()
+        self.temporal_ctrl = cm.get_temporal_ctrl()
+        self.sanctoral_ctrl = cm.get_sanctoral_ctrl()
 
-    def office(self):
-        pass
+    def office(self, day):
+        # find the Feast for the given day.
+          # follow this logic for all possible holidays on the given day.
+        day_temp = self.temporal_ctrl.get_fest_name(day)
+        day_sanct = self.sanctoral_ctrl.get_fest_name(day)
+        # search the Feast who is celebrat.
+        fest = self.occurence_ctrl.search(day_temp,day_sanct)
+        # see if there are any first vespers.
+        fest = self.contents_ctrl.search(day)
+        # 
+        return(fest)
 
     def mass(self):
         pass

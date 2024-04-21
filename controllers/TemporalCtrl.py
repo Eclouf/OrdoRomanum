@@ -15,4 +15,5 @@ class TemporalCtrl:
         pass
 
     def get_fest_name(self):
+        # return the Feast as dict
         return "Fête de truc"

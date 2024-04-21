@@ -6,9 +6,6 @@ import pandas as pd
     test for the table of occurence 
     determination of feast celebrated
 """
-# For test 2 dict for 2 fests
-festA = {'title':'Fest of A','office':'office of A','rank':8500, 'occ':'F3U'}
-festB = {'title':'Fest of B','office':'office of B','rank':150, 'occ':'F2U'}
 
 class OccurenceCtrl:
     def __init__(self):
@@ -28,7 +25,6 @@ class OccurenceCtrl:
 
         # Creat table of occurence
         self._table_occurence_ = pd.DataFrame(self.__data__, index=self.__ordinate__, columns=self.__abcissa__)
-        print(self._table_occurence_)
           
     def search(self, fest1, fest2):
         # Determination of festivities on the x-axis and y-axis for self._table_occurence_
@@ -46,7 +42,6 @@ class OccurenceCtrl:
         x = first['occ']
         y = second['occ']
         occurence = self._table_occurence_.loc[x,y]
-        print(occurence)
 
         if occurence == 1:
             print(f"Occurence N°{occurence}")
@@ -98,6 +93,3 @@ class OccurenceCtrl:
         
         return result
     
-test = OccurenceCtrl()
-office = test.search(festA, festB)
-print(office)

@@ -16,10 +16,20 @@ class MainPage(AbstractPage):
         cm = ControllerManager
         self.temporal_ctrl = cm.get_temporal_ctrl()
         self.colors_ctrl = cm.get_colors_ctrl()
+        self.occurence_ctrl = cm.get_occurrence_ctrl()
+        self.contents_ctrl = cm.get_contents_ctrl()
 
+        # For test 2 fests
+        festA = {'title':'Fest of A','office':'office of A','rank':8500, 'occ':'F3U', 'con':'F1'}
+        festB = {'title':'Fest of B','office':'office of B','rank':150, 'occ':'F2U', 'con':'jio2'}
+        
         # test
         print("test colors query")
         self.colors_ctrl.tests()
+        print("test occurence")
+        self.occurence_ctrl.search(festA, festB)
+        print("test contents")
+        self.contents_ctrl.search(festA,festB)
 
     def build(self) -> toga.Widget:
         self.label_title = toga.Label(
