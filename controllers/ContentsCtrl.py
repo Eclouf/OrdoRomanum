@@ -29,7 +29,7 @@ class ContentsCtrl:
         self._table_competition_ = pd.DataFrame(self.__data__, index=self.__ordinate__, columns=self.__abcissa__)
 
         
-    def search(self, day0, day1):
+    def search(self, day0: dict, day1: dict):
         # Determination of festivities on the x-axis and y-axis for self._table_competition_
         if day0['con'] in self.__only__:
             first = day0   # y-axis

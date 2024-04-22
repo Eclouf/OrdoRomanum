@@ -7,7 +7,8 @@ from controllers.SanctoralCtrl import SanctoralCtrl
 from controllers.TemporalCtrl import TemporalCtrl
 from controllers.TranslationCtrl import TranslationCtrl
 from controllers.CalendarCtrl import CalendarRom
-
+from controllers.DioceseCtrl import DioceseCtrl
+from controllers.CongregationCtrl import CongregationCtrl
 """
   ControllerManager initialize the models & allow to retrieve each controllers and instantiate them one time if they aren't
   Each controller has to be imported from here, NEVER OUTSIDE
@@ -23,6 +24,8 @@ class ControllerManager:
     _sanctoral_ctrl = None
     _temporal_ctrl = None
     _translation_ctrl = None
+    _diocese_ctrl = None
+    _congregation_ctrl = None
 
     @staticmethod
     def get_colors_ctrl():
@@ -72,3 +75,17 @@ class ControllerManager:
         if not cm._calendar_ctrl:
             cm._calendar_ctrl = CalendarRom()
         return cm._calendar_ctrl
+    
+    @staticmethod
+    def get_diocese_ctrl():
+        cm = ControllerManager
+        if not cm._diocese_ctrl:
+            cm._diocese_ctrl = DioceseCtrl()
+        return cm._diocese_ctrl
+    
+    @staticmethod
+    def get_congregation_ctrl():
+        cm = ControllerManager
+        if not cm._congregation_ctrl:
+            cm._congregation_ctrl = CongregationCtrl()
+        return cm._congregation_ctrl

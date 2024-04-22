@@ -26,7 +26,7 @@ class OccurenceCtrl:
         # Creat table of occurence
         self._table_occurence_ = pd.DataFrame(self.__data__, index=self.__ordinate__, columns=self.__abcissa__)
           
-    def search(self, fest1, fest2):
+    def search(self, fest1: dict, fest2: dict):
         # Determination of festivities on the x-axis and y-axis for self._table_occurence_
         if fest1['occ'] in self.__only__:
             first = fest2   # y-axis
