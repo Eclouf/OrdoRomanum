@@ -13,5 +13,5 @@ class DioceseCtrl:
     def __init__(self, model: ModelManager):
         pass
     
-    def CalendarDiocese():
+    def calendar_diocese():
         pass

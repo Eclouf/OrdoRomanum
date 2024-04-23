@@ -11,5 +11,5 @@ class CongregationCtrl:
     def __init__(self, model: ModelManager):
         pass
     
-    def CalendarCongregation():
+    def calendar_congregation():
         pass
