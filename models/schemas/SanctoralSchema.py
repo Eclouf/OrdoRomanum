@@ -1,4 +1,5 @@
 # -*- encoding:utf-8 -*-
+from typing import Optional
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import Integer, String
 from models.utils.Base import Base
@@ -13,6 +14,7 @@ class SanctoralSchema(Base):
     color: Mapped[str] = mapped_column(String)
     office: Mapped[str] = mapped_column(String)
     mass: Mapped[str] = mapped_column(String)
+    com: Mapped[Optional[str]] = mapped_column(String)
     note: Mapped[str] = mapped_column(String)
     degree: Mapped[str] = mapped_column(String)
     rank: Mapped[int] = mapped_column(Integer)
@@ -20,4 +22,4 @@ class SanctoralSchema(Base):
     con: Mapped[str] = mapped_column(String)
 
     def __repr__(self) -> str:
-        return f"SanctoralSchema(id={self.id!r}, index_month={self.index_month!r}, index_day={self.index_day!r}, title={self.title!r}, color={self.color!r}, office={self.office!r}, mass={self.mass!r}, note={self.note!r}, degree={self.degree!r}, rank={self.rank!r})"
+        return f"SanctoralSchema(id={self.id!r}, index_month={self.index_month!r}, index_day={self.index_day!r}, title={self.title!r}, color={self.color!r}, office={self.office!r}, mass={self.mass!r}, com={self.com!r} note={self.note!r}, degree={self.degree!r}, rank={self.rank!r})"

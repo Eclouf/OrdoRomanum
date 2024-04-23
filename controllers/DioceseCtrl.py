@@ -12,5 +12,5 @@ class DioceseCtrl:
     def __init__(self):
         pass
     
-    def calendar_diocese(self):
+    def calendar_diocese(self, country: str, diocese: str, day):
         pass

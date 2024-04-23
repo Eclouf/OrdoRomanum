@@ -17,37 +17,45 @@ class Ordination:
         self.diocese_ctrl = cm.get_diocese_ctrl()
         self.congregation_ctrl = cm.get_congregation_ctrl()
 
-    def office(self, day: datetime, diocese: str, congregation: str):
+    def office(self, country:str, diocese: str, congregation: str, day: datetime):
         # find the Feast for the given day.
           # follow this logic for all possible holidays on the given day.
         fest: dict =[]
-        day_dioc: dict = self.diocese_ctrl.calendar_diocese(diocese)
-        day_cong: dict = self.congregation_ctrl.calendar_congregation(congregation)
-        day_temp = self.temporal_ctrl.get_fest_name(day)
-        day_sanct = self.sanctoral_ctrl.get_fest_name(day)
+        day_dioc = self.diocese_ctrl.calendar_diocese(country, diocese, day)
+        day_cong = self.congregation_ctrl.calendar_congregation(congregation, day)
+        day_temp = self.temporal_ctrl.get_fest(day)
+        day_sanct = self.sanctoral_ctrl.get_fest(day)
         
-        if day_dioc != [] and day_cong != []:
+        if day_dioc  and day_cong :
             if day_dioc['title'] == day_cong['title']:
-                fest = max(day_dioc, day_cong, key=lambda x: x["rank"])
+                fest = max(day_dioc, day_cong, key=lambda x: x['rank'])
             else:
                 fest = self.occurence_ctrl.search(day_dioc, day_cong)
-        elif day_dioc ==[] and day_cong != []:
+        elif not day_dioc  and day_cong :
             fest = day_cong
         else:
             fest = day_dioc
             
-        if day_sanct != [] and fest != []:
-            fest = self.occurence_ctrl.search(day_sanct, fest)
-        elif day_sanct != [] and fest == []:
+        if day_sanct and fest :
+            if day_sanct['title'] == fest['title']:
+                fest = max(day_sanct, fest, key=lambda x: x['rank'])
+            else:
+                fest = self.occurence_ctrl.search(day_sanct, fest)
+        elif day_sanct  and not fest:
             fest = day_sanct
         else:
             fest = fest
         
-        # search the Feast who is celebrat.
-        fest = self.occurence_ctrl.search(day_temp,day_sanct)
-        # see if there are any first vespers.
-        fest = self.contents_ctrl.search(day)
-        # 
+        if day_temp and fest:
+            if day_temp['title'] == fest['title']:
+                fest = max(day_temp, fest, key=lambda x: x['rank'])
+            else:
+                fest = self.occurence_ctrl.search(day_temp, fest)
+        elif day_temp and not fest:
+            fest = day_temp
+        else:
+            fest=fest
+       
         return(fest)
 
     def mass(self):
