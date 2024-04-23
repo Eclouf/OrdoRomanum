@@ -18,8 +18,8 @@ from models.schemas import (
 
 
 """
-  Singleton Model class. Use to initialize the database
-  normal inheritance vs metaclass inheritance: https://medium.com/@saimun92/difference-between-a-normal-class-inheritance-and-a-metaclass-inheritance-in-python-7bfa26a055ba
+    Singleton Model class. Use to initialize the database
+    normal inheritance vs metaclass inheritance: https://medium.com/@saimun92/difference-between-a-normal-class-inheritance-and-a-metaclass-inheritance-in-python-7bfa26a055ba
 """
 
 

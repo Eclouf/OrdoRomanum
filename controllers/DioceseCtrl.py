@@ -1,5 +1,4 @@
 # -*- encoding:utf-8 -*-
-from models.ModelManager import ModelManager
 
 
 """
@@ -10,8 +9,8 @@ from models.ModelManager import ModelManager
 """
 
 class DioceseCtrl:
-    def __init__(self, model: ModelManager):
+    def __init__(self):
         pass
     
-    def calendar_diocese():
+    def calendar_diocese(self):
         pass

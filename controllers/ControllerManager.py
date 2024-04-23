@@ -10,8 +10,8 @@ from controllers.CalendarCtrl import CalendarRom
 from controllers.DioceseCtrl import DioceseCtrl
 from controllers.CongregationCtrl import CongregationCtrl
 """
-  ControllerManager initialize the models & allow to retrieve each controllers and instantiate them one time if they aren't
-  Each controller has to be imported from here, NEVER OUTSIDE
+    ControllerManager initialize the models & allow to retrieve each controllers and instantiate them one time if they aren't
+    Each controller has to be imported from here, NEVER OUTSIDE
 """
 
 

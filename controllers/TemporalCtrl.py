@@ -2,8 +2,8 @@
 from models.ModelManager import ModelManager
 
 """
-  Temporal controller.
-  Contains logic regarding actions performed by the user about temporal
+    Temporal controller.
+    Contains logic regarding actions performed by the user about temporal
 """
 
 

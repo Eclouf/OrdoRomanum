@@ -3,7 +3,7 @@ from models.ModelManager import ModelManager
 
 
 """
-  Colors controller.
+    Colors controller.
 """
 
 

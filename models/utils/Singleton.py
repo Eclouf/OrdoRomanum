@@ -2,7 +2,7 @@
 
 
 """
-  singleton pattern: https://refactoring.guru/fr/design-patterns/singleton/python/example
+    Singleton pattern: https://refactoring.guru/fr/design-patterns/singleton/python/example
 """
 
 

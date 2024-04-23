@@ -4,8 +4,8 @@ from toga import Widget
 
 
 """
-  Abstract class used to define base structure for class pages
-  @abstractmethod is a decorator indicating that the function must be implemented in the child class
+    Abstract class used to define base structure for class pages
+    @abstractmethod is a decorator indicating that the function must be implemented in the child class
 """
 
 

@@ -4,8 +4,8 @@ from models.schemas.ColorsSchema import ColorsSchema
 from models.utils.AbstractDAO import AbstractDAO
 
 """
-  ColorsDAO class.
-  https://docs.sqlalchemy.org/en/20/orm/queryguide/select.html
+    ColorsDAO class.
+    https://docs.sqlalchemy.org/en/20/orm/queryguide/select.html
 """
 
 

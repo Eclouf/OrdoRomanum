@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 
 """
-  AbstractDAO: provide attributes from ModelManager & interface to all DAOs
+    AbstractDAO: provide attributes from ModelManager & interface to all DAOs
 """
 
 
