@@ -53,10 +53,11 @@ On ajoute les modifications, on commit et on envoie sur la branche distante : `g
 
 ## Design patterns
 
-Liste des design patterns les plus connus en Python : <https://refactoring.guru/design-patterns/python>
+Liste des design patterns (patrons de conception en français) les plus connus en Python : <https://refactoring.guru/design-patterns/python>
 
 - **Singleton** : classe qui est instantiée une seule et unique fois lorsque le programme est lancé, même lorsque l'on créé plusieurs objets de cette classe (les deux objets font référence au même objet en RAM)
 - **Abstract Factory** : classe permettant de définir des méthodes (méthode=fonction d'une classe) qui devront obligatoirement être définie dans la classe enfant ayant pour parent la classe abstraite
+- [**Injection de dépendances**](https://gist.github.com/metal3d/e0989042e69191ac03bb) : principe d'injecter ce dont dépend une classe. On parle généralement de ce patron de conception lorsqu'on souhaite éviter le plus possible un couplage fort entre une classe qui dépend d'une autre.
 
 ## Logiciels tiers
 
