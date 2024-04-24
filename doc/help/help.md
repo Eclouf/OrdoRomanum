@@ -58,11 +58,17 @@ Liste des design patterns les plus connus en Python : <https://refactoring.guru/
 - **Singleton** : classe qui est instantiée une seule et unique fois lorsque le programme est lancé, même lorsque l'on créé plusieurs objets de cette classe (les deux objets font référence au même objet en RAM)
 - **Abstract Factory** : classe permettant de définir des méthodes (méthode=fonction d'une classe) qui devront obligatoirement être définie dans la classe enfant ayant pour parent la classe abstraite
 
-## Cheatsheet Python
-
-Aide-mémoire pour le langage Python, une documentation concise expliquant les principaux concepts sur Python : <https://www.pythoncheatsheet.org/>
-
 ## Logiciels tiers
 
 - [**GitAhead**](https://gitahead.github.io/gitahead.com/) : un client Git qui peut aider visuellement à mieux comprendre le fonctionnement.
 - [**DBeaver**](https://dbeaver.io/) : un logiciel d'administration de base de donnée relationnelle SQL.
+
+## Extensions VSCode
+
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) : extension conseillé par VSCode pour développer en Python.
+- [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) : extension pour formater proprement le code Python.
+
+## Ressources
+
+- [Arjancodes](https://www.youtube.com/@) : chaîne YouTube autour de Python, les explications sont claires.
+- [Python Cheatsheet](https://www.pythoncheatsheet.org/) : aide-mémoire sur le langage Python, une documentation concise expliquant les principaux concepts sur Python
