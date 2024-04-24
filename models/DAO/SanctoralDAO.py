@@ -1,4 +1,6 @@
 # -*- encoding:utf-8 -*-
+from sqlalchemy import select
+from models.schemas.SanctoralSchema import SanctoralSchema
 from models.utils.AbstractDAO import AbstractDAO
 
 """
@@ -8,8 +10,10 @@ from models.utils.AbstractDAO import AbstractDAO
 
 
 class SanctoralDAO(AbstractDAO):
-    def get_by_id(self):
-        pass
+    def get_by_id(self, month: int, day: int):
+        query = select(SanctoralSchema).where(SanctoralSchema.index_month == month, SanctoralSchema.index_day == day)
+        row = self.session.scalars(query).all()
+        return row
 
     def get_all(self):
         pass

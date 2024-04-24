@@ -5,6 +5,7 @@ from toga.style.pack import Pack
 from toga.constants import COLUMN
 import toga.widgets
 import toga.widgets.button
+import datetime
 
 from controllers.ControllerManager import ControllerManager
 from views.GUI.utils.AbstractPage import AbstractPage
@@ -15,6 +16,7 @@ class MainPage(AbstractPage):
         super().__init__(app)
         cm = ControllerManager
         self.temporal_ctrl = cm.get_temporal_ctrl()
+        self.sanctoral_ctrl = cm.get_sanctoral_ctrl()
         self.colors_ctrl = cm.get_colors_ctrl()
         self.occurence_ctrl = cm.get_occurrence_ctrl()
         self.contents_ctrl = cm.get_contents_ctrl()
@@ -28,8 +30,10 @@ class MainPage(AbstractPage):
         self.colors_ctrl.tests()
         print("test occurence")
         self.occurence_ctrl.search(festA, festB)
-        print("test contents")
-        self.contents_ctrl.search(festA,festB)
+        print("test sanctoral")
+        x = datetime.date(2024,1,1)
+        fest = self.sanctoral_ctrl.get_fest(x)
+        print(fest)
 
     def build(self) -> toga.Widget:
         self.label_title = toga.Label(

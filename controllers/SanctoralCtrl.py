@@ -1,4 +1,5 @@
 # -*- encoding:utf-8 -*-
+from datetime import datetime
 from models.ModelManager import ModelManager
 
 
@@ -19,6 +20,9 @@ class SanctoralCtrl:
         # return the Feast as dict
         return "Fête de truc"
 
-    def get_fest(self):
-        pass
+    def get_fest(self, day: datetime):
+        month = day.month
+        day = day.day
+        fest = self.dao.get_by_id(month, day)
+        return fest
         

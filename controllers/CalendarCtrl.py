@@ -39,6 +39,8 @@ class CalendarRom():
             sun_adv_2 = sun_adv_4 - timedelta(days=14)
             sun_adv_1 = sun_adv_4 - timedelta(days=21)
         
+        cycle_chrismas = [sun_adv_1, sun_adv_2, sun_adv_3, sun_adv_4]
+        
         # Cycle of Epiphany
         epiphany = datetime(year, 1, 6)
         sundays_epi = {}
@@ -58,22 +60,62 @@ class CalendarRom():
             if dimanche + timedelta(days=7) == septuagesima:
                 break
         
+        cycle_epiphany = list(sundays_epi.items())
+        
         # Cycle of Lent
         septuagesima = easter - timedelta(days=63)
         sexagesima = easter - timedelta(days=56)
         quinquagesima = easter - timedelta(days=49)
         ash_wednesday = easter - timedelta(days=46)
+        # lent 1
         sun_lent_1 = easter - timedelta(days=42)
+        mon_lent_1 = sun_lent_1 + timedelta(days=1)
+        tue_lent_1 = sun_lent_1 + timedelta(days=2)
+        wen_lent_1 = sun_lent_1 + timedelta(days=3)
+        thu_lent_1 = sun_lent_1 + timedelta(days=4)
+        fri_lent_1 = sun_lent_1 + timedelta(days=5)
+        sat_lent_1 = sun_lent_1 + timedelta(days=6)
+        # lent 2
         sun_lent_2 = easter - timedelta(days=35)
+        mon_lent_2 = sun_lent_2 + timedelta(days=1)
+        tue_lent_2 = sun_lent_2 + timedelta(days=2)
+        wen_lent_2 = sun_lent_2 + timedelta(days=3)
+        thu_lent_2 = sun_lent_2 + timedelta(days=4)
+        fri_lent_2 = sun_lent_2 + timedelta(days=5)
+        sat_lent_2 = sun_lent_2 + timedelta(days=6)
+        # lent 3
         sun_lent_3 = easter - timedelta(days=28)
-        sun_lent_4 = easter - timedelta(days=21)  
+        mon_lent_3 = sun_lent_3 + timedelta(days=1)
+        tue_lent_3 = sun_lent_3 + timedelta(days=2)
+        wen_lent_3 = sun_lent_3 + timedelta(days=3)
+        thu_lent_3 = sun_lent_3 + timedelta(days=4)
+        fri_lent_3 = sun_lent_3 + timedelta(days=5)
+        sat_lent_3 = sun_lent_3 + timedelta(days=6)
+        # lent 4
+        sun_lent_4 = easter - timedelta(days=21)
+        mon_lent_4 = sun_lent_4 + timedelta(days=1)
+        tue_lent_4 = sun_lent_4 + timedelta(days=2)
+        wen_lent_4 = sun_lent_4 + timedelta(days=3)
+        thu_lent_4 = sun_lent_4 + timedelta(days=4)
+        fri_lent_4 = sun_lent_4 + timedelta(days=5)
+        sat_lent_4 = sun_lent_4 + timedelta(days=6)
         sun_passion_1 = easter - timedelta(days=14)
         sun_passion_2 = easter - timedelta(days=7)  
-        jeudi_saint = easter - timedelta(days=3)  
-        vendredi_saint = easter - timedelta(days=2) 
-        samedi_saint = easter - timedelta(days=1)  
+        thu_passion = easter - timedelta(days=3)  
+        good_friday = easter - timedelta(days=2) 
+        sat_passion = easter - timedelta(days=1)  
+        
+        cycle_lent = []
         
         # Cycle of Easter
+        cycle_easter = []
+        easter
+        mon_easter = easter + timedelta(days=1)
+        tue_easter = easter + timedelta(days=2)
+        wen_easter = easter + timedelta(days=3)
+        thu_easter = easter + timedelta(days=4)
+        fri_easter = easter + timedelta(days=5)
+        sat_easter = easter + timedelta(days=6)
         sun_easter_1 = easter + timedelta(days=7)
         sun_easter_2 = easter + timedelta(days=14)
         sun_easter_3 = easter + timedelta(days=21)
@@ -81,5 +123,6 @@ class CalendarRom():
         sun_easter_5 = easter + timedelta(days=35)
         ascension = easter + timedelta(days=40)
         
+        cycle_easter = []
         # Cycle of Pentecost
         
