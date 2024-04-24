@@ -29,17 +29,22 @@ class CalendarRom():
     
         # Cycle of Chrismas
         if chrismas.weekday() == 6:  # alors il y a 4 dimanche de l'avent
-            sun_adv_4 = chrismas - timedelta(days=7)
-            sun_adv_3 = chrismas - timedelta(days=14)  # gaudete
-            sun_adv_2 = chrismas - timedelta(days=21)
-            sun_adv_1 = chrismas - timedelta(days=28)
+            cycle_chrismas = {
+                chrismas - timedelta(days=7):'',  # 4 '' -> id of temporal
+                chrismas - timedelta(days=14):'', # 3
+                chrismas - timedelta(days=21):'', # 2
+                chrismas - timedelta(days=28):''  # 1
+            }
         else:  # touver le dimanche avant chrismas
             sun_adv_4 = chrismas - timedelta(days=chrismas.weekday() + 1)
-            sun_adv_3 = sun_adv_4 - timedelta(days=7)  # gaudete
-            sun_adv_2 = sun_adv_4 - timedelta(days=14)
-            sun_adv_1 = sun_adv_4 - timedelta(days=21)
+            cycle_chrismas = {
+                sun_adv_4:'',
+                sun_adv_4 - timedelta(days=7):'', 
+                sun_adv_4 - timedelta(days=14):'',
+                sun_adv_4 - timedelta(days=21):''
+            }
         
-        cycle_chrismas = [sun_adv_1, sun_adv_2, sun_adv_3, sun_adv_4]
+       
         
         # Cycle of Epiphany
         epiphany = datetime(year, 1, 6)
@@ -57,72 +62,81 @@ class CalendarRom():
             nb_sun_epi += 1
             dimanche = dimanche + timedelta(days=7)
             sundays_epi["sun_epi_" + str(i)] = dimanche
-            if dimanche + timedelta(days=7) == septuagesima:
+            if dimanche + timedelta(days=7) == easter - timedelta(days=63):
                 break
         
         cycle_epiphany = list(sundays_epi.items())
         
         # Cycle of Lent
-        septuagesima = easter - timedelta(days=63)
-        sexagesima = easter - timedelta(days=56)
-        quinquagesima = easter - timedelta(days=49)
-        ash_wednesday = easter - timedelta(days=46)
-        # lent 1
-        sun_lent_1 = easter - timedelta(days=42)
-        mon_lent_1 = sun_lent_1 + timedelta(days=1)
-        tue_lent_1 = sun_lent_1 + timedelta(days=2)
-        wen_lent_1 = sun_lent_1 + timedelta(days=3)
-        thu_lent_1 = sun_lent_1 + timedelta(days=4)
-        fri_lent_1 = sun_lent_1 + timedelta(days=5)
-        sat_lent_1 = sun_lent_1 + timedelta(days=6)
-        # lent 2
-        sun_lent_2 = easter - timedelta(days=35)
-        mon_lent_2 = sun_lent_2 + timedelta(days=1)
-        tue_lent_2 = sun_lent_2 + timedelta(days=2)
-        wen_lent_2 = sun_lent_2 + timedelta(days=3)
-        thu_lent_2 = sun_lent_2 + timedelta(days=4)
-        fri_lent_2 = sun_lent_2 + timedelta(days=5)
-        sat_lent_2 = sun_lent_2 + timedelta(days=6)
-        # lent 3
-        sun_lent_3 = easter - timedelta(days=28)
-        mon_lent_3 = sun_lent_3 + timedelta(days=1)
-        tue_lent_3 = sun_lent_3 + timedelta(days=2)
-        wen_lent_3 = sun_lent_3 + timedelta(days=3)
-        thu_lent_3 = sun_lent_3 + timedelta(days=4)
-        fri_lent_3 = sun_lent_3 + timedelta(days=5)
-        sat_lent_3 = sun_lent_3 + timedelta(days=6)
-        # lent 4
-        sun_lent_4 = easter - timedelta(days=21)
-        mon_lent_4 = sun_lent_4 + timedelta(days=1)
-        tue_lent_4 = sun_lent_4 + timedelta(days=2)
-        wen_lent_4 = sun_lent_4 + timedelta(days=3)
-        thu_lent_4 = sun_lent_4 + timedelta(days=4)
-        fri_lent_4 = sun_lent_4 + timedelta(days=5)
-        sat_lent_4 = sun_lent_4 + timedelta(days=6)
-        sun_passion_1 = easter - timedelta(days=14)
-        sun_passion_2 = easter - timedelta(days=7)  
-        thu_passion = easter - timedelta(days=3)  
-        good_friday = easter - timedelta(days=2) 
-        sat_passion = easter - timedelta(days=1)  
-        
-        cycle_lent = []
+        cycle_lent = {
+            easter - timedelta(days=63):'', # septuagesima
+            easter - timedelta(days=56):'', # sexagesima
+            easter - timedelta(days=49):'', # quinquagesima
+            easter - timedelta(days=46):'', # ash_wednesday
+            easter - timedelta(days=45):'',
+            easter - timedelta(days=44):'',
+            easter - timedelta(days=43):'',
+            easter - timedelta(days=42):'', # sun_lent_1
+            easter - timedelta(days=41):'',
+            easter - timedelta(days=40):'',
+            easter - timedelta(days=39):'',
+            easter - timedelta(days=38):'',
+            easter - timedelta(days=37):'',
+            easter - timedelta(days=36):'',
+            easter - timedelta(days=35):'', # sun_lent_2
+            easter - timedelta(days=34):'',
+            easter - timedelta(days=33):'',
+            easter - timedelta(days=32):'',
+            easter - timedelta(days=31):'',
+            easter - timedelta(days=30):'',
+            easter - timedelta(days=29):'',
+            easter - timedelta(days=28):'', # sun_lent_3
+            easter - timedelta(days=27):'',
+            easter - timedelta(days=26):'',
+            easter - timedelta(days=25):'',
+            easter - timedelta(days=24):'',
+            easter - timedelta(days=23):'',
+            easter - timedelta(days=22):'',
+            easter - timedelta(days=21):'', # sun_lent_4
+            easter - timedelta(days=20):'',
+            easter - timedelta(days=19):'',
+            easter - timedelta(days=18):'',
+            easter - timedelta(days=17):'',
+            easter - timedelta(days=16):'',
+            easter - timedelta(days=15):'',
+            easter - timedelta(days=14):'', # sun_lent_5
+            easter - timedelta(days=13):'',
+            easter - timedelta(days=12):'',
+            easter - timedelta(days=11):'',
+            easter - timedelta(days=10):'',
+            easter - timedelta(days=9):'',
+            easter - timedelta(days=8):'',
+            easter - timedelta(days=7):'', # sun_lent_6
+            easter - timedelta(days=6):'',
+            easter - timedelta(days=5):'',
+            easter - timedelta(days=4):'',
+            easter - timedelta(days=3):'',
+            easter - timedelta(days=2):'',
+            easter - timedelta(days=1):'',
+        }
         
         # Cycle of Easter
-        cycle_easter = []
-        easter
-        mon_easter = easter + timedelta(days=1)
-        tue_easter = easter + timedelta(days=2)
-        wen_easter = easter + timedelta(days=3)
-        thu_easter = easter + timedelta(days=4)
-        fri_easter = easter + timedelta(days=5)
-        sat_easter = easter + timedelta(days=6)
-        sun_easter_1 = easter + timedelta(days=7)
-        sun_easter_2 = easter + timedelta(days=14)
-        sun_easter_3 = easter + timedelta(days=21)
-        sun_easter_4 = easter + timedelta(days=28)
-        sun_easter_5 = easter + timedelta(days=35)
-        ascension = easter + timedelta(days=40)
+        cycle_easter = {
+            easter:'',
+            easter + timedelta(days=1):'',
+            easter + timedelta(days=2):'',
+            easter + timedelta(days=3):'',
+            easter + timedelta(days=4):'',
+            easter + timedelta(days=5):'',
+            easter + timedelta(days=6):'',
+            easter + timedelta(days=7):'',
+            easter + timedelta(days=14):'',
+            easter + timedelta(days=21):'',
+            easter + timedelta(days=28):'',
+            easter + timedelta(days=35):'',
+            easter + timedelta(days=40):''
+        }
         
-        cycle_easter = []
         # Cycle of Pentecost
+        return cycle_chrismas, cycle_epiphany, cycle_lent, cycle_easter
         
