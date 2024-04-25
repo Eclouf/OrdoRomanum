@@ -7,15 +7,16 @@ from models.utils.Base import Base
 
 class SanctoralSchema(Base):
     __tablename__ = "sanctoral"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     index_month: Mapped[int] = mapped_column(Integer)
     index_day: Mapped[int] = mapped_column(Integer)
     title: Mapped[str] = mapped_column(String)
+    category: Mapped[str] = mapped_column(String)
     color: Mapped[str] = mapped_column(String)
     office: Mapped[str] = mapped_column(String)
     mass: Mapped[str] = mapped_column(String)
     com: Mapped[Optional[str]] = mapped_column(String)
-    note: Mapped[str] = mapped_column(String)
+    note: Mapped[Optional[str]] = mapped_column(String)
     degree: Mapped[str] = mapped_column(String)
     rank: Mapped[int] = mapped_column(Integer)
     occ: Mapped[int] = mapped_column(String)

@@ -5,6 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from models.DAO.SanctoralDAO import SanctoralDAO
 from models.DAO.ColorsDAO import ColorsDAO
 from models.DAO.TemporalDAO import TemporalDAO
+from models.DAO.CategoryDAO import CategoryDAO
 from models.utils.Base import Base
 from models.utils.Singleton import Singleton
 
@@ -27,6 +28,7 @@ class ModelManager(metaclass=Singleton):
     _colors_dao = None
     _sanctoral_dao = None
     _temporal_dao = None
+    _category_dao = None
 
     def __init__(self) -> None:
         self.engine = create_engine(
@@ -50,3 +52,8 @@ class ModelManager(metaclass=Singleton):
         if not ModelManager._temporal_dao:
             ModelManager._temporal_dao = TemporalDAO(self)
         return ModelManager._temporal_dao
+    
+    def get_category_dao(self):
+        if not ModelManager._category_dao:
+            ModelManager._category_dao = CategoryDAO(self)
+        return ModelManager._category_dao
