@@ -6,6 +6,8 @@ from models.DAO.SanctoralDAO import SanctoralDAO
 from models.DAO.ColorsDAO import ColorsDAO
 from models.DAO.TemporalDAO import TemporalDAO
 from models.DAO.CategoryDAO import CategoryDAO
+from models.DAO.OfficeDAO import OfficeDAO
+from models.DAO.ExceptionsDAO import ExceptionsDAO
 from models.utils.Base import Base
 from models.utils.Singleton import Singleton
 
@@ -15,6 +17,8 @@ from models.schemas import (
     TemporalSchema,
     SanctoralSchema,
     ExceptionsSchema,
+    CategorySchema,
+    OfficeSchema,
 )
 
 
@@ -29,6 +33,8 @@ class ModelManager(metaclass=Singleton):
     _sanctoral_dao = None
     _temporal_dao = None
     _category_dao = None
+    _office_dao = None
+    _exceptions_dao = None
 
     def __init__(self) -> None:
         self.engine = create_engine(
@@ -57,3 +63,13 @@ class ModelManager(metaclass=Singleton):
         if not ModelManager._category_dao:
             ModelManager._category_dao = CategoryDAO(self)
         return ModelManager._category_dao
+    
+    def get_office_dao(self):
+        if not ModelManager._office_dao:
+            ModelManager._office_dao = OfficeDAO(self)
+        return ModelManager._office_dao
+    
+    def get_exceptions_dao(self):
+        if not ModelManager._exceptions_dao:
+            ModelManager._exceptions_dao = ExceptionsDAO(self)
+        return ModelManager._exceptions_dao

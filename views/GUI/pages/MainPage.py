@@ -22,8 +22,8 @@ class MainPage(AbstractPage):
         self.contents_ctrl = cm.get_contents_ctrl()
 
         # For test 2 fests
-        festA = {'title':'Fest of A','office':'office of A','rank':8500, 'occ':'F3U', 'con':'F1'}
-        festB = {'title':'Fest of B','office':'office of B','rank':150, 'occ':'F2U', 'con':'jio2'}
+        festA = {'title':'Fest of A','lauds':'office of A','vespers':'vespers A','rank':8500, 'occ':'F3U', 'con':'F1'}
+        festB = {'title':'Fest of B','lauds':'office of B','vespers':'vespers B','rank':150, 'occ':'F2U', 'con':'jio2'}
         
         # test
         print("test colors query")

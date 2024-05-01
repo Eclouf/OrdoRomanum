@@ -1,5 +1,6 @@
 # -*- encoding:utf-8 -*-
 import pandas as pd
+from models.ModelManager import ModelManager
 
 
 """
@@ -8,7 +9,8 @@ import pandas as pd
 """
 
 class OccurenceCtrl:
-    def __init__(self):
+    def __init__(self, model: ModelManager):
+        self.dao = model.get_exceptions_dao()
         self.__only__ = ['O2', 'O1', 'V1', 'f3C', 'f3A', 'f2', 'f1', 'D2', 'D1']
         self.__ordinate__ = ['F1U', 'F1P', 'F2U', 'F2P', 'F3U', 'F3P', 'V2', 'V3']
         self.__abcissa__ = ['O2', 'O1', 'F3P', 'F3U', 'F2P', 'F2U', 'F1P', 'F1U', 'V2', 'V1', 'f3C', 'f3A', 'f2', 'f1', 'D2', 'D1']
@@ -54,17 +56,18 @@ class OccurenceCtrl:
         elif occurence == 3:
             print(f"Occurence N°{occurence}")
             result = first
-            result['office'] += f" commemoraison à laude et à vêpres : {second['title']}" # exception
+            result['lauds'] += self.dao.get_by_id(1),second['title'] # exception
+            result['vespers'] += self.dao.get_by_id(0),second['title'] # exception
             
         elif occurence == 4:
             print(f"Occurence N°{occurence}")
             result = first
-            result['office'] += f" commemoraison à laude : {second['title']}" # exception
+            result['lauds'] += self.dao.get_by_id(1),second['title'] # exception
             
         elif occurence == 5:
             print(f"Occurence N°{occurence}")
             result = second
-            result['office'] += f" commemoraison à laude : {first['title']}" # exception
+            result['lauds'] += self.dao.get_by_id(1),first['title'] # exception
 
         elif occurence == 6:
             print(f"Occurence N°{occurence}")

@@ -31,6 +31,9 @@ class CalendarRom():
         if chrismas.weekday() == 6:  # alors il y a 4 dimanche de l'avent
             cycle_chrismas = {
                 chrismas - timedelta(days=7):'',  # 4 '' -> id of temporal
+                chrismas - timedelta(days=8):'',  # 4 tps
+                chrismas - timedelta(days=9):'',
+                chrismas - timedelta(day=11):'',
                 chrismas - timedelta(days=14):'', # 3
                 chrismas - timedelta(days=21):'', # 2
                 chrismas - timedelta(days=28):''  # 1
@@ -39,6 +42,9 @@ class CalendarRom():
             sun_adv_4 = chrismas - timedelta(days=chrismas.weekday() + 1)
             cycle_chrismas = {
                 sun_adv_4:'',
+                sun_adv_4 - timedelta(days=1):'',
+                sun_adv_4 - timedelta(days=2):'',
+                sun_adv_4 - timedelta(days=4):'',
                 sun_adv_4 - timedelta(days=7):'', 
                 sun_adv_4 - timedelta(days=14):'',
                 sun_adv_4 - timedelta(days=21):''
