@@ -50,28 +50,26 @@ class CalendarRom():
                 sun_adv_4 - timedelta(days=21):''
             }
         
-       
-        
         # Cycle of Epiphany
         epiphany = datetime(year, 1, 6)
         sundays_epi = {}
         if epiphany.weekday() == 6:
             holy_family = epiphany + timedelta(days=7)
-            sundays_epi["sun_epi_1"] = holy_family
+            sundays_epi[holy_family] = 1
         else:
             holy_family = epiphany + timedelta(days=(6 - epiphany.weekday()))
-            sundays_epi["sun_epi_1"] = holy_family
+            sundays_epi[holy_family] = 1
         
-        nb_sun_epi = 0
+        nb_sun_epi = 1
         dimanche = holy_family
         for i in range(2, 6):
             nb_sun_epi += 1
             dimanche = dimanche + timedelta(days=7)
-            sundays_epi["sun_epi_" + str(i)] = dimanche
+            sundays_epi[dimanche] = nb_sun_epi
             if dimanche + timedelta(days=7) == easter - timedelta(days=63):
                 break
         
-        cycle_epiphany = list(sundays_epi.items())
+        cycle_epiphany = sundays_epi
         
         # Cycle of Lent
         cycle_lent = {
@@ -129,20 +127,103 @@ class CalendarRom():
         # Cycle of Easter
         cycle_easter = {
             easter:'',
-            easter + timedelta(days=1):'',
+            easter + timedelta(days=1):'', # Octave
             easter + timedelta(days=2):'',
             easter + timedelta(days=3):'',
             easter + timedelta(days=4):'',
             easter + timedelta(days=5):'',
             easter + timedelta(days=6):'',
-            easter + timedelta(days=7):'',
+            easter + timedelta(days=7):'', # Dim in albis
             easter + timedelta(days=14):'',
             easter + timedelta(days=21):'',
             easter + timedelta(days=28):'',
             easter + timedelta(days=35):'',
+            easter + timedelta(days=39):'', # Ascension
             easter + timedelta(days=40):''
         }
         
         # Cycle of Pentecost
-        return cycle_chrismas, cycle_epiphany, cycle_lent, cycle_easter
+        pentecost = easter + timedelta(days=49)
+        cycle_pentecote = {
+            pentecost:'', # Pentcôte
+            pentecost + timedelta(days=11):'', # Fête Dieu
+            pentecost + timedelta(days=7):'', # 1
+            pentecost + timedelta(days=14):'', # 2
+            pentecost + timedelta(days=21):'', # 3
+            pentecost + timedelta(days=28):'', # 4
+            pentecost + timedelta(days=35):'', # 5
+            pentecost + timedelta(days=42):'', # 6
+            pentecost + timedelta(days=49):'', # 7
+            pentecost + timedelta(days=56):'', # 8
+            pentecost + timedelta(days=63):'', # 9
+            pentecost + timedelta(days=70):'', # 10
+            pentecost + timedelta(days=77):'', # 11
+            pentecost + timedelta(days=84):'', # 12
+            pentecost + timedelta(days=91):'', # 13
+            pentecost + timedelta(days=98):'', # 14
+            pentecost + timedelta(days=105):'', # 15
+            pentecost + timedelta(days=112):'', # 16
+            pentecost + timedelta(days=119):'', # 17
+            pentecost + timedelta(days=126):'', # 18
+            pentecost + timedelta(days=133):'', # 19
+            pentecost + timedelta(days=140):'', # 20
+            pentecost + timedelta(days=147):'', # 21
+            pentecost + timedelta(days=154):'', # 22
+            pentecost + timedelta(days=151):'', # 23
+        }
+        
+        
+        
+        # Fonction pour calculer le nombre de dimanches entre deux dates
+        def count_sundays(start_date, end_date):
+            sundays = 0
+            current_date = start_date
+            while current_date <= end_date:
+                if current_date.weekday() == 6: # 6 représente le dimanche
+                    sundays += 1
+                current_date += timedelta(days=1)
+            return sundays
+        
+        # Calculer le nombre de dimanches entre la Pentecôte et le premier dimanche de l'Avent
+        first_advent_sunday = datetime(year, 12, 1) + timedelta(days=(6 - datetime(year, 12, 1).weekday()))
+        nb_sun_pent = count_sundays(pentecost, first_advent_sunday)
+        
+        
+        
+        if nb_sun_pent == 24:
+            cycle_pentecote.update({
+                pentecost + timedelta(days=158):'', # 24
+            })
+
+        elif nb_sun_pent == 25:
+            cycle_pentecote.update({
+                pentecost + timedelta(days=158):'', # 24
+                pentecost + timedelta(days=165):'', # 25
+            })
+
+        elif nb_sun_pent == 26:
+            cycle_pentecote.update({
+                pentecost + timedelta(days=158):'', # 24
+                pentecost + timedelta(days=165):'', # 25
+                pentecost + timedelta(days=172):'', # 26
+            })
+            
+        elif nb_sun_pent == 27:
+            cycle_pentecote.update({
+                pentecost + timedelta(days=158):'', # 24
+                pentecost + timedelta(days=165):'', # 25
+                pentecost + timedelta(days=172):'', # 26
+                pentecost + timedelta(days=179):'', # 27
+            })
+            
+        elif nb_sun_pent == 28:
+            cycle_pentecote.update({
+                pentecost + timedelta(days=158):'', # 24
+                pentecost + timedelta(days=165):'', # 25
+                pentecost + timedelta(days=172):'', # 26
+                pentecost + timedelta(days=179):'', # 27
+                pentecost + timedelta(days=186):'', # 28
+            })
+        
+        return cycle_chrismas, cycle_epiphany, cycle_lent, cycle_easter, cycle_pentecote
         
