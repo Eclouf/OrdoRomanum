@@ -30,10 +30,10 @@ class CalendarRom():
         # Cycle of Chrismas
         if chrismas.weekday() == 6:  # alors il y a 4 dimanche de l'avent
             cycle_chrismas = {
-                chrismas - timedelta(days=7):'',  # 4 '' -> id of temporal
-                chrismas - timedelta(days=8):'',  # 4 tps
-                chrismas - timedelta(days=9):'',
-                chrismas - timedelta(day=11):'',
+                chrismas - timedelta(days=7):'', # 4 '' -> id of temporal
+                chrismas - timedelta(days=8):'', # 4tps
+                chrismas - timedelta(days=9):'', # 4tps
+                chrismas - timedelta(day=11):'', # 4tps
                 chrismas - timedelta(days=14):'', # 3
                 chrismas - timedelta(days=21):'', # 2
                 chrismas - timedelta(days=28):''  # 1
@@ -42,9 +42,9 @@ class CalendarRom():
             sun_adv_4 = chrismas - timedelta(days=chrismas.weekday() + 1)
             cycle_chrismas = {
                 sun_adv_4:'',
-                sun_adv_4 - timedelta(days=1):'',
-                sun_adv_4 - timedelta(days=2):'',
-                sun_adv_4 - timedelta(days=4):'',
+                sun_adv_4 - timedelta(days=1):'', # 4tps
+                sun_adv_4 - timedelta(days=2):'', # 4tps
+                sun_adv_4 - timedelta(days=4):'', # 4tps
                 sun_adv_4 - timedelta(days=7):'', 
                 sun_adv_4 - timedelta(days=14):'',
                 sun_adv_4 - timedelta(days=21):''
@@ -83,10 +83,10 @@ class CalendarRom():
             easter - timedelta(days=42):'', # sun_lent_1
             easter - timedelta(days=41):'',
             easter - timedelta(days=40):'',
-            easter - timedelta(days=39):'',
+            easter - timedelta(days=39):'', # 4tps
             easter - timedelta(days=38):'',
-            easter - timedelta(days=37):'',
-            easter - timedelta(days=36):'',
+            easter - timedelta(days=37):'', # 4tps
+            easter - timedelta(days=36):'', # 4tps
             easter - timedelta(days=35):'', # sun_lent_2
             easter - timedelta(days=34):'',
             easter - timedelta(days=33):'',
@@ -138,16 +138,22 @@ class CalendarRom():
             easter + timedelta(days=21):'',
             easter + timedelta(days=28):'',
             easter + timedelta(days=35):'',
+            easter +timedelta(days=36):'', # Rogations x3
+            easter +timedelta(days=37):'',
+            easter +timedelta(days=38):'',
             easter + timedelta(days=39):'', # Ascension
-            easter + timedelta(days=40):''
+            easter + timedelta(days=42):'' # Sunday after Ascension
         }
         
         # Cycle of Pentecost
         pentecost = easter + timedelta(days=49)
         cycle_pentecote = {
             pentecost:'', # Pentcôte
-            pentecost + timedelta(days=11):'', # Fête Dieu
+            pentecost + timedelta(days=3):'', # 4tps
+            pentecost + timedelta(days=5):'', # 4tps
+            pentecost + timedelta(days=6):'', # 4tps
             pentecost + timedelta(days=7):'', # 1
+            pentecost + timedelta(days=11):'', # Fête Dieu
             pentecost + timedelta(days=14):'', # 2
             pentecost + timedelta(days=21):'', # 3
             pentecost + timedelta(days=28):'', # 4
@@ -172,7 +178,24 @@ class CalendarRom():
             pentecost + timedelta(days=151):'', # 23
         }
         
+        # 4tps of september
+        crux = datetime(year, 9, 14)
+        start = crux
         
+        if start.weekday() == 2:  # 2 représente le mercredi
+            wen = start + timedelta(days=7)
+            fri = wen + timedelta(days=2)
+            sat = wen + timedelta(days=3)
+        else:
+            wen = start + timedelta(days=((start.weekday() + 1) % 7))
+            fri = start + timedelta(days=((start.weekday() + 4) % 7))
+            sat = start + timedelta(days=((start.weekday() + 5) % 7))
+        
+        cycle_pentecote.update({
+            wen: '',
+            fri: '',
+            sat: ''
+        })
         
         # Fonction pour calculer le nombre de dimanches entre deux dates
         def count_sundays(start_date, end_date):
