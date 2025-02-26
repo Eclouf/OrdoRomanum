@@ -56,18 +56,18 @@ class OccurenceCtrl:
         elif occurence == 3:
             print(f"Occurence N°{occurence}")
             result = first
-            result['lauds'] += self.dao.get_by_id(1),second['title'] # exception
-            result['vespers'] += self.dao.get_by_id(0),second['title'] # exception
+            result['lauds'] += self.dao.get_by_id(1).exception + second['title'] # exception
+            result['vespers'] += self.dao.get_by_id(0).exception + second['title'] # exception
             
         elif occurence == 4:
             print(f"Occurence N°{occurence}")
             result = first
-            result['lauds'] += self.dao.get_by_id(1),second['title'] # exception
+            result['lauds'] += self.dao.get_by_id(1).exception + second['title'] # exception
             
         elif occurence == 5:
             print(f"Occurence N°{occurence}")
             result = second
-            result['lauds'] += self.dao.get_by_id(1),first['title'] # exception
+            result['lauds'] += self.dao.get_by_id(1).exception +first['title'] # exception
 
         elif occurence == 6:
             print(f"Occurence N°{occurence}")

@@ -45,7 +45,7 @@ class ControllerManager:
     def get_occurrence_ctrl():
         cm = ControllerManager
         if not cm._occurrence_ctrl:
-            cm._occurrence_ctrl = OccurenceCtrl()
+            cm._occurrence_ctrl = OccurenceCtrl(cm._model)
         return cm._occurrence_ctrl
 
     @staticmethod

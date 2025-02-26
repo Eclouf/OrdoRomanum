@@ -12,7 +12,7 @@ from models.utils.AbstractDAO import AbstractDAO
 class SanctoralDAO(AbstractDAO):
     def get_by_id(self, month: int, day: int):
         query = select(SanctoralSchema).where(SanctoralSchema.index_month == month, SanctoralSchema.index_day == day)
-        row = self.session.scalars(query).all()
+        row = self.session.scalars(query).first()
         return row
 
     def get_all(self):
