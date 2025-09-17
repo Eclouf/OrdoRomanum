@@ -1,0 +1,34 @@
+#title: Saint Camille de Lellis, Confesseur
+#date: 
+    ##day: 18
+    ##month: 7
+#degree: 3
+#category: 15
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des confesseurs non pontifes
+    ##matins: 
+    ##laudes: Commémoration: Sainte Symphorose et ses sept Fils, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Sainte Symphorose et ses sept Fils, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

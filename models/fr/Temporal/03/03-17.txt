@@ -1,0 +1,34 @@
+#title: Lundi de la deuxième semaine de Carême
+#date: 
+    ##day: 17
+    ##month: 3
+#degree: 3
+#category: 
+#rank: 3
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Patrice, Évêque et Confesseur
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Patrice, Évêque et Confesseur
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

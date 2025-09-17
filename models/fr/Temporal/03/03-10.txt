@@ -1,0 +1,34 @@
+#title: Lundi de la première semaine de Carême
+#date: 
+    ##day: 10
+    ##month: 3
+#degree: 3
+#category: 
+#rank: 3
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Les Saints Quarante Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Les Saints Quarante Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

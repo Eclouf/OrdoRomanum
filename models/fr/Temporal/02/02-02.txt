@@ -1,0 +1,34 @@
+#title: La Purification de la Sainte Vierge Marie
+#date: 
+    ##day: 2
+    ##month: 2
+#degree: 2
+#category: 18
+#rank: 2
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Quatrième Dimanche après l'Épiphanie
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Quatrième Dimanche après l'Épiphanie
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

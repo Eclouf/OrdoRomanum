@@ -1,0 +1,34 @@
+#title: Notre-Dame du Rosaire
+#date: 
+    ##day: 7
+    ##month: 10
+#degree: 2
+#category: 
+#rank: 2
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Marc, Pape et Confesseur
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Marc, Pape et Confesseur
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

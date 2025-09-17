@@ -1,0 +1,34 @@
+#title: Vendredi de la quatrième semaine de Carême
+#date: 
+    ##day: 4
+    ##month: 4
+#degree: 3
+#category: 
+#rank: 3
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Isidore, Évêque, Confesseur et Docteur de l'Église
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Isidore, Évêque, Confesseur et Docteur de l'Église
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

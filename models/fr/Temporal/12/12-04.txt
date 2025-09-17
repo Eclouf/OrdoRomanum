@@ -1,0 +1,34 @@
+#title: Saint Pierre Chrysologue, Évêque, Confesseur et Docteur de l'Église
+#date: 
+    ##day: 4
+    ##month: 12
+#degree: 3
+#category: 14
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des confesseurs pontifes
+    ##matins: 
+    ##laudes: Commémoration: Jeudi de la première semaine de l'Avent; Sainte Barbe, Vierge et Martyre
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Jeudi de la première semaine de l'Avent; Sainte Barbe, Vierge et Martyre
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

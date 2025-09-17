@@ -1,0 +1,34 @@
+#title: Sainte Jeanne-Françoise Frémiot de Chantal, Veuve
+#date: 
+    ##day: 21
+    ##month: 8
+#degree: 3
+#category: 22
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

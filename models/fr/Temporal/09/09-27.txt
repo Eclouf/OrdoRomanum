@@ -1,0 +1,34 @@
+#title: Samedi des Quatre-Temps de Septembre
+#date: 
+    ##day: 27
+    ##month: 9
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saints Côme et Damien, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Côme et Damien, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

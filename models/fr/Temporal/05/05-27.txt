@@ -1,0 +1,34 @@
+#title: Saint Bède le Vénérable, Confesseur et Docteur de l'Église
+#date: 
+    ##day: 27
+    ##month: 5
+#degree: 3
+#category: 14
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des docteurs
+    ##matins: 
+    ##laudes: Commémoration: Saint Jean Premier, Pape et Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Jean Premier, Pape et Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

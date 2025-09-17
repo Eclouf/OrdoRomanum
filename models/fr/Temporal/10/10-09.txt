@@ -1,0 +1,34 @@
+#title: Saint Jean Léonardi, Confesseur
+#date: 
+    ##day: 9
+    ##month: 10
+#degree: 3
+#category: 15
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des confesseurs non pontifes
+    ##matins: 
+    ##laudes: Commémoration: Saints Denis, Évêque, Rustique et Éleuthère, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Denis, Évêque, Rustique et Éleuthère, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

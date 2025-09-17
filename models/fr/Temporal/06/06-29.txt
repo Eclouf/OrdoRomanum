@@ -1,0 +1,34 @@
+#title: Saints Pierre et Paul, Apôtres
+#date: 
+    ##day: 29
+    ##month: 6
+#degree: 1
+#category: 1
+#rank: 1
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des apôtres
+    ##matins: 
+    ##laudes: Commémoration: Troisième Dimanche après la Pentecôte
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Troisième Dimanche après la Pentecôte
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

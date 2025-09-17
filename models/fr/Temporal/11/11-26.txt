@@ -1,0 +1,34 @@
+#title: Saint Sylvestre, Abbé
+#date: 
+    ##day: 26
+    ##month: 11
+#degree: 3
+#category: 27
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des abbés
+    ##matins: 
+    ##laudes: Commémoration: Saint Pierre d'Alexandrie, Évêque et Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Pierre d'Alexandrie, Évêque et Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

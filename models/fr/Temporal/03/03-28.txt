@@ -1,0 +1,34 @@
+#title: Vendredi de la troisième semaine de Carême
+#date: 
+    ##day: 28
+    ##month: 3
+#degree: 3
+#category: 
+#rank: 3
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Jean de Capistran, Confesseur
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Jean de Capistran, Confesseur
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

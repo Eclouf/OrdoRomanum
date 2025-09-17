@@ -1,0 +1,34 @@
+#title: Vigile de l'Ascension
+#date: 
+    ##day: 28
+    ##month: 5
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Augustin, Évêque et Confesseur
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Augustin, Évêque et Confesseur
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

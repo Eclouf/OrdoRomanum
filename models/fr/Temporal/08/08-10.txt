@@ -1,0 +1,34 @@
+#title: Neuvième Dimanche après la Pentecôte
+#date: 
+    ##day: 10
+    ##month: 8
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Laurent, Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Laurent, Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

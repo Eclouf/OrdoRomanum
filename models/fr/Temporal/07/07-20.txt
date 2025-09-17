@@ -1,0 +1,34 @@
+#title: Sixième Dimanche après la Pentecôte
+#date: 
+    ##day: 20
+    ##month: 7
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Jérôme Émilien, Confesseur; Sainte Marguerite, Vierge et Martyre
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Jérôme Émilien, Confesseur; Sainte Marguerite, Vierge et Martyre
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

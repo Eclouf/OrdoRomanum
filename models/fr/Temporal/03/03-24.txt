@@ -1,0 +1,34 @@
+#title: Lundi de la troisième semaine de Carême
+#date: 
+    ##day: 24
+    ##month: 3
+#degree: 3
+#category: 
+#rank: 3
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Gabriel, Archange
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Gabriel, Archange
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

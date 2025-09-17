@@ -1,0 +1,34 @@
+#title: Deuxième dimanche après Pâques
+#date: 
+    ##day: 4
+    ##month: 5
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Sainte Monique, Veuve
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Sainte Monique, Veuve
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

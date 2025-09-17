@@ -1,0 +1,34 @@
+#title: Quinzième Dimanche après la Pentecôte
+#date: 
+    ##day: 21
+    ##month: 9
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Matthieu, Apôtre et Évangéliste
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Matthieu, Apôtre et Évangéliste
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

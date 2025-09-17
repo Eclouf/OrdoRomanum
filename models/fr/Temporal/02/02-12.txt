@@ -1,0 +1,34 @@
+#title: Les Sept Saints Fondateurs de l'Ordre des Servites de la Bienheureuse Vierge Marie, Confesseurs
+#date: 
+    ##day: 12
+    ##month: 2
+#degree: 3
+#category: 16
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des confesseurs non pontifes
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

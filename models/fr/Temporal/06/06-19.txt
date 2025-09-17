@@ -1,0 +1,34 @@
+#title: Fête du Très Saint Corps du Christ
+#date: 
+    ##day: 19
+    ##month: 6
+#degree: 1
+#category: 
+#rank: 1
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Sainte Julienne Falconieri, Vierge; Saints Gervais et Protais, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Sainte Julienne Falconieri, Vierge; Saints Gervais et Protais, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

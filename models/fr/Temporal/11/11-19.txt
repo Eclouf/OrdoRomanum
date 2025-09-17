@@ -1,0 +1,34 @@
+#title: Sainte Élisabeth, Veuve
+#date: 
+    ##day: 19
+    ##month: 11
+#degree: 3
+#category: 22
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Pontien, Pape et Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Pontien, Pape et Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

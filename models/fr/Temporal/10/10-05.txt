@@ -1,0 +1,34 @@
+#title: Dix-septième Dimanche après la Pentecôte
+#date: 
+    ##day: 5
+    ##month: 10
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saints Placide et ses Compagnons, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Placide et ses Compagnons, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

@@ -1,0 +1,34 @@
+#title: Saint Éphrem le Syrien, Diacre, Confesseur et Docteur de l'Église
+#date: 
+    ##day: 18
+    ##month: 6
+#degree: 3
+#category: 17
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des docteurs
+    ##matins: 
+    ##laudes: Commémoration: Saints Marc et Marcellien, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Marc et Marcellien, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

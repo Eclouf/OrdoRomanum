@@ -1,0 +1,34 @@
+#title: Troisième Dimanche après Pâques
+#date: 
+    ##day: 11
+    ##month: 5
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saints Philippe et Jacques, Apôtres
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Philippe et Jacques, Apôtres
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

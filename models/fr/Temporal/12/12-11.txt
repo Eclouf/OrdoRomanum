@@ -1,0 +1,34 @@
+#title: Saint Damase Premier, Pape et Confesseur
+#date: 
+    ##day: 11
+    ##month: 12
+#degree: 3
+#category: 15
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des confesseurs pontifes
+    ##matins: 
+    ##laudes: Commémoration: Jeudi de la deuxième semaine de l'Avent
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Jeudi de la deuxième semaine de l'Avent
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

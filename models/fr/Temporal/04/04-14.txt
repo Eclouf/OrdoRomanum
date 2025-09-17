@@ -1,0 +1,34 @@
+#title: Lundi Saint
+#date: 
+    ##day: 14
+    ##month: 4
+#degree: 1
+#category: 
+#rank: 1
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Justin, Martyr; Saints Tiburce, Valérien et Maxime, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Justin, Martyr; Saints Tiburce, Valérien et Maxime, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

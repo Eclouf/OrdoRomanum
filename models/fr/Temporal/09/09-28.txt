@@ -1,0 +1,34 @@
+#title: Seizième Dimanche après la Pentecôte
+#date: 
+    ##day: 28
+    ##month: 9
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Wenceslas, Duc, Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Wenceslas, Duc, Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

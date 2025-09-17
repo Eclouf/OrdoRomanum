@@ -1,0 +1,34 @@
+#title: Saint André Avellin, Confesseur
+#date: 
+    ##day: 10
+    ##month: 11
+#degree: 3
+#category: 15
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des confesseurs non pontifes
+    ##matins: 
+    ##laudes: Commémoration: Saints Tryphon, Respice et Nymphe, Vierge, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Tryphon, Respice et Nymphe, Vierge, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

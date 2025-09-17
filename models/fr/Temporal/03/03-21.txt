@@ -1,0 +1,34 @@
+#title: Vendredi de la deuxième semaine de Carême
+#date: 
+    ##day: 21
+    ##month: 3
+#degree: 3
+#category: 
+#rank: 3
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Benoît, Abbé
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Benoît, Abbé
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

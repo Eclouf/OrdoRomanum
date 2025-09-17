@@ -1,0 +1,34 @@
+#title: Sainte Marthe, Vierge
+#date: 
+    ##day: 29
+    ##month: 7
+#degree: 3
+#category: 18
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des vierges
+    ##matins: 
+    ##laudes: Commémoration: Saints Félix, Pape, Simplice, Faustin et Béatrice, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Félix, Pape, Simplice, Faustin et Béatrice, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

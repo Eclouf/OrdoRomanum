@@ -1,0 +1,34 @@
+#title: Férie
+#date: 
+    ##day: 3
+    ##month: 5
+#degree: 4
+#category: 
+#rank: 4
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saints Alexandre, Pape et Martyr, Eventius et Théodule, Martyrs, et Juvénal, Évêque et Confesseur
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Alexandre, Pape et Martyr, Eventius et Théodule, Martyrs, et Juvénal, Évêque et Confesseur
+    ##gloria: 
+    ##credo:
+    
+#notes:
+

@@ -1,0 +1,34 @@
+#title: Cinquième Dimanche après l'Épiphanie
+#date: 
+    ##day: 9
+    ##month: 2
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Cyrille d'Alexandrie, Évêque, Confesseur et Docteur de l'Église; Sainte Apolline, Vierge et Martyre
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Cyrille d'Alexandrie, Évêque, Confesseur et Docteur de l'Église; Sainte Apolline, Vierge et Martyre
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

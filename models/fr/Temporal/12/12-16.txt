@@ -1,0 +1,34 @@
+#title: Saint Eusèbe, Évêque et Martyr
+#date: 
+    ##day: 16
+    ##month: 12
+#degree: 3
+#category: 7
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des martyrs
+    ##matins: 
+    ##laudes: Commémoration: Mardi de la troisième semaine de l'Avent
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Mardi de la troisième semaine de l'Avent
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

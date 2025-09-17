@@ -1,0 +1,34 @@
+#title: Sainte Brigitte, Veuve
+#date: 
+    ##day: 8
+    ##month: 10
+#degree: 3
+#category: 22
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saints Serge, Bacchus, Marcel et Apulée, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Serge, Bacchus, Marcel et Apulée, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

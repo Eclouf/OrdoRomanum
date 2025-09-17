@@ -1,0 +1,34 @@
+#title: Mardi de la Pentecôte
+#date: 
+    ##day: 10
+    ##month: 6
+#degree: 1
+#category: 
+#rank: 1
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Sainte Marguerite, Reine et Veuve
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Sainte Marguerite, Reine et Veuve
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

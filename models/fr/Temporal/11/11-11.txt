@@ -1,0 +1,34 @@
+#title: Saint Martin, Évêque et Confesseur
+#date: 
+    ##day: 11
+    ##month: 11
+#degree: 3
+#category: 15
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des confesseurs pontifes
+    ##matins: 
+    ##laudes: Commémoration: Saint Menne, Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Menne, Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

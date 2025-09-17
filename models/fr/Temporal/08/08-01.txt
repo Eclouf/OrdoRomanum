@@ -1,0 +1,34 @@
+#title: Férie
+#date: 
+    ##day: 1
+    ##month: 8
+#degree: 4
+#category: 
+#rank: 4
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saints Machabées, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Machabées, Martyrs
+    ##gloria: 
+    ##credo:
+    
+#notes:
+

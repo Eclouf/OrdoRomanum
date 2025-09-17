@@ -1,0 +1,34 @@
+#title: Saint Jean de la Croix, Confesseur et Docteur de l'Église
+#date: 
+    ##day: 24
+    ##month: 11
+#degree: 3
+#category: 14
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des docteurs
+    ##matins: 
+    ##laudes: Commémoration: Saint Chrysogone, Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Chrysogone, Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+
