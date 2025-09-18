@@ -6,7 +6,7 @@
 #category: 
 #rank:
 #type: Temporal
-#color: 
+#color: 0
 
 
 #martirologe:

@@ -1,5 +1,6 @@
 # -*- encoding:utf-8 -*-
 from datetime import datetime, timedelta
+from typing import Dict
 
 """
     calculates the dates of the liturgical year
@@ -30,24 +31,25 @@ class CalendarRom():
         # Cycle of Chrismas
         if chrismas.weekday() == 6:  # alors il y a 4 dimanche de l'avent
             cycle_chrismas = {
-                chrismas - timedelta(days=7):'', # 4 '' -> id of temporal
-                chrismas - timedelta(days=8):'', # 4tps
-                chrismas - timedelta(days=9):'', # 4tps
-                chrismas - timedelta(day=11):'', # 4tps
-                chrismas - timedelta(days=14):'', # 3
-                chrismas - timedelta(days=21):'', # 2
-                chrismas - timedelta(days=28):''  # 1
+                chrismas - timedelta(days=7):'sun_advent_4',
+                chrismas - timedelta(days=8):'sun_advent_3',
+                chrismas - timedelta(days=9):'sun_advent_2',
+                chrismas - timedelta(days=11):'sun_advent_1',
+                chrismas - timedelta(days=14):'sun_advent_3',
+                chrismas - timedelta(days=21):'sun_advent_2',
+                chrismas - timedelta(days=28):'sun_advent_1'
             }
+        
         else:  # touver le dimanche avant chrismas
             sun_adv_4 = chrismas - timedelta(days=chrismas.weekday() + 1)
             cycle_chrismas = {
-                sun_adv_4:'',
-                sun_adv_4 - timedelta(days=1):'', # 4tps
-                sun_adv_4 - timedelta(days=2):'', # 4tps
-                sun_adv_4 - timedelta(days=4):'', # 4tps
-                sun_adv_4 - timedelta(days=7):'', 
-                sun_adv_4 - timedelta(days=14):'',
-                sun_adv_4 - timedelta(days=21):''
+                sun_adv_4:'sun_advent_4',
+                sun_adv_4 - timedelta(days=1):'sun_advent_3', # 4tps
+                sun_adv_4 - timedelta(days=2):'sun_advent_2', # 4tps
+                sun_adv_4 - timedelta(days=4):'sun_advent_1', # 4tps
+                sun_adv_4 - timedelta(days=7):'sun_advent_3', 
+                sun_adv_4 - timedelta(days=14):'sun_advent_2',
+                sun_adv_4 - timedelta(days=21):'sun_advent_1'
             }
         
         # Cycle of Epiphany
@@ -65,117 +67,122 @@ class CalendarRom():
         for i in range(2, 6):
             nb_sun_epi += 1
             dimanche = dimanche + timedelta(days=7)
-            sundays_epi[dimanche] = nb_sun_epi
+            sundays_epi[dimanche] = f'sun_epi_{nb_sun_epi}'
             if dimanche + timedelta(days=7) == easter - timedelta(days=63):
                 break
         
         cycle_epiphany = sundays_epi
         
-        # Cycle of Lent
+        # Cycle of Lent — assign explicit IDs for Sundays and key days; generic for others
         cycle_lent = {
-            easter - timedelta(days=63):'', # septuagesima
-            easter - timedelta(days=56):'', # sexagesima
-            easter - timedelta(days=49):'', # quinquagesima
-            easter - timedelta(days=46):'', # ash_wednesday
-            easter - timedelta(days=45):'',
-            easter - timedelta(days=44):'',
-            easter - timedelta(days=43):'',
-            easter - timedelta(days=42):'', # sun_lent_1
-            easter - timedelta(days=41):'',
-            easter - timedelta(days=40):'',
-            easter - timedelta(days=39):'', # 4tps
-            easter - timedelta(days=38):'',
-            easter - timedelta(days=37):'', # 4tps
-            easter - timedelta(days=36):'', # 4tps
-            easter - timedelta(days=35):'', # sun_lent_2
-            easter - timedelta(days=34):'',
-            easter - timedelta(days=33):'',
-            easter - timedelta(days=32):'',
-            easter - timedelta(days=31):'',
-            easter - timedelta(days=30):'',
-            easter - timedelta(days=29):'',
-            easter - timedelta(days=28):'', # sun_lent_3
-            easter - timedelta(days=27):'',
-            easter - timedelta(days=26):'',
-            easter - timedelta(days=25):'',
-            easter - timedelta(days=24):'',
-            easter - timedelta(days=23):'',
-            easter - timedelta(days=22):'',
-            easter - timedelta(days=21):'', # sun_lent_4
-            easter - timedelta(days=20):'',
-            easter - timedelta(days=19):'',
-            easter - timedelta(days=18):'',
-            easter - timedelta(days=17):'',
-            easter - timedelta(days=16):'',
-            easter - timedelta(days=15):'',
-            easter - timedelta(days=14):'', # sun_lent_5
-            easter - timedelta(days=13):'',
-            easter - timedelta(days=12):'',
-            easter - timedelta(days=11):'',
-            easter - timedelta(days=10):'',
-            easter - timedelta(days=9):'',
-            easter - timedelta(days=8):'',
-            easter - timedelta(days=7):'', # sun_lent_6
-            easter - timedelta(days=6):'',
-            easter - timedelta(days=5):'',
-            easter - timedelta(days=4):'',
-            easter - timedelta(days=3):'',
-            easter - timedelta(days=2):'',
-            easter - timedelta(days=1):'',
+            easter - timedelta(days=63): 'septuagesima',
+            easter - timedelta(days=56): 'sexagesima',
+            easter - timedelta(days=49): 'quinquagesima',
+            easter - timedelta(days=46): 'ash_wednesday',
+            easter - timedelta(days=45): 'lent_d45',
+            easter - timedelta(days=44): 'lent_d44',
+            easter - timedelta(days=43): 'lent_d43',
+            easter - timedelta(days=42): 'sun_lent_1',
+            easter - timedelta(days=41): 'lent_d41',
+            easter - timedelta(days=40): 'lent_d40',
+            easter - timedelta(days=39): 'lent_d39',
+            easter - timedelta(days=38): 'lent_d38',
+            easter - timedelta(days=37): 'lent_d37',
+            easter - timedelta(days=36): 'lent_d36',
+            easter - timedelta(days=35): 'sun_lent_2',
+            easter - timedelta(days=34): 'lent_d34',
+            easter - timedelta(days=33): 'lent_d33',
+            easter - timedelta(days=32): 'lent_d32',
+            easter - timedelta(days=31): 'lent_d31',
+            easter - timedelta(days=30): 'lent_d30',
+            easter - timedelta(days=29): 'lent_d29',
+            easter - timedelta(days=28): 'sun_lent_3',
+            easter - timedelta(days=27): 'lent_d27',
+            easter - timedelta(days=26): 'lent_d26',
+            easter - timedelta(days=25): 'lent_d25',
+            easter - timedelta(days=24): 'lent_d24',
+            easter - timedelta(days=23): 'lent_d23',
+            easter - timedelta(days=22): 'lent_d22',
+            easter - timedelta(days=21): 'sun_lent_4',
+            easter - timedelta(days=20): 'lent_d20',
+            easter - timedelta(days=19): 'lent_d19',
+            easter - timedelta(days=18): 'lent_d18',
+            easter - timedelta(days=17): 'lent_d17',
+            easter - timedelta(days=16): 'lent_d16',
+            easter - timedelta(days=15): 'lent_d15',
+            easter - timedelta(days=14): 'sun_lent_5',
+            easter - timedelta(days=13): 'lent_d13',
+            easter - timedelta(days=12): 'lent_d12',
+            easter - timedelta(days=11): 'lent_d11',
+            easter - timedelta(days=10): 'lent_d10',
+            easter - timedelta(days=9): 'lent_d9',
+            easter - timedelta(days=8): 'lent_d8',
+            easter - timedelta(days=7): 'sun_lent_6',
+            easter - timedelta(days=6): 'lent_d6',
+            easter - timedelta(days=5): 'lent_d5',
+            easter - timedelta(days=4): 'lent_d4',
+            easter - timedelta(days=3): 'lent_d3',
+            easter - timedelta(days=2): 'lent_d2',
+            easter - timedelta(days=1): 'lent_d1',
         }
         
         # Cycle of Easter
         cycle_easter = {
-            easter:'',
-            easter + timedelta(days=1):'', # Octave
-            easter + timedelta(days=2):'',
-            easter + timedelta(days=3):'',
-            easter + timedelta(days=4):'',
-            easter + timedelta(days=5):'',
-            easter + timedelta(days=6):'',
-            easter + timedelta(days=7):'', # Dim in albis
-            easter + timedelta(days=14):'',
-            easter + timedelta(days=21):'',
-            easter + timedelta(days=28):'',
-            easter + timedelta(days=35):'',
-            easter +timedelta(days=36):'', # Rogations x3
-            easter +timedelta(days=37):'',
-            easter +timedelta(days=38):'',
-            easter + timedelta(days=39):'', # Ascension
-            easter + timedelta(days=42):'' # Sunday after Ascension
+            easter:'easter_sunday',
+            easter + timedelta(days=1):'mon_easter', # Octave
+            easter + timedelta(days=2):'tue_easter',
+            easter + timedelta(days=3):'wed_easter',
+            easter + timedelta(days=4):'thur_easter',
+            easter + timedelta(days=5):'fri_easter',
+            easter + timedelta(days=6):'sat_easter',
+            easter + timedelta(days=7):'sun_easter', # Dim in albis
+            easter + timedelta(days=14):'sun_easter_2',
+            easter + timedelta(days=21):'sun_easter_3',
+            easter + timedelta(days=28):'sun_easter_4',
+            easter + timedelta(days=35):'sun_easter_5',
+            easter + timedelta(days=36):'mon_rogations', # Rogations x3
+            easter + timedelta(days=37):'tue_rogations',
+            easter + timedelta(days=38):'wed_rogations',
+            easter + timedelta(days=39):'thur_ascension', # Ascension
+            easter + timedelta(days=42):'sun_easter_6' # Sunday after Ascension
         }
         
         # Cycle of Pentecost
         pentecost = easter + timedelta(days=49)
         cycle_pentecote = {
-            pentecost:'', # Pentcôte
-            pentecost + timedelta(days=3):'', # 4tps
-            pentecost + timedelta(days=5):'', # 4tps
-            pentecost + timedelta(days=6):'', # 4tps
-            pentecost + timedelta(days=7):'', # 1
-            pentecost + timedelta(days=11):'', # Fête Dieu
-            pentecost + timedelta(days=14):'', # 2
-            pentecost + timedelta(days=21):'', # 3
-            pentecost + timedelta(days=28):'', # 4
-            pentecost + timedelta(days=35):'', # 5
-            pentecost + timedelta(days=42):'', # 6
-            pentecost + timedelta(days=49):'', # 7
-            pentecost + timedelta(days=56):'', # 8
-            pentecost + timedelta(days=63):'', # 9
-            pentecost + timedelta(days=70):'', # 10
-            pentecost + timedelta(days=77):'', # 11
-            pentecost + timedelta(days=84):'', # 12
-            pentecost + timedelta(days=91):'', # 13
-            pentecost + timedelta(days=98):'', # 14
-            pentecost + timedelta(days=105):'', # 15
-            pentecost + timedelta(days=112):'', # 16
-            pentecost + timedelta(days=119):'', # 17
-            pentecost + timedelta(days=126):'', # 18
-            pentecost + timedelta(days=133):'', # 19
-            pentecost + timedelta(days=140):'', # 20
-            pentecost + timedelta(days=147):'', # 21
-            pentecost + timedelta(days=154):'', # 22
-            pentecost + timedelta(days=151):'', # 23
+            pentecost:'pentecost', # Pentcôte
+            pentecost + timedelta(days=3):'mon_pentecost', # 4tps
+            pentecost + timedelta(days=5):'wed_pentecost', # 4tps
+            pentecost + timedelta(days=6):'thur_pentecost', # 4tps
+            pentecost + timedelta(days=7):'sun_pentecost_1', # 1
+            pentecost + timedelta(days=11):'thur_corpus_christi', # Fête Dieu
+            pentecost + timedelta(days=14):'sun_pentecost_2', # 2
+            pentecost + timedelta(days=21):'sun_pentecost_3', # 3
+            pentecost + timedelta(days=28):'sun_pentecost_4', # 4
+            pentecost + timedelta(days=35):'sun_pentecost_5', # 5
+            pentecost + timedelta(days=42):'sun_pentecost_6', # 6
+            pentecost + timedelta(days=49):'sun_pentecost_7', # 7
+            pentecost + timedelta(days=56):'sun_pentecost_8', # 8
+            pentecost + timedelta(days=63):'sun_pentecost_9', # 9
+            pentecost + timedelta(days=70):'sun_pentecost_10', # 10
+            pentecost + timedelta(days=77):'sun_pentecost_11', # 11
+            pentecost + timedelta(days=84):'sun_pentecost_12', # 12
+            pentecost + timedelta(days=91):'sun_pentecost_13', # 13
+            pentecost + timedelta(days=98):'sun_pentecost_14', # 14
+            pentecost + timedelta(days=105):'sun_pentecost_15', # 15
+            pentecost + timedelta(days=112):'sun_pentecost_16', # 16
+            pentecost + timedelta(days=119):'sun_pentecost_17', # 17
+            pentecost + timedelta(days=126):'sun_pentecost_18', # 18
+            pentecost + timedelta(days=133):'sun_pentecost_19', # 19
+            pentecost + timedelta(days=140):'sun_pentecost_20', # 20
+            pentecost + timedelta(days=147):'sun_pentecost_21', # 21
+            pentecost + timedelta(days=154):'sun_pentecost_22', # 22
+            pentecost + timedelta(days=161):'sun_pentecost_23', # 23
+            pentecost + timedelta(days=168):'sun_pentecost_24', # 24
+            pentecost + timedelta(days=175):'sun_pentecost_25', # 25
+            pentecost + timedelta(days=182):'sun_pentecost_26', # 26
+            pentecost + timedelta(days=189):'sun_pentecost_27', # 27
+            pentecost + timedelta(days=196):'sun_pentecost_28', # 28
         }
         
         # 4tps of september
@@ -192,9 +199,9 @@ class CalendarRom():
             sat = start + timedelta(days=((start.weekday() + 5) % 7))
         
         cycle_pentecote.update({
-            wen: '',
-            fri: '',
-            sat: ''
+            wen: 'wen_4tps_pentecost',
+            fri: 'fri_4tps_pentecost',
+            sat: 'sat_4tps_pentecost'
         })
         
         # Fonction pour calculer le nombre de dimanches entre deux dates
@@ -215,38 +222,52 @@ class CalendarRom():
         
         if nb_sun_pent == 24:
             cycle_pentecote.update({
-                pentecost + timedelta(days=158):'', # 24
+                pentecost + timedelta(days=158):'sun_pentecost_24', # 24
             })
 
         elif nb_sun_pent == 25:
             cycle_pentecote.update({
-                pentecost + timedelta(days=158):'', # 24
-                pentecost + timedelta(days=165):'', # 25
+                pentecost + timedelta(days=158):'sun_pentecost_24', # 24
+                pentecost + timedelta(days=165):'sun_pentecost_25', # 25
             })
 
         elif nb_sun_pent == 26:
             cycle_pentecote.update({
-                pentecost + timedelta(days=158):'', # 24
-                pentecost + timedelta(days=165):'', # 25
-                pentecost + timedelta(days=172):'', # 26
+                pentecost + timedelta(days=158):'sun_pentecost_24', # 24
+                pentecost + timedelta(days=165):'sun_pentecost_25', # 25
+                pentecost + timedelta(days=172):'sun_pentecost_26', # 26
             })
             
         elif nb_sun_pent == 27:
             cycle_pentecote.update({
-                pentecost + timedelta(days=158):'', # 24
-                pentecost + timedelta(days=165):'', # 25
-                pentecost + timedelta(days=172):'', # 26
-                pentecost + timedelta(days=179):'', # 27
+                pentecost + timedelta(days=158):'sun_pentecost_24', # 24
+                pentecost + timedelta(days=165):'sun_pentecost_25', # 25
+                pentecost + timedelta(days=172):'sun_pentecost_26', # 26
+                pentecost + timedelta(days=179):'sun_pentecost_27', # 27
             })
             
         elif nb_sun_pent == 28:
             cycle_pentecote.update({
-                pentecost + timedelta(days=158):'', # 24
-                pentecost + timedelta(days=165):'', # 25
-                pentecost + timedelta(days=172):'', # 26
-                pentecost + timedelta(days=179):'', # 27
-                pentecost + timedelta(days=186):'', # 28
+                pentecost + timedelta(days=158):'sun_pentecost_24', # 24
+                pentecost + timedelta(days=165):'sun_pentecost_25', # 25
+                pentecost + timedelta(days=172):'sun_pentecost_26', # 26
+                pentecost + timedelta(days=179):'sun_pentecost_27', # 27
+                pentecost + timedelta(days=186):'sun_pentecost_28', # 28
             })
         
         return cycle_chrismas, cycle_epiphany, cycle_lent, cycle_easter, cycle_pentecote
-        
+
+    def date_to_id_map(self, year: int) -> Dict[str, str]:
+        """
+        Returns a consolidated mapping for the given year:
+          ISO date string (YYYY-MM-DD) -> id
+
+        This provides the direct date -> id link, where the fiche filename is
+        '<id>.txt'.
+        """
+        cy_chr, cy_epi, cy_lent, cy_easter, cy_pent = self.liturgical_year(year)
+        merged: Dict[str, str] = {}
+        for dct in (cy_chr, cy_epi, cy_lent, cy_easter, cy_pent):
+            for dt, id_ in dct.items():
+                merged[dt.strftime("%Y-%m-%d")] = id_
+        return merged

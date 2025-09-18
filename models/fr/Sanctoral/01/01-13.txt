@@ -34,7 +34,7 @@ Au monastère de Vergy, le saint confesseur Viventius (vers l'an 400).
     ##compline: 
 
 
-#messe: 
+#messe: Ecce advenit
     ##commemoration: 
     ##gloria: oui
     ##credo:
