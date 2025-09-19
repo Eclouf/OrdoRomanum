@@ -6,7 +6,7 @@
 #category: 14
 #rank: 3
 #type: Sanctoral
-#color: 
+#color: 0
 
 
 #martirologe:
