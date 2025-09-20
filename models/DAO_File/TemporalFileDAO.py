@@ -33,18 +33,21 @@ class TemporalFileDAO(AbstractFileDAO):
         super().__init__(model_manager)
         self.temporal_root = os.path.join(self.locale_root, 'Temporal')
         self._calendar = CalendarRom()
+        self._year_map_cache: dict[int, dict[str, str]] = {}
 
     def _file_for_id(self, id_: str) -> Optional[str]:
-        # Try index first
-        idx = self._load_or_build_temporal_index()
-        rel = idx.get(id_)
-        if isinstance(rel, str) and rel:
-            abs_path = os.path.join(self.locale_root, rel)
-            if os.path.isfile(abs_path):
-                return abs_path
-        # Fallback: direct path
+        # Deterministic fast path: Temporal/<id>.txt
         cand = os.path.join(self.temporal_root, f"{id_}.txt")
-        return cand if os.path.isfile(cand) else None
+        if os.path.isfile(cand):
+            return cand
+        # Optional fallback via index (useful if files are organized differently)
+        # idx = self._load_or_build_temporal_index()
+        # rel = idx.get(id_)
+        # if isinstance(rel, str) and rel:
+        #     abs_path = os.path.join(self.locale_root, rel)
+        #     if os.path.isfile(abs_path):
+        #         return abs_path
+        return None
 
     def _parse_file(self, id_: str, path: str) -> TemporalFiche:
         text = self._read_text(path)
@@ -85,7 +88,11 @@ class TemporalFileDAO(AbstractFileDAO):
         return self._parse_file(id_, path)
 
     def get_by_date(self, date: datetime) -> Optional[TemporalFiche]:
-        ids = self._calendar.date_to_id_map(date.year)
+        # cache per year to avoid recomputing the full map repeatedly
+        ids = self._year_map_cache.get(date.year)
+        if ids is None:
+            ids = self._calendar.date_to_id_map(date.year)
+            self._year_map_cache[date.year] = ids
         id_ = ids.get(date.strftime('%Y-%m-%d'))
         if not id_:
             return None

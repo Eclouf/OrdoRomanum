@@ -4,7 +4,7 @@
     ##month: 1
 #degree: 3
 #category: 14
-#rank: 3
+#rank: 
 #type: Sanctoral
 #color: 0
 
@@ -21,7 +21,7 @@ En Syrie, le saint Julien de Sabas, l'aîné, qui à l'époque de l'empereur Val
 
 
 #office: 
-    ##common: commun des confesseurs pontifes
+    ##common: 7
     ##matins: 
     ##laudes: Commémoration: Saint Félix de Nole
     ##prime: 
@@ -35,7 +35,7 @@ En Syrie, le saint Julien de Sabas, l'aîné, qui à l'époque de l'empereur Val
 #messe: 
     ##commemoration: Saint Félix de Nole
     ##gloria: oui
-    ##credo:
+    ##credo: oui
     
 #notes:
 

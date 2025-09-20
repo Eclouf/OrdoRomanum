@@ -18,7 +18,7 @@ class SanctoralFiche:
     little_hours: Optional[int] = None
     vespers: Optional[int] = None
     compline: Optional[int] = None
-    mass: str = ''
+    mass: Optional[Dict[str, Any]] = None
     com: str = ''
     note: str = ''
     degree: Optional[int] = None
@@ -33,23 +33,10 @@ class SanctoralFileDAO(AbstractFileDAO):
         self.sanctoral_root = os.path.join(self.locale_root, 'Sanctoral')
 
     def _find_file_for(self, month: int, day: int) -> Optional[str]:
-        # Try index first
-        idx = self._load_or_build_sanctoral_index()
-        key = f"{month:02d}-{day:02d}"
-        rel = idx.get(key)
-        if isinstance(rel, str) and rel:
-            abs_path = os.path.join(self.locale_root, rel)
-            if os.path.isfile(abs_path):
-                return abs_path
-        # Fallback: scan directory
+        # Deterministic fast path: Sanctoral/MM/MM-DD.txt
         mdir = os.path.join(self.sanctoral_root, f"{month:02d}")
-        if not os.path.isdir(mdir):
-            return None
-        prefix = f"{day:02d}-"
-        for name in os.listdir(mdir):
-            if name.startswith(prefix) and name.endswith('.txt'):
-                return os.path.join(mdir, name)
-        return None
+        cand = os.path.join(mdir, f"{month:02d}-{day:02d}.txt")
+        return cand if os.path.isfile(cand) else None
 
     def _parse_file(self, path: str) -> SanctoralFiche:
         text = self._read_text(path)
@@ -57,12 +44,23 @@ class SanctoralFileDAO(AbstractFileDAO):
         f = SanctoralFiche()
         # direct fields
         f.title = str(data.get('title', '')).strip()
-        # Mass title and notes: support both scalar and section with subkeys ('_value')
+        # Mass as structured dict: {'title': ..., 'commemoration': ..., 'gloria': ..., 'credo': ...}
         messe_val = data.get('messe')
+        mass_dict: Dict[str, Any] = {}
         if isinstance(messe_val, dict):
-            f.mass = str(messe_val.get('_value', '')).strip()
+            title_val = str(messe_val.get('_value', '')).strip()
+            if title_val:
+                mass_dict['title'] = title_val
+            for k, v in messe_val.items():
+                if k == '_value':
+                    continue
+                if isinstance(v, str):
+                    mass_dict[k] = v.strip()
         else:
-            f.mass = str(messe_val or data.get('mass', '')).strip()
+            title_val = str(messe_val or data.get('mass', '')).strip()
+            if title_val:
+                mass_dict['title'] = title_val
+        f.mass = mass_dict or None
 
         notes_val = data.get('notes')
         if isinstance(notes_val, dict):
@@ -99,7 +97,7 @@ class SanctoralFileDAO(AbstractFileDAO):
         f.vespers = office_block.get('vespers') or None
         f.compline = office_block.get('compline') or None
         # mass subfields
-        messe_block = data.get('messe', {}) if isinstance(data.get('messe', {}), dict) else {}
+        messe_block = f.mass if isinstance(f.mass, dict) else {}
         com_val = messe_block.get('commemoration', '') if isinstance(messe_block.get('commemoration', ''), str) else ''
         f.com = com_val.strip()
         return f
