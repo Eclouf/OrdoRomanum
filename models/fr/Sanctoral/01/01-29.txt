@@ -3,10 +3,10 @@
     ##day: 29
     ##month: 1
 #degree: 3
-#category: 14
-#rank: 3
+#category: 11
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 0
 
 
 #martirologe:
@@ -20,7 +20,7 @@ Dans la région de Trois, le saint martyr Sabinian, qui fut décapité pour la f
 
 
 #office: 
-    ##common: commun des confesseurs pontifes
+    ##common: 7
     ##matins: 
     ##laudes: 
     ##prime: 
@@ -31,7 +31,7 @@ Dans la région de Trois, le saint martyr Sabinian, qui fut décapité pour la f
     ##compline: 
 
 
-#messe: 
+#messe: 8
     ##commemoration: 
     ##gloria: oui
     ##credo:

@@ -14,6 +14,7 @@ class OfficeFileDAO(AbstractFileDAO):
     def __init__(self, model_manager) -> None:
         super().__init__(model_manager)
         self._common_map: Optional[Dict[int, str]] = None
+        self._common_meta: Optional[Dict[int, Dict[str, str]]] = None
         self._common_path_candidates = [
             os.path.join(self.locale_root, 'Common.txt'),
             os.path.join(self.locale_root, 'common.txt'),
@@ -24,28 +25,47 @@ class OfficeFileDAO(AbstractFileDAO):
             return self._common_map
         path = next((p for p in self._common_path_candidates if os.path.isfile(p)), None)
         mapping: Dict[int, str] = {}
+        meta: Dict[int, Dict[str, str]] = {}
         if path:
-            text = self._read_text(path)
-            for line in text.splitlines():
-                if not line.strip() or line.strip().startswith('#'):
+            with open(path, 'r', encoding='utf-8') as f:
+                text = f.read()
+            current_id: Optional[int] = None
+            for raw in text.splitlines():
+                if not raw.strip() or raw.lstrip().startswith('#'):
                     continue
-                # Split on tab first, then fallback to multi-space
-                parts = line.split('\t', 1)
-                if len(parts) != 2:
-                    raw = [p for p in line.split(' ') if p]
-                    if len(raw) >= 2:
-                        key_part = raw[0]
-                        val = ' '.join(raw[1:])
-                    else:
+                # ID line starts with a number
+                stripped = raw.strip('\n\r')
+                if stripped and stripped[0].isdigit():
+                    # split on whitespace sequences
+                    parts = [p for p in stripped.split(' ') if p]
+                    if len(parts) >= 2:
+                        key_part = parts[0]
+                        label = ' '.join(parts[1:])
+                        try:
+                            current_id = int(key_part)
+                        except ValueError:
+                            current_id = None
+                            continue
+                        mapping[current_id] = label.strip()
+                        meta.setdefault(current_id, {})
                         continue
-                else:
-                    key_part, val = parts[0], parts[1]
-                try:
-                    key = int(key_part.strip())
-                except ValueError:
+                # Continuation meta line (indented)
+                if current_id is not None and raw[:1].isspace():
+                    cont = raw.strip()
+                    if ':' in cont:
+                        k, v = cont.split(':', 1)
+                        key_norm = k.strip()
+                        # Accept leading '-' or 'tab-' prefixes
+                        if key_norm.startswith('-'):
+                            key_norm = key_norm[1:].lstrip()
+                        if key_norm.lower().startswith('tab-'):
+                            key_norm = key_norm[4:]
+                        meta[current_id][key_norm.strip().lower()] = v.strip()
                     continue
-                mapping[key] = val.strip()
+                # Otherwise, unknown format; ignore
+            
         self._common_map = mapping
+        self._common_meta = meta
         return mapping
 
     def _resolve(self, value: Any) -> Optional[str]:
@@ -92,3 +112,21 @@ class OfficeFileDAO(AbstractFileDAO):
 
     def get_all(self):
         return []
+
+    def get_common_inline_details(self, id_val: Any) -> Dict[str, Any]:
+        try:
+            num = int(str(id_val).strip())
+        except Exception:
+            return {}
+        # Ensure maps are loaded
+        self._load_common_map()
+        if not self._common_meta:
+            return {}
+        data = self._common_meta.get(num, {})
+        if not data:
+            return {}
+        # Only support 'messe' key for now (maps to mass.title)
+        title = data.get('messe')
+        if title:
+            return {'mass': {'title': title}}
+        return {}

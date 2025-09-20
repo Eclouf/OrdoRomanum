@@ -1,12 +1,12 @@
-#title: Troisième Dimanche après l'Épiphanie
+#title: Saint Polycarpe, évêque et martyr
 #date: 
     ##day: 26
     ##month: 1
 #degree: 2
-#category: 
-#rank: 2
-#type: Temporal
-#color: 
+#category: 12
+#rank: 
+#type: Sanctoral
+#color: 1
 
 
 #martirologe:
@@ -22,9 +22,9 @@
 
 
 #office: 
-    ##common: 
+    ##common: 4
     ##matins: 
-    ##laudes: Commémoration: Saint Polycarpe, Évêque et Martyr
+    ##laudes: 
     ##prime: 
     ##terce: 
     ##sext: 
@@ -33,8 +33,8 @@
     ##compline: 
 
 
-#messe: 
-    ##commemoration: Saint Polycarpe, Évêque et Martyr
+#messe: 4
+    ##commemoration: 
     ##gloria: oui
     ##credo:
     

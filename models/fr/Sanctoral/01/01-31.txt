@@ -4,9 +4,9 @@
     ##month: 1
 #degree: 3
 #category: 15
-#rank: 3
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 0
 
 
 #martirologe:
@@ -22,7 +22,7 @@ Le même jour est commémorée la translation du saint évangéliste Marc, lorsq
 
 
 #office: 
-    ##common: commun des confesseurs non pontifes
+    ##common: 9
     ##matins: 
     ##laudes: 
     ##prime: 
@@ -33,7 +33,7 @@ Le même jour est commémorée la translation du saint évangéliste Marc, lorsq
     ##compline: 
 
 
-#messe: 
+#messe: Propre: Dedit illi
     ##commemoration: 
     ##gloria: oui
     ##credo:

@@ -19,21 +19,22 @@ De même, les saints martyrs Donat, Sabin et Agapie.
 
 
 #office: 
-    ##common: 
+    ##common: Propre
     ##matins: 
-    ##laudes: 
-    ##prime: 
-    ##terce: 
-    ##sext: 
-    ##none: 
-    ##vespers: 
-    ##compline: 
+    ##laudes: Antiennes, Capitule et Hymne propres. Mémoire: Saint Pierre (même conclusion)
+    ##prime: A la ferie
+    ##terce: Antienne et psaume feriaux, Capitule, Répons bref et verset propre
+    ##sext: Antienne et psaume feriaux, Capitule, Répons bref et verset propre
+    ##none: Antienne et psaume feriaux, Capitule, Répons bref et verset propre
+    ##vespers: Antiennes, Captul et Hymne propres.
+    ##compline: de la ferie.
 
 
-#messe: 
+#messe: Propre: Scio
     ##commemoration: 
     ##gloria: oui
-    ##credo:
+    ##credo: oui
+    ##preface: des Apôtres
     
 #notes:
 

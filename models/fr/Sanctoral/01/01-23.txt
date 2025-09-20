@@ -4,9 +4,9 @@
     ##month: 1
 #degree: 3
 #category: 15
-#rank: 3
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 0
 
 
 #martirologe:
@@ -22,9 +22,9 @@ Dans la province de Valeria, (au VIe siècle), le saint moine Martyrius, dont le
 
 
 #office: 
-    ##common: commun des confesseurs non pontifes
+    ##common: 9
     ##matins: 
-    ##laudes: Commémoration: Sainte Émérentienne, Vierge et Martyre
+    ##laudes: Mémoire: Sainte Émérentienne, Vierge et Martyre
     ##prime: 
     ##terce: 
     ##sext: 
@@ -33,7 +33,7 @@ Dans la province de Valeria, (au VIe siècle), le saint moine Martyrius, dont le
     ##compline: 
 
 
-#messe: 
+#messe: 9
     ##commemoration: Sainte Émérentienne, Vierge et Martyre
     ##gloria: oui
     ##credo:

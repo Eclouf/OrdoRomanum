@@ -4,9 +4,9 @@
     ##month: 1
 #degree: 3
 #category: 8
-#rank: 3
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 1
 
 
 #martirologe:
@@ -18,7 +18,7 @@ En Palestine, (en l'an 473), saint Euthyme (surnommé le Grand), abbé (près de
 
 
 #office: 
-    ##common: commun des martyrs pontifes
+    ##common: 5
     ##matins: 
     ##laudes: 
     ##prime: 
@@ -29,7 +29,7 @@ En Palestine, (en l'an 473), saint Euthyme (surnommé le Grand), abbé (près de
     ##compline: 
 
 
-#messe: 
+#messe: Propre: Intret
     ##commemoration: 
     ##gloria: oui
     ##credo:

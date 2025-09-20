@@ -153,6 +153,11 @@ def _render_sanctoral(model: ModelManager, fest: dict[str, Any]) -> str:
         parts.append(f"{_lbl('Commémoration')}: {fest['com']}")
     if fest.get("note"):
         parts.append(f"{_lbl('Notes')}: {fest['note']}")
+    # Martyrology (list of entries) - display last
+    mart = fest.get('martyrology')
+    if isinstance(mart, list) and mart:
+        bullets = "\n".join([f"  - {item}" for item in mart])
+        parts.append(f"{_h('Martirologe')}:\n" + bullets)
     return "\n\n".join(parts)
 
 

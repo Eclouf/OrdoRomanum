@@ -4,9 +4,9 @@
     ##month: 1
 #degree: 3
 #category: 15
-#rank: 3
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 0
 
 
 #martirologe:
@@ -22,9 +22,9 @@ De même (en Égypte, en l'an 391), le bienheureux Isidore, célèbre pour la sa
 
 
 #office: 
-    ##common: commun des confesseurs non pontifes
-    ##matins: 
-    ##laudes: Commémoration: Saint Maur, abbé
+    ##common: 9
+    ##matins: Répons « ap. le 13 janv. ».
+    ##laudes: Mémoire: Saint Maur, abbé
     ##prime: 
     ##terce: 
     ##sext: 
@@ -33,7 +33,7 @@ De même (en Égypte, en l'an 391), le bienheureux Isidore, célèbre pour la sa
     ##compline: 
 
 
-#messe: 
+#messe: Justus
     ##commemoration: Saint Maur, abbé
     ##gloria: oui
     ##credo:

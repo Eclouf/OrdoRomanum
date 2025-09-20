@@ -1,12 +1,12 @@
-#title: Férie
+#title: Sainte Prisque, Vierge et Martyre
 #date: 
     ##day: 18
     ##month: 1
-#degree: 4
+#degree: 0
 #category: 
-#rank: 4
+#rank: 20
 #type: Sanctoral
-#color: 
+#color: 1
 
 
 #martirologe:
@@ -19,8 +19,8 @@ En Bretagne, saint Deicola, abbé de Luxeuil, (en l'an 625), disciple du bienheu
 
 
 #office: 
-    ##common: 
-    ##matins: 
+    ##common: 11
+    ##matins: Répons « ap. le 13 janv. ».
     ##laudes: Commémoration: Sainte Prisque, Vierge et Martyre
     ##prime: 
     ##terce: 
@@ -30,9 +30,9 @@ En Bretagne, saint Deicola, abbé de Luxeuil, (en l'an 625), disciple du bienheu
     ##compline: 
 
 
-#messe: 
+#messe: 11
     ##commemoration: Sainte Prisque, Vierge et Martyre
-    ##gloria: 
+    ##gloria: oui
     ##credo:
     
 #notes:

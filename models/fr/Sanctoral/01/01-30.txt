@@ -3,8 +3,8 @@
     ##day: 30
     ##month: 1
 #degree: 3
-#category: 7
-#rank: 3
+#category: 20
+#rank: 
 #type: Sanctoral
 #color: 
 
@@ -23,18 +23,18 @@ Dans le monastère de Maubeuge, en Hainaut, à l'époque du roi Dagobert, la sai
 
 
 #office: 
-    ##common: commun des martyrs
+    ##common: 11
     ##matins: 
-    ##laudes: 
+    ##laudes: Hymnes propres
     ##prime: 
     ##terce: 
     ##sext: 
     ##none: 
-    ##vespers: 
+    ##vespers: Hymnes propres
     ##compline: 
 
 
-#messe: 
+#messe: 11
     ##commemoration: 
     ##gloria: oui
     ##credo:

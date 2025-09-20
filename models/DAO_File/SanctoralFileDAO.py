@@ -1,7 +1,7 @@
 # -*- encoding:utf-8 -*-
 import os
 from dataclasses import dataclass
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 from .AbstractFileDAO import AbstractFileDAO
 from models.utils.file_parsers import parse_kv_document
 
@@ -25,6 +25,7 @@ class SanctoralFiche:
     rank: Optional[int] = None
     occ: Optional[int] = None
     con: Optional[int] = None
+    martyrology: Optional[List[str]] = None
 
 
 class SanctoralFileDAO(AbstractFileDAO):
@@ -50,16 +51,29 @@ class SanctoralFileDAO(AbstractFileDAO):
         if isinstance(messe_val, dict):
             title_val = str(messe_val.get('_value', '')).strip()
             if title_val:
-                mass_dict['title'] = title_val
+                if title_val.isdigit():
+                    try:
+                        mass_dict['common_id'] = int(title_val)
+                    except Exception:
+                        pass
+                else:
+                    mass_dict['title'] = title_val
             for k, v in messe_val.items():
                 if k == '_value':
                     continue
                 if isinstance(v, str):
                     mass_dict[k] = v.strip()
         else:
-            title_val = str(messe_val or data.get('mass', '')).strip()
-            if title_val:
-                mass_dict['title'] = title_val
+            raw = messe_val or data.get('mass', '')
+            s = str(raw).strip()
+            # If numeric, treat as reference to Common.txt ID
+            if s.isdigit():
+                try:
+                    mass_dict['common_id'] = int(s)
+                except Exception:
+                    pass
+            elif s:
+                mass_dict['title'] = s
         f.mass = mass_dict or None
 
         notes_val = data.get('notes')
@@ -100,6 +114,19 @@ class SanctoralFileDAO(AbstractFileDAO):
         messe_block = f.mass if isinstance(f.mass, dict) else {}
         com_val = messe_block.get('commemoration', '') if isinstance(messe_block.get('commemoration', ''), str) else ''
         f.com = com_val.strip()
+        # martyrology parsing: split with '|'
+        mart_val = data.get('martirologe')
+        mart_text = None
+        if isinstance(mart_val, dict):
+            mart_text = mart_val.get('_value') if isinstance(mart_val.get('_value'), str) else None
+        elif isinstance(mart_val, str):
+            mart_text = mart_val
+        if isinstance(mart_text, str):
+            if '|' in mart_text:
+                items = [s.strip() for s in mart_text.split('|') if s.strip()]
+            else:
+                items = [mart_text.strip()] if mart_text.strip() else []
+            f.martyrology = items or None
         return f
 
     def get_by_id(self, month: int, day: int) -> Optional[SanctoralFiche]:

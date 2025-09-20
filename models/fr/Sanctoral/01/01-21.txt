@@ -3,10 +3,10 @@
     ##day: 21
     ##month: 1
 #degree: 3
-#category: 7
-#rank: 3
+#category: 20
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 1
 
 
 #martirologe:
@@ -19,21 +19,23 @@ Dans le monastère d'Einsiedeln, en Gaule, le saint ermite Meinard, qui fut assa
 
 
 #office: 
-    ##common: commun des martyrs
+    ##common: Propre
     ##matins: 
-    ##laudes: 
-    ##prime: 
-    ##terce: 
-    ##sext: 
-    ##none: 
-    ##vespers: 
-    ##compline: 
+    ##laudes: Antiennes, Capitule et Hymne propres.
+    ##prime: A la ferie
+    ##terce: Antienne et psaume feriaux, Capitule, Répons bref et verset propre
+    ##sext: Antienne et psaume feriaux, Capitule, Répons bref et verset propre
+    ##none: Antienne et psaume feriaux, Capitule, Répons bref et verset propre
+    ##vespers: Antiennes, Captul et Hymne propres.
+    ##compline: de la ferie.
 
 
-#messe: 
+#messe: Propre: Me exspectaverunt
     ##commemoration: 
     ##gloria: oui
     ##credo:
     
-#notes:
+#notes:|
+Messe Requiem Anniversaire (Noir) pour Louis XVI [assassiné le 21 janvier 1793].
+Bénédiction par le Pape des agneaux dont la laine servira à confectionner les palliums.
 

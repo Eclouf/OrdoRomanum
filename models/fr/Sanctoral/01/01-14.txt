@@ -3,7 +3,7 @@
     ##day: 14
     ##month: 1
 #degree: 3
-#category: 14
+#category: 11
 #rank: 
 #type: Sanctoral
 #color: 0
@@ -22,17 +22,17 @@ En Syrie, le saint Julien de Sabas, l'aîné, qui à l'époque de l'empereur Val
 
 #office: 
     ##common: 7
-    ##matins: 
-    ##laudes: Commémoration: Saint Félix de Nole
-    ##prime: 
-    ##terce: 
-    ##sext: 
-    ##none: 
-    ##vespers: 
-    ##compline: 
+    ##matins: Répons « ap. le 13 janv. ».
+    ##laudes: Mémoire: Saint Félix de Nole
+    ##prime: test
+    ##terce: test
+    ##sext: test
+    ##none: test
+    ##vespers: Ant. Magnif. : O Doctor.
+    ##compline: test
 
 
-#messe: 
+#messe: 8
     ##commemoration: Saint Félix de Nole
     ##gloria: oui
     ##credo: oui

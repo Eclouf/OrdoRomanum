@@ -1,12 +1,12 @@
-#title: Deuxième Dimanche après l'Épiphanie
+#title: Saints Marius, Marthe Audifax et Abachum
 #date: 
     ##day: 19
     ##month: 1
-#degree: 2
-#category: 
-#rank: 2
-#type: Temporal
-#color: 
+#degree: 0
+#category: 8
+#rank: 
+#type: Sanctoral
+#color: 1
 
 
 #martirologe:
@@ -19,9 +19,9 @@ En Afrique, les saints martyrs Paul, Gerontius, Januarius, Saturninus, Successus
 
 
 #office: 
-    ##common: 
+    ##common: 16
     ##matins: 
-    ##laudes: Commémoration: Saints Marius, Marthe, Audifax et Abachus, Martyrs; Saint Canut, roi, martyr
+    ##laudes: 
     ##prime: 
     ##terce: 
     ##sext: 
@@ -30,8 +30,8 @@ En Afrique, les saints martyrs Paul, Gerontius, Januarius, Saturninus, Successus
     ##compline: 
 
 
-#messe: 
-    ##commemoration: Saints Marius, Marthe, Audifax et Abachus, Martyrs; Saint Canut, roi, martyr
+#messe: 5
+    ##commemoration: 
     ##gloria: oui
     ##credo:
     

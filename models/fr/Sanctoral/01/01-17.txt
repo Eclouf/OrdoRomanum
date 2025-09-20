@@ -4,9 +4,9 @@
     ##month: 1
 #degree: 3
 #category: 27
-#rank: 3
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 0
 
 
 #martirologe:
@@ -18,8 +18,8 @@ Dans le monastère de Saint-André à Rome, (au VIe siècle), les bienheureux mo
 
 
 #office: 
-    ##common: commun des abbés
-    ##matins: 
+    ##common: 9
+    ##matins: Répons « ap. le 13 janv. ».
     ##laudes: 
     ##prime: 
     ##terce: 
@@ -29,7 +29,7 @@ Dans le monastère de Saint-André à Rome, (au VIe siècle), les bienheureux mo
     ##compline: 
 
 
-#messe: 
+#messe: Propre: Os justi
     ##commemoration: 
     ##gloria: oui
     ##credo:

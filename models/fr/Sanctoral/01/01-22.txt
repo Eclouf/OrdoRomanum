@@ -4,9 +4,9 @@
     ##month: 1
 #degree: 3
 #category: 8
-#rank: 3
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 1
 
 
 #martirologe:
@@ -15,7 +15,7 @@ En Perse, le saint moine Anastase, qui, après avoir enduré de nombreux tourmen
 
 
 #office: 
-    ##common: commun des martyrs
+    ##common: 5
     ##matins: 
     ##laudes: 
     ##prime: 

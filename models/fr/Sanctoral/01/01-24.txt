@@ -3,10 +3,10 @@
     ##day: 24
     ##month: 1
 #degree: 3
-#category: 7
-#rank: 3
+#category: 12
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 1
 
 
 #martirologe:
@@ -20,7 +20,7 @@ De même, (au VIe siècle), le bienheureux abbé Suran, qui brilla dans la saint
 
 
 #office: 
-    ##common: commun des martyrs
+    ##common: 4
     ##matins: 
     ##laudes: 
     ##prime: 
@@ -31,7 +31,7 @@ De même, (au VIe siècle), le bienheureux abbé Suran, qui brilla dans la saint
     ##compline: 
 
 
-#messe: 
+#messe: Propre: Statuit
     ##commemoration: 
     ##gloria: oui
     ##credo:

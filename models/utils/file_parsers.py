@@ -61,16 +61,15 @@ def parse_kv_document(text: str) -> Dict[str, Any]:
             current_subkey = subkey
         else:
             # multiline append to the last key or subkey
-            if current_key is not None and isinstance(result.get(current_key), dict) and current_subkey:
-                prev = result[current_key].get(current_subkey, '')
-                if prev:
-                    result[current_key][current_subkey] = prev + "\n" + line
+            if current_key is not None and isinstance(result.get(current_key), dict):
+                if current_subkey:
+                    prev = result[current_key].get(current_subkey, '')
+                    result[current_key][current_subkey] = (prev + "\n" if prev else "") + line
                 else:
-                    result[current_key][current_subkey] = line
+                    # Append to the section's _value when no subkey is active
+                    prev = result[current_key].get('_value', '')
+                    result[current_key]['_value'] = (prev + "\n" if prev else "") + line
             elif current_key is not None and isinstance(result.get(current_key, ''), str):
                 prev = result.get(current_key, '')
-                if prev:
-                    result[current_key] = prev + "\n" + line
-                else:
-                    result[current_key] = line
+                result[current_key] = (prev + "\n" if prev else "") + line
     return result

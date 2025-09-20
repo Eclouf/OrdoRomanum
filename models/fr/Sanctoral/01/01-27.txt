@@ -3,10 +3,10 @@
     ##day: 27
     ##month: 1
 #degree: 3
-#category: 14
-#rank: 3
+#category: 15
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 0
 
 
 #martirologe:
@@ -20,18 +20,18 @@
 
 
 #office: 
-    ##common: commun des confesseurs pontifes
+    ##common: 9
     ##matins: 
     ##laudes: 
     ##prime: 
     ##terce: 
     ##sext: 
     ##none: 
-    ##vespers: 
+    ##vespers: Ant. Magnif. : O Doctor.
     ##compline: 
 
 
-#messe: 
+#messe: Propre: In medio
     ##commemoration: 
     ##gloria: oui
     ##credo:

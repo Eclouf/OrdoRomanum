@@ -4,9 +4,9 @@
     ##month: 1
 #degree: 3
 #category: 15
-#rank: 3
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 0
 
 
 #martirologe:
@@ -20,9 +20,9 @@ En Palestine, (au VIe siècle), le saint ermite Jacques, qui, après s'être éc
 
 
 #office: 
-    ##common: commun des confesseurs non pontifes
+    ##common: 9
     ##matins: 
-    ##laudes: Commémoration: Sainte Agnès, Vierge et Martyre, deuxième fête
+    ##laudes: Mémoire: Sainte Agnès, Vierge et Martyre.
     ##prime: 
     ##terce: 
     ##sext: 
@@ -31,8 +31,8 @@ En Palestine, (au VIe siècle), le saint ermite Jacques, qui, après s'être éc
     ##compline: 
 
 
-#messe: 
-    ##commemoration: Sainte Agnès, Vierge et Martyre, deuxième fête
+#messe: Justus
+    ##commemoration: Sainte Agnès, Vierge et Martyre.
     ##gloria: oui
     ##credo:
     
