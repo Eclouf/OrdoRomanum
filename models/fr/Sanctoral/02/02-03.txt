@@ -1,12 +1,12 @@
-#title: Férie
+#title: Saint Blaise, Évêque et Martyr
 #date: 
     ##day: 3
     ##month: 2
-#degree: 4
-#category: 
-#rank: 4
-#type: Temporal
-#color: 
+#degree: 0
+#category: 12
+#rank: 
+#type: Sanctoral
+#color: 1
 
 
 #martirologe:
@@ -16,7 +16,7 @@
 #office: 
     ##common: 
     ##matins: 
-    ##laudes: Commémoration: Saint Blaise, Évêque et Martyr
+    ##laudes: Mémoire: Saint Blaise, Évêque et Martyr
     ##prime: 
     ##terce: 
     ##sext: 
@@ -25,10 +25,10 @@
     ##compline: 
 
 
-#messe: 
-    ##commemoration: Saint Blaise, Évêque et Martyr
-    ##gloria: 
+#messe: Propre: Sacerdotes Dei
+    ##commemoration: 
+    ##gloria: oui
     ##credo:
     
 #notes:
-
+Bénédiction des gorges avec les cierges (étole rouge).

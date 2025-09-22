@@ -1,12 +1,12 @@
-#title: Férie
+#title: Saint Siméon, Évêque et Martyr
 #date: 
     ##day: 18
     ##month: 2
-#degree: 4
-#category: 
-#rank: 4
-#type: Temporal
-#color: 
+#degree: 0
+#category: 12
+#rank: 
+#type: Sanctoral
+#color: 1
 
 
 #martirologe:
@@ -16,7 +16,7 @@
 #office: 
     ##common: 
     ##matins: 
-    ##laudes: Commémoration: Saint Siméon, Évêque et Martyr
+    ##laudes: Mémoire: Saint Siméon, Évêque et Martyr
     ##prime: 
     ##terce: 
     ##sext: 
@@ -25,9 +25,9 @@
     ##compline: 
 
 
-#messe: 
-    ##commemoration: Saint Siméon, Évêque et Martyr
-    ##gloria: 
+#messe: Propre: Statuit
+    ##commemoration: 
+    ##gloria: oui
     ##credo:
     
 #notes:

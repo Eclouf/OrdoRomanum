@@ -9,14 +9,16 @@
     -messe: Intret
 6   d'un ou plusieurs Martyrs au Temps Pascal
 7   des Confesseurs Pontifes
+    -messe: Statuit
 8   des Docteurs -> 7 ou 9 
     -messe: In medio
 9   des Confesseurs non Pontifes
     -messe: Os justi
 10  d'un Abbé -> 9
+    -messe: a determiner
 11  des Vierges
     -messe(martyr): Loquebar
-    -messe(non martyr): a determiner
+    -messe(non martyr): Dilexisti
 12  des Saintes Femmes
 13  de la Dédicace des Eglises
 14  des fêtes de la Sainte Vierge Marie

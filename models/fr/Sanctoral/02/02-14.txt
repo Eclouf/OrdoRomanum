@@ -1,12 +1,12 @@
-#title: Férie
+#title: Saint Valentin, Prêtre et Martyr
 #date: 
     ##day: 14
     ##month: 2
-#degree: 4
-#category: 
-#rank: 4
-#type: Temporal
-#color: 
+#degree: 0
+#category: Prêtre et Martyr
+#rank: 
+#type: Sanctoral
+#color: 1
 
 
 #martirologe:
@@ -16,7 +16,7 @@
 #office: 
     ##common: 
     ##matins: 
-    ##laudes: Commémoration: Saint Valentin, Prêtre et Martyr
+    ##laudes: Mémoire: Saint Valentin, Prêtre et Martyr
     ##prime: 
     ##terce: 
     ##sext: 
@@ -25,9 +25,9 @@
     ##compline: 
 
 
-#messe: 
-    ##commemoration: Saint Valentin, Prêtre et Martyr
-    ##gloria: 
+#messe: Propre: In Virtute
+    ##commemoration: 
+    ##gloria: oui
     ##credo:
     
 #notes:

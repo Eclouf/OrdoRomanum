@@ -1,12 +1,12 @@
-#title: Férie
+#title: Saint Faustin et Jovite, Martyrs
 #date: 
     ##day: 15
     ##month: 2
-#degree: 4
-#category: 
-#rank: 4
+#degree: 0
+#category: 8
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 1
 
 
 #martirologe:
@@ -16,7 +16,7 @@
 #office: 
     ##common: 
     ##matins: 
-    ##laudes: Commémoration: Saints Faustin et Jovite, Martyrs
+    ##laudes: Mémoire: Saints Faustin et Jovite, Martyrs
     ##prime: 
     ##terce: 
     ##sext: 
@@ -25,9 +25,9 @@
     ##compline: 
 
 
-#messe: 
-    ##commemoration: Saints Faustin et Jovite, Martyrs
-    ##gloria: 
+#messe: 5
+    ##commemoration: 
+    ##gloria: oui
     ##credo:
     
 #notes:

@@ -4,9 +4,9 @@
     ##month: 2
 #degree: 3
 #category: 16
-#rank: 3
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 0
 
 
 #martirologe:
@@ -14,7 +14,7 @@
 
 
 #office: 
-    ##common: commun des confesseurs non pontifes
+    ##common: Propre
     ##matins: 
     ##laudes: 
     ##prime: 
@@ -25,7 +25,7 @@
     ##compline: 
 
 
-#messe: 
+#messe: Propre: Justi decantaverunt
     ##commemoration: 
     ##gloria: oui
     ##credo:

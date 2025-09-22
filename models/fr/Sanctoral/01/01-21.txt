@@ -20,13 +20,13 @@ Dans le monastère d'Einsiedeln, en Gaule, le saint ermite Meinard, qui fut assa
 
 #office: 
     ##common: Propre
-    ##matins: 
-    ##laudes: Antiennes, Capitule et Hymne propres.
+    ##matins: Antiennes propres
+    ##laudes: 
     ##prime: A la ferie
-    ##terce: Antienne et psaume feriaux, Capitule, Répons bref et verset propre
-    ##sext: Antienne et psaume feriaux, Capitule, Répons bref et verset propre
-    ##none: Antienne et psaume feriaux, Capitule, Répons bref et verset propre
-    ##vespers: Antiennes, Captul et Hymne propres.
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
     ##compline: de la ferie.
 
 
@@ -35,7 +35,7 @@ Dans le monastère d'Einsiedeln, en Gaule, le saint ermite Meinard, qui fut assa
     ##gloria: oui
     ##credo:
     
-#notes:|
+#notes:
 Messe Requiem Anniversaire (Noir) pour Louis XVI [assassiné le 21 janvier 1793].
 Bénédiction par le Pape des agneaux dont la laine servira à confectionner les palliums.
 

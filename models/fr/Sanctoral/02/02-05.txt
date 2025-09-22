@@ -3,10 +3,10 @@
     ##day: 5
     ##month: 2
 #degree: 3
-#category: 7
-#rank: 3
+#category: 20
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 1
 
 
 #martirologe:
@@ -14,8 +14,8 @@
 
 
 #office: 
-    ##common: commun des martyrs
-    ##matins: 
+    ##common: Propre
+    ##matins: Psaumes propres
     ##laudes: 
     ##prime: 
     ##terce: 
@@ -25,7 +25,7 @@
     ##compline: 
 
 
-#messe: 
+#messe: Propre: Gaudeamus
     ##commemoration: 
     ##gloria: oui
     ##credo:

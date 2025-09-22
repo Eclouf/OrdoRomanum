@@ -3,10 +3,10 @@
     ##day: 1
     ##month: 2
 #degree: 3
-#category: 7
-#rank: 3
+#category: 12
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 1
 
 
 #martirologe:
@@ -14,7 +14,7 @@
 
 
 #office: 
-    ##common: commun des martyrs
+    ##common: 4
     ##matins: 
     ##laudes: 
     ##prime: 
@@ -25,7 +25,7 @@
     ##compline: 
 
 
-#messe: 
+#messe: 4
     ##commemoration: 
     ##gloria: oui
     ##credo:

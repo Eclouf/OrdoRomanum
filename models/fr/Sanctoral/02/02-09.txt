@@ -1,12 +1,12 @@
-#title: Cinquième Dimanche après l'Épiphanie
+#title: Saint Cyrille d'Alexandrie, Évêque, Confesseur et Docteur de l'Église
 #date: 
     ##day: 9
     ##month: 2
 #degree: 2
-#category: 
-#rank: 2
-#type: Temporal
-#color: 
+#category: 11
+#rank: 3
+#type: Sanctoral
+#color: 0
 
 
 #martirologe:
@@ -14,19 +14,19 @@
 
 
 #office: 
-    ##common: 
+    ##common: 7
     ##matins: 
-    ##laudes: Commémoration: Saint Cyrille d'Alexandrie, Évêque, Confesseur et Docteur de l'Église; Sainte Apolline, Vierge et Martyre
+    ##laudes: 
     ##prime: 
     ##terce: 
     ##sext: 
     ##none: 
-    ##vespers: 
+    ##vespers: antienne de Magnificat : O Doctor
     ##compline: 
 
 
-#messe: 
-    ##commemoration: Saint Cyrille d'Alexandrie, Évêque, Confesseur et Docteur de l'Église; Sainte Apolline, Vierge et Martyre
+#messe: 8
+    ##commemoration: 
     ##gloria: oui
     ##credo:
     

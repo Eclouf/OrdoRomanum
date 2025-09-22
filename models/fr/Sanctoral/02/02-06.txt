@@ -3,10 +3,10 @@
     ##day: 6
     ##month: 2
 #degree: 3
-#category: 15
-#rank: 3
+#category: 9
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 0
 
 
 #martirologe:
@@ -14,9 +14,9 @@
 
 
 #office: 
-    ##common: commun des confesseurs pontifes
+    ##common: 7
     ##matins: 
-    ##laudes: Commémoration: Sainte Dorothée, Vierge et Martyre
+    ##laudes: Mémoire: Sainte Dorothée, Vierge et Martyre
     ##prime: 
     ##terce: 
     ##sext: 
@@ -25,7 +25,7 @@
     ##compline: 
 
 
-#messe: 
+#messe: 7
     ##commemoration: Sainte Dorothée, Vierge et Martyre
     ##gloria: oui
     ##credo:
