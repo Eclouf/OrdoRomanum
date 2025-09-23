@@ -1,28 +1,30 @@
-#title: 
-#degree: 
-#category: 
-#rank: 
+#title: 8e Dimanche après la Pentecôte
+#degree: 2
+#category:
+#occ: D2
+#con: D2
+#rank:
 #type: Temporal
-#color: 
+#color: 2
 
-#office: 
-    ##common: 
-    ##matins: 
-    ##laudes: 
-    ##prime: 
-    ##terce: 
-    ##sext: 
-    ##none: 
-    ##vespers: 
-    ##compline: 
+#office:
+    ##common: per Annunm
+    ##matins:
+    ##laudes:
+    ##prime: Psaume 117
+    ##terce:
+    ##sext:
+    ##none:
+    ##vespers:
+    ##compline:
 
 
-#messe: 
-    ##commemoration: 
-    ##gloria: 
+#messe: Propre:
+    ##commemoration:
+    ##gloria: oui
     ##credo:
-    ##preface:
-    
+    ##preface: de la Très Sainte Trinité
+
 #notes:
 
 .

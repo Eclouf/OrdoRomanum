@@ -3,28 +3,26 @@
 #category:
 #occ: D2
 #con: D2
-#rank: 
+#rank:
 #type: Temporal
 #color: 2
 
-#office: 
+#office:
     ##common: per Annunm
-    ##matins: 
-    ##laudes: 
+    ##matins:
+    ##laudes:
     ##prime: Psaume 117
-    ##terce: 
-    ##sext: 
-    ##none: 
-    ##vespers: 
-    ##compline: 
+    ##terce:
+    ##sext:
+    ##none:
+    ##vespers:
+    ##compline:
 
 
-#messe: 
-    ##commemoration: 
+#messe: Propre:
+    ##commemoration:
     ##gloria: oui
     ##credo:
     ##preface: de la Très Sainte Trinité
-    
+
 #notes:
-
-

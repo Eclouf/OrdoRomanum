@@ -41,10 +41,14 @@ class ContentsCtrl:
             first = day0
             second = day1
             
-        # Search competition : 
-        x = first['con']
-        y = second['con']
-        competition = self._table_competition_.loc[x,y]
+        # Search competition: normalize codes and guard against unknowns
+        x = (str(first.get('con') or '')).strip()
+        y = (str(second.get('con') or '')).strip()
+        if x not in self._table_competition_.index:
+            raise ValueError(f"Contenu inconnu (ligne): {x}; attendues: {list(self._table_competition_.index)}")
+        if y not in self._table_competition_.columns:
+            raise ValueError(f"Contenu inconnu (colonne): {y}; attendues: {list(self._table_competition_.columns)}")
+        competition = self._table_competition_.loc[x, y]
     
         if competition == 1:
             result = day0
