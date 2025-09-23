@@ -26,6 +26,8 @@ class TemporalFiche:
     note: str = ''
     degree: Optional[int] = None
     rank: Optional[int] = None
+    occ: Optional[str] = None
+    con: Optional[str] = None
 
 
 class TemporalFileDAO(AbstractFileDAO):
@@ -67,6 +69,11 @@ class TemporalFileDAO(AbstractFileDAO):
         f.color = to_int(data.get('color'))
         f.degree = to_int(data.get('degree'))
         f.rank = to_int(data.get('rank'))
+        # occurrence/content codes are symbolic strings
+        occ_val = data.get('occ')
+        con_val = data.get('con')
+        f.occ = str(occ_val).strip() if isinstance(occ_val, str) and occ_val.strip() else None
+        f.con = str(con_val).strip() if isinstance(con_val, str) and con_val.strip() else None
         # office block
         office_block = data.get('office', {}) if isinstance(data.get('office', {}), dict) else {}
         f.office = office_block.get('common') or None

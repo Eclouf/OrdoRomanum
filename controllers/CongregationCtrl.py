@@ -10,5 +10,10 @@ class CongregationCtrl:
     def __init__(self):
         pass
     
-    def calendar_congregation(self):
-        pass
+    def calendar_congregation(self, congregation: str, day):
+        """
+        Placeholder for congregation-specific calendar retrieval.
+        Expected to return a feast dict aligned with Sanctoral/Temporal schema,
+        or None/empty when not applicable for the given date.
+        """
+        return None

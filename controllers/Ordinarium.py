@@ -18,45 +18,60 @@ class Ordination:
         self.congregation_ctrl = cm.get_congregation_ctrl()
 
     def office(self, country:str, diocese: str, congregation: str, day: datetime):
-        # find the Feast for the given day.
-          # follow this logic for all possible holidays on the given day.
-        fest: dict =[]
-        day_dioc = self.diocese_ctrl.calendar_diocese(country, diocese, day)
-        day_cong = self.congregation_ctrl.calendar_congregation(congregation, day)
-        day_temp = self.temporal_ctrl.get_fest(day)
-        day_sanct = self.sanctoral_ctrl.get_fest(day)
+        """
+        Orchestrate feast selection for a given day with the following policy:
+        - Temporal has global priority over Sanctoral/Diocese/Congregation.
+        - When Temporal is absent, compare remaining candidates using OccurenceCtrl,
+          then adjust structure with ContentsCtrl.
+        The function is defensive against missing fields (rank/occ/con).
+        """
+
+        def norm(f: dict | None) -> dict | None:
+            if not f:
+                return None
+            # Defensive defaults
+            f.setdefault('occ', '')
+            f.setdefault('con', '')
+            # Normalize codes (strip whitespace)
+            f['occ'] = (str(f.get('occ') or '')).strip()
+            f['con'] = (str(f.get('con') or '')).strip()
+            return f
         
-        if day_dioc  and day_cong :
-            if day_dioc['title'] == day_cong['title']:
-                fest = max(day_dioc, day_cong, key=lambda x: x['rank'])
-            else:
-                fest = self.occurence_ctrl.search(day_dioc, day_cong)
-        elif not day_dioc  and day_cong :
-            fest = day_cong
-        else:
-            fest = day_dioc
-            
-        if day_sanct and fest :
-            if day_sanct['title'] == fest['title']:
-                fest = max(day_sanct, fest, key=lambda x: x['rank'])
-            else:
-                fest = self.occurence_ctrl.search(day_sanct, fest)
-        elif day_sanct  and not fest:
-            fest = day_sanct
-        else:
-            fest = fest
+        # Gather candidates
+        day_dioc = norm(self.diocese_ctrl.calendar_diocese(country, diocese, day)) if self.diocese_ctrl else None
+        day_cong = norm(self.congregation_ctrl.calendar_congregation(congregation, day)) if self.congregation_ctrl else None
+        day_temp = norm(self.temporal_ctrl.get_fest(day)) if self.temporal_ctrl else None
+        day_sanct = norm(self.sanctoral_ctrl.get_fest(day)) if self.sanctoral_ctrl else None
+
+        # Start with the first available candidate in a fixed order
+        fest = day_temp or day_sanct or day_dioc or day_cong
         
-        if day_temp and fest:
-            if day_temp['title'] == fest['title']:
-                fest = max(day_temp, fest, key=lambda x: x['rank'])
-            else:
-                fest = self.occurence_ctrl.search(day_temp, fest)
-        elif day_temp and not fest:
-            fest = day_temp
-        else:
-            fest=fest
-       
-        return(fest)
+        # Helper to merge two candidates using occurrence then contents matrices
+        def merge_with(current: dict | None, other: dict | None) -> dict | None:
+            if not other:
+                return current
+            if current is None:
+                return other
+            # Decide via occurrence matrix then tune contents
+            try:
+                base = self.occurence_ctrl.search(current, other)
+            except Exception:
+                # Fallback: keep current; do not use rank here
+                base = current
+            try:
+                tuned = self.contents_ctrl.search(base, other if base is current else current)
+            except Exception:
+                tuned = base
+            return tuned
+
+        # Merge all candidates in order: Temporal, Sanctoral, Diocese, Congregation
+        # (Every pair is compared; no source is automatically prioritized)
+        fest = merge_with(fest, day_temp if fest is not day_temp else None)
+        fest = merge_with(fest, day_sanct)
+        fest = merge_with(fest, day_dioc)
+        fest = merge_with(fest, day_cong)
+
+        return fest or {}
 
     def mass(self):
         pass

@@ -47,22 +47,18 @@ class ContentsCtrl:
         competition = self._table_competition_.loc[x,y]
     
         if competition == 1:
-            print(competition)
             result = day0
-            result['office'] += f"commemoraison aux vêpres des premières vêpres de {day1['title']}" # exception
+            result['office'] = (result.get('office') or '') + f"commemoraison aux vêpres des premières vêpres de {day1['title']}" # exception
             
         elif competition == 2:
-            print(competition)
             result = day0
-            result['office'] += f"première vêpres de {day1['title']} et commémoraison de {day0['title']}" # exception
+            result['office'] = (result.get('office') or '') + f"première vêpres de {day1['title']} et commémoraison de {day0['title']}" # exception
             
         elif competition == 3:
-            print(competition)
             result = day0
-            result['office'] += f"première vêpres : {day1['title']}" # exception
+            result['office'] = (result.get('office') or '') + f"première vêpres : {day1['title']}" # exception
             
         else:
             pass
         
         return result
-    

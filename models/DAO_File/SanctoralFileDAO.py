@@ -23,8 +23,8 @@ class SanctoralFiche:
     note: str = ''
     degree: Optional[int] = None
     rank: Optional[int] = None
-    occ: Optional[int] = None
-    con: Optional[int] = None
+    occ: Optional[str] = None
+    con: Optional[str] = None
     martyrology: Optional[List[str]] = None
 
 
@@ -91,8 +91,25 @@ class SanctoralFileDAO(AbstractFileDAO):
         f.color = to_int(data.get('color'))
         f.degree = to_int(data.get('degree'))
         f.rank = to_int(data.get('rank'))
-        f.occ = to_int(data.get('occ'))
-        f.con = to_int(data.get('con'))
+        # occurrence/content codes are symbolic (e.g., F2U, D2): read as strings
+        occ_val = data.get('occ')
+        con_val = data.get('con')
+        f.occ = str(occ_val).strip() if isinstance(occ_val, str) and occ_val.strip() else None
+        f.con = str(con_val).strip() if isinstance(con_val, str) and con_val.strip() else None
+        # Be resilient to misplaced '##occ'/'##con' stored under another section dict
+        if f.occ is None or f.con is None:
+            for v in data.values():
+                if isinstance(v, dict):
+                    if f.occ is None:
+                        ov = v.get('occ')
+                        if isinstance(ov, str) and ov.strip():
+                            f.occ = ov.strip()
+                    if f.con is None:
+                        cv = v.get('con')
+                        if isinstance(cv, str) and cv.strip():
+                            f.con = cv.strip()
+                if f.occ is not None and f.con is not None:
+                    break
         # office block
         office_block = data.get('office', {}) if isinstance(data.get('office', {}), dict) else {}
         # We set the attributes to small integers if available, otherwise set to None and let OfficeFileDAO passthrough strings

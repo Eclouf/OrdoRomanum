@@ -36,6 +36,7 @@ BASE_DIR = Path(__file__).resolve().parent
 from models.ModelManager import ModelManager
 from models.utils.indexer import build_sanctoral_index, build_temporal_index
 from controllers.SanctoralCtrl import SanctoralCtrl
+from controllers.Ordinarium import Ordination
 
 
 def to_serializable(obj: Any) -> Any:
@@ -58,6 +59,7 @@ def to_serializable(obj: Any) -> Any:
     return str(obj)
 
 USE_COLOR = False
+DEBUG = False
 
 
 def _label_or_none(row: Any) -> Optional[str]:
@@ -124,6 +126,14 @@ def _render_sanctoral(model: ModelManager, fest: dict[str, Any]) -> str:
         parts.append(f"{_lbl('Degré')}: {deg}")
     if rng is not None:
         parts.append(f"{_lbl('Rang')}: {rng}")
+    # Debug info
+    if DEBUG:
+        occ = fest.get('occ')
+        con = fest.get('con')
+        if occ:
+            parts.append(f"{_lbl('Occurrence')}: {occ}")
+        if con:
+            parts.append(f"{_lbl('Contenu')}: {con}")
 
     # Office
     office_parts = []
@@ -244,6 +254,17 @@ def cmd_category(args: argparse.Namespace) -> None:
     print(json.dumps(out, ensure_ascii=False, indent=2))
 
 
+def cmd_ordinarium(args: argparse.Namespace) -> None:
+    date = datetime.strptime(args.date, "%Y-%m-%d")
+    ordination = Ordination()
+    fest = ordination.office(args.country, args.diocese, args.congregation, date)
+    if args.format == 'json':
+        print(json.dumps(to_serializable(fest), ensure_ascii=False, indent=2))
+    else:
+        text = _render_sanctoral(None, fest)
+        _print_text(text)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="OrdoRomanum CLI (TXT backend)")
     sub = parser.add_subparsers(dest="cmd", required=True)
@@ -255,12 +276,14 @@ def main() -> None:
     p_san.add_argument("--date", required=True, help="Date au format YYYY-MM-DD")
     p_san.add_argument("--format", choices=["text", "json"], default="text", help="Format de sortie")
     p_san.add_argument("--color", choices=["auto", "on", "off"], default="auto", help="Couleur en sortie texte")
+    p_san.add_argument("--debug", action="store_true", help="Afficher les codes occ/con et informations de debug")
     p_san.set_defaults(func=cmd_sanctoral)
 
     p_tmp = sub.add_parser("temporal", help="Afficher la fiche temporelle pour une date (YYYY-MM-DD)")
     p_tmp.add_argument("--date", required=True, help="Date au format YYYY-MM-DD")
     p_tmp.add_argument("--format", choices=["text", "json"], default="text", help="Format de sortie")
     p_tmp.add_argument("--color", choices=["auto", "on", "off"], default="auto", help="Couleur en sortie texte")
+    p_tmp.add_argument("--debug", action="store_true", help="Afficher les codes occ/con et informations de debug")
     p_tmp.set_defaults(func=cmd_temporal)
 
     p_col = sub.add_parser("colors", help="Afficher une couleur par id")
@@ -271,10 +294,21 @@ def main() -> None:
     p_cat.add_argument("--id", required=True, help="Identifiant de catégorie")
     p_cat.set_defaults(func=cmd_category)
 
+    p_ord = sub.add_parser("ordinarium", help="Calculer la fête finale (Temporal prioritaire) pour une date")
+    p_ord.add_argument("--country", required=False, default="FR", help="Pays (code ou libellé)")
+    p_ord.add_argument("--diocese", required=False, default="", help="Diocèse")
+    p_ord.add_argument("--congregation", required=False, default="", help="Congrégation")
+    p_ord.add_argument("--date", required=True, help="Date au format YYYY-MM-DD")
+    p_ord.add_argument("--format", choices=["text", "json"], default="text", help="Format de sortie")
+    p_ord.add_argument("--color", choices=["auto", "on", "off"], default="auto", help="Couleur en sortie texte")
+    p_ord.add_argument("--debug", action="store_true", help="Afficher les codes occ/con et informations de debug")
+    p_ord.set_defaults(func=cmd_ordinarium)
+
     args = parser.parse_args()
 
-    # setup color policy
+    # setup color/debug policy
     global USE_COLOR
+    global DEBUG
     if getattr(args, 'format', 'text') == 'text':
         if getattr(args, 'color', 'auto') == 'on':
             USE_COLOR = True
@@ -284,6 +318,7 @@ def main() -> None:
             USE_COLOR = sys.stdout.isatty()
     else:
         USE_COLOR = False
+    DEBUG = bool(getattr(args, 'debug', False))
 
     args.func(args)
 

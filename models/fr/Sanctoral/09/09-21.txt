@@ -1,12 +1,14 @@
-#title: Quinzième Dimanche après la Pentecôte
+#title: Saint Matthieu, Apôtre et Évangéliste
 #date: 
     ##day: 21
     ##month: 9
 #degree: 2
-#category: 
-#rank: 2
-#type: Temporal
-#color: 
+#category: 1
+#occ: F2U
+#con: F2
+#rank: 
+#type: Sanctoral
+#color: 0
 
 
 #martirologe:
@@ -14,9 +16,9 @@
 
 
 #office: 
-    ##common: 
+    ##common: 0 
     ##matins: 
-    ##laudes: Commémoration: Saint Matthieu, Apôtre et Évangéliste
+    ##laudes: 
     ##prime: 
     ##terce: 
     ##sext: 
@@ -26,7 +28,7 @@
 
 
 #messe: 
-    ##commemoration: Saint Matthieu, Apôtre et Évangéliste
+    ##commemoration: 
     ##gloria: oui
     ##credo:
     

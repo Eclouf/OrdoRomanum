@@ -1,15 +1,17 @@
-#title: 
-#degree: 
-#category: 
+#title: 15e Dimanche après la Pentecôte
+#degree: 2
+#category:
+#occ: D2
+#con: D2
 #rank: 
 #type: Temporal
-#color: 
+#color: 2
 
 #office: 
-    ##common: 
+    ##common: per Annunm
     ##matins: 
     ##laudes: 
-    ##prime: 
+    ##prime: Psaume 117
     ##terce: 
     ##sext: 
     ##none: 
@@ -19,10 +21,10 @@
 
 #messe: 
     ##commemoration: 
-    ##gloria: 
+    ##gloria: oui
     ##credo:
-    ##preface:
+    ##preface: de la Très Sainte Trinité
     
 #notes:
 
-.
+

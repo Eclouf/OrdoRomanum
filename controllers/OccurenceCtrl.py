@@ -29,6 +29,7 @@ class OccurenceCtrl:
         self._table_occurence_ = pd.DataFrame(self.__data__, index=self.__ordinate__, columns=self.__abcissa__)
           
     def search(self, fest1: dict, fest2: dict):
+        
         # Determination of festivities on the x-axis and y-axis for self._table_occurence_
         if fest1['occ'] in self.__only__:
             first = fest2   # y-axis
@@ -40,59 +41,65 @@ class OccurenceCtrl:
             first = fest1
             second = fest2
             
-        # Search occurence : 
-        x = first['occ']
-        y = second['occ']
-        occurence = self._table_occurence_.loc[x,y]
+        # Search occurence : normalize codes and guard against unknowns
+        x = (str(first.get('occ') or '')).strip()
+        y = (str(second.get('occ') or '')).strip()
+        if x not in self._table_occurence_.index:
+            raise ValueError(f"Occurrence inconnue (ligne): {x}; attendues: {list(self._table_occurence_.index)}")
+        if y not in self._table_occurence_.columns:
+            raise ValueError(f"Occurrence inconnue (colonne): {y}; attendues: {list(self._table_occurence_.columns)}")
+        occurence = self._table_occurence_.loc[x, y]
+
+        # Safe access to exception texts (may be missing if DB not configured)
+        def _exc(idx: int) -> str:
+            try:
+                row = self.dao.get_by_id(idx) if hasattr(self, 'dao') and self.dao else None
+                return (getattr(row, 'exception', '') or '')
+            except Exception:
+                return ''
 
         if occurence == 1:
-            print(f"Occurence N°{occurence}")
             result = first
         
         elif occurence == 2:
-            print(f"Occurence N°{occurence}")
             result = second
             
         elif occurence == 3:
-            print(f"Occurence N°{occurence}")
             result = first
-            result['lauds'] += self.dao.get_by_id(1).exception + second['title'] # exception
-            result['vespers'] += self.dao.get_by_id(0).exception + second['title'] # exception
+            result['lauds'] = (result.get('lauds') or '') + _exc(1) + second['title'] # exception
+            result['vespers'] = (result.get('vespers') or '') + _exc(0) + second['title'] # exception
             
         elif occurence == 4:
-            print(f"Occurence N°{occurence}")
             result = first
-            result['lauds'] += self.dao.get_by_id(1).exception + second['title'] # exception
+            result['lauds'] = (result.get('lauds') or '') + _exc(1) + second['title'] # exception
             
         elif occurence == 5:
-            print(f"Occurence N°{occurence}")
             result = second
-            result['lauds'] += self.dao.get_by_id(1).exception +first['title'] # exception
+            result['lauds'] = (result.get('lauds') or '') + _exc(1) + first['title'] # exception
 
         elif occurence == 6:
-            print(f"Occurence N°{occurence}")
             result = first
             # translation of second
             
         elif occurence == 7:
-            print(f"Occurence N°{occurence}")
             result = second
             # translation of first
             
         elif occurence == 8:
-            print(f"Occurence N°{occurence}")
-            result = max(first, second, key=lambda x: x["rank"])
-            lower = min(first, second, key=lambda x: x["rank"])
+            # Use rank only for this occurrence; safe default
+            get_rank = lambda f: (f.get('rank') or -1)
+            result = max([first, second], key=get_rank)
+            lower = min([first, second], key=get_rank)
             # translation of lower
             
         elif occurence == 9:
-            print(f"Occurence N°{occurence}")
-            result = max(first, second, key=lambda x: x["rank"])
-            lower = min(first, second, key=lambda x: x["rank"])
+            # Use rank only for this occurrence; safe default
+            get_rank = lambda f: (f.get('rank') or -1)
+            result = max([first, second], key=get_rank)
+            lower = min([first, second], key=get_rank)
             # translation of lower
             
         else:
             pass
-        
         return result
     

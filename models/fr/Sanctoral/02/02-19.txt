@@ -4,7 +4,7 @@
     ##month: 2
 #degree: 4
 #category: 
-#rank: 4
+#rank: 
 #type: Temporal
 #color: 
 
