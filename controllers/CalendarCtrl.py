@@ -79,52 +79,35 @@ class CalendarRom():
             easter - timedelta(days=56): 'sexagesima',
             easter - timedelta(days=49): 'quinquagesima',
             easter - timedelta(days=46): 'ash_wednesday',
-            easter - timedelta(days=45): 'lent_d45',
-            easter - timedelta(days=44): 'lent_d44',
-            easter - timedelta(days=43): 'lent_d43',
-            easter - timedelta(days=42): 'sun_lent_1',
-            easter - timedelta(days=41): 'lent_d41',
-            easter - timedelta(days=40): 'lent_d40',
-            easter - timedelta(days=39): 'lent_d39',
-            easter - timedelta(days=38): 'lent_d38',
-            easter - timedelta(days=37): 'lent_d37',
-            easter - timedelta(days=36): 'lent_d36',
-            easter - timedelta(days=35): 'sun_lent_2',
-            easter - timedelta(days=34): 'lent_d34',
-            easter - timedelta(days=33): 'lent_d33',
-            easter - timedelta(days=32): 'lent_d32',
-            easter - timedelta(days=31): 'lent_d31',
-            easter - timedelta(days=30): 'lent_d30',
-            easter - timedelta(days=29): 'lent_d29',
-            easter - timedelta(days=28): 'sun_lent_3',
-            easter - timedelta(days=27): 'lent_d27',
-            easter - timedelta(days=26): 'lent_d26',
-            easter - timedelta(days=25): 'lent_d25',
-            easter - timedelta(days=24): 'lent_d24',
-            easter - timedelta(days=23): 'lent_d23',
-            easter - timedelta(days=22): 'lent_d22',
-            easter - timedelta(days=21): 'sun_lent_4',
-            easter - timedelta(days=20): 'lent_d20',
-            easter - timedelta(days=19): 'lent_d19',
-            easter - timedelta(days=18): 'lent_d18',
-            easter - timedelta(days=17): 'lent_d17',
-            easter - timedelta(days=16): 'lent_d16',
-            easter - timedelta(days=15): 'lent_d15',
-            easter - timedelta(days=14): 'sun_lent_5',
-            easter - timedelta(days=13): 'lent_d13',
-            easter - timedelta(days=12): 'lent_d12',
-            easter - timedelta(days=11): 'lent_d11',
-            easter - timedelta(days=10): 'lent_d10',
-            easter - timedelta(days=9): 'lent_d9',
-            easter - timedelta(days=8): 'lent_d8',
-            easter - timedelta(days=7): 'sun_lent_6',
-            easter - timedelta(days=6): 'lent_d6',
-            easter - timedelta(days=5): 'lent_d5',
-            easter - timedelta(days=4): 'lent_d4',
-            easter - timedelta(days=3): 'lent_d3',
-            easter - timedelta(days=2): 'lent_d2',
-            easter - timedelta(days=1): 'lent_d1',
         }
+        
+        # Calculate Lent weeks with proper day names
+        # Lent starts on Ash Wednesday (46 days before Easter)
+        ash_wednesday = easter - timedelta(days=46)
+        
+        # Add the three days after Ash Wednesday
+        cycle_lent[ash_wednesday + timedelta(days=1)] = 'ash_thursday'  # Thursday after Ash Wednesday
+        cycle_lent[ash_wednesday + timedelta(days=2)] = 'ash_friday'    # Friday after Ash Wednesday
+        cycle_lent[ash_wednesday + timedelta(days=3)] = 'ash_saturday'  # Saturday after Ash Wednesday
+        
+        # Generate Lent calendar with proper naming
+        # Lent has 6 weeks, starting from the Monday after Ash Wednesday
+        lent_start = ash_wednesday + timedelta(days=4)  # Monday after Ash Wednesday
+        
+        for week in range(1, 7):  # 6 weeks of Lent
+            week_start = lent_start + timedelta(days=(week-1)*7)
+            
+            # Monday to Saturday
+            cycle_lent[week_start] = f'mon_lent_{week}'      # Monday
+            cycle_lent[week_start + timedelta(days=1)] = f'tue_lent_{week}'  # Tuesday
+            cycle_lent[week_start + timedelta(days=2)] = f'wed_lent_{week}'  # Wednesday
+            cycle_lent[week_start + timedelta(days=3)] = f'thu_lent_{week}'  # Thursday
+            cycle_lent[week_start + timedelta(days=4)] = f'fri_lent_{week}'  # Friday
+            cycle_lent[week_start + timedelta(days=5)] = f'sat_lent_{week}'  # Saturday
+            
+            # Sunday
+            sunday_date = week_start + timedelta(days=6)
+            cycle_lent[sunday_date] = f'sun_lent_{week}'
         
         # Cycle of Easter
         cycle_easter = {

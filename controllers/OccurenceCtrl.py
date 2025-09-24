@@ -75,7 +75,7 @@ class OccurenceCtrl:
             
         elif occurence == 5:
             result = second
-            result['lauds'] = (result.get('lauds') or '') + _exc(1) + first['title'] # exception
+            result['lauds'] = (result.get('lauds') or '') + _exc(1) + 'Mémoire: ' + first['title'] # exception
 
         elif occurence == 6:
             result = first

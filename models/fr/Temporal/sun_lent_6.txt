@@ -1,28 +1,30 @@
-#title: 
-#degree: 
-#category: 
-#rank: 
+#title: Dimanche des Rameaux
+#degree: 1
+#category:
+#occ: D1
+#con: D1
+#rank:
 #type: Temporal
-#color: 
+#color: 3
 
-#office: 
-    ##common: 
-    ##matins: 
-    ##laudes: 
-    ##prime: 
-    ##terce: 
-    ##sext: 
-    ##none: 
-    ##vespers: 
-    ##compline: 
+#office:
+    ##common: de la Passion.
+    ##matins:
+    ##laudes: Laudes II. Ant. propres
+    ##prime: Psaume 53
+    ##terce: Ant. propres
+    ##sext:
+    ##none:
+    ##vespers:
+    ##compline:
 
 
-#messe: 
-    ##commemoration: 
-    ##gloria: 
-    ##credo:
-    ##preface:
-    
+#messe: Propre: Domine, de longe
+    ##commemoration:
+    ##gloria:
+    ##credo: oui
+    ##preface: de la Sainte Croix
+
 #notes:
-
-.
+Bénédiction des Rameaux, Procession avant la messe.
+Aux autres Messes, dernier Évangile de la Bénédiction des Rameaux (Cum appropinquasset).
