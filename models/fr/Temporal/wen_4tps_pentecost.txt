@@ -1,28 +1,31 @@
-#title: 
-#degree: 
+#title: Mercredi des Quatre Temps de septembre
+#degree: 2
 #category: 
 #rank: 
+#occ: f2
+#con: f2
 #type: Temporal
-#color: 
+#color: 5
 
 #office: 
     ##common: 
-    ##matins: 
-    ##laudes: 
+    ##matins: 1 Noct., 9 Pss. (VII à IX : 2e schéma), 3 Leçons de l’Homélie. 
+    ##laudes: Laudes II, Prières fériales.
     ##prime: 
     ##terce: 
     ##sext: 
     ##none: 
-    ##vespers: 
+    ##vespers: Prières fériales.
     ##compline: 
 
 
-#messe: 
+#messe: Propre: Exsultata
     ##commemoration: 
     ##gloria: 
     ##credo:
-    ##preface:
+    ##preface: commune.
     
 #notes:
-
+On ne porte pas les dalmatique et tunique.
+Pas de fleurs ni de reliques sur l’autel.
 .

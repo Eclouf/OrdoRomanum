@@ -168,18 +168,20 @@ class CalendarRom():
             pentecost + timedelta(days=196):'sun_pentecost_28', # 28
         }
         
-        # 4tps of september
+        # 4tps of september - corrected logic: Quatre Temps come the week following the week containing the crux (Sept 14), with Sunday starting the week
         crux = datetime(year, 9, 14)
-        start = crux
         
-        if start.weekday() == 2:  # 2 représente le mercredi
-            wen = start + timedelta(days=7)
-            fri = wen + timedelta(days=2)
-            sat = wen + timedelta(days=3)
-        else:
-            wen = start + timedelta(days=((start.weekday() + 1) % 7))
-            fri = start + timedelta(days=((start.weekday() + 4) % 7))
-            sat = start + timedelta(days=((start.weekday() + 5) % 7))
+        # Calculate days from crux to next Sunday
+        days_to_next_sunday = (6 - crux.weekday()) % 7
+        next_sunday = crux + timedelta(days=days_to_next_sunday)
+        
+        # The following week starts on the next Sunday
+        following_week_sunday = next_sunday + timedelta(days=7)
+        
+        # Quatre Temps: Wednesday, Friday, Saturday of the following week
+        wen = following_week_sunday + timedelta(days=3)  # Wednesday
+        fri = following_week_sunday + timedelta(days=5)  # Friday
+        sat = following_week_sunday + timedelta(days=6)  # Saturday
         
         cycle_pentecote.update({
             wen: 'wen_4tps_pentecost',
