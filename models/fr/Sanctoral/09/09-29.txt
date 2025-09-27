@@ -4,9 +4,11 @@
     ##month: 9
 #degree: 1
 #category: 
-#rank: 1
+#occ: F1U
+#con: F1
+#rank: 
 #type: Sanctoral
-#color: 
+#color: 0
 
 
 #martirologe:
@@ -14,10 +16,10 @@
 
 
 #office: 
-    ##common: 
+    ##common: Propre
     ##matins: 
     ##laudes: 
-    ##prime: 
+    ##prime: psaume 53
     ##terce: 
     ##sext: 
     ##none: 
@@ -25,10 +27,12 @@
     ##compline: 
 
 
-#messe: 
+#messe: Propre: Benedicite
     ##commemoration: 
     ##gloria: oui
-    ##credo:
+    ##credo: oui
+    ##preface: commune
     
 #notes:
-
+Protecteur de l’Église universelle & de nombreux pays.
+Messes des Défunts interdites, Funérailles autorisées seulement si la fête n’est pas de précepte.

@@ -66,16 +66,16 @@ class OccurenceCtrl:
             
         elif occurence == 3:
             result = first
-            result['lauds'] = (result.get('lauds') or '') + _exc(1) + second['title'] # exception
-            result['vespers'] = (result.get('vespers') or '') + _exc(0) + second['title'] # exception
+            result['lauds'] = (result.get('lauds') or '') + _exc(1) + ' Mémoire: ' + second['title'] # exception
+            result['vespers'] = (result.get('vespers') or '') + _exc(0) + ' Mémoire: ' + second['title'] # exception
             
         elif occurence == 4:
             result = first
-            result['lauds'] = (result.get('lauds') or '') + _exc(1) + second['title'] # exception
+            result['lauds'] = (result.get('lauds') or '') + _exc(1) + ' Mémoire: ' + second['title'] # exception
             
         elif occurence == 5:
             result = second
-            result['lauds'] = (result.get('lauds') or '') + _exc(1) + 'Mémoire: ' + first['title'] # exception
+            result['lauds'] = (result.get('lauds') or '') + _exc(1) + ' Mémoire: ' + first['title'] # exception
 
         elif occurence == 6:
             result = first

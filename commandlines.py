@@ -550,8 +550,16 @@ def _render_sanctoral(model: ModelManager, fest: dict[str, Any]) -> str:
     mart = fest.get('martyrology')
     if isinstance(mart, list) and mart:
         bullets = "\n".join([f"  - {item}" for item in mart])
-        parts.append(f"{_h('Martirologe')}:\n" + bullets)
-    return "\n\n".join(parts)
+        martyrology_section = f"{_h('Martirologe')}:\n" + bullets
+       
+        parts.append(martyrology_section)
+    else:
+        pass
+    
+    
+    result = "\n\n".join(parts)
+    
+    return result
 
 
 def _render_temporal(model: ModelManager, fiche: Any) -> str:
@@ -766,11 +774,17 @@ def cmd_category(args: argparse.Namespace) -> None:
 def cmd_ordinarium(args: argparse.Namespace) -> None:
     date = datetime.strptime(args.date, "%Y-%m-%d")
     ordination = Ordination()
+    
+    # Récupérer l'office pour la date donnée
     fest = ordination.office(args.country, args.diocese, args.congregation, date)
     if args.format == 'json':
         print(json.dumps(to_serializable(fest), ensure_ascii=False, indent=2))
     else:
-        text = _render_sanctoral(None, fest)
+        # Vérifier si c'est une fête temporelle ou sanctorale
+        if fest.get('type') == 'temporal':
+            text = _render_temporal(None, fest)
+        else:
+            text = _render_sanctoral(None, fest)
         _print_text(text)
 
 

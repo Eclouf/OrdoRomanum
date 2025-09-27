@@ -29,10 +29,10 @@ class TemporalCtrl:
         by OccurenceCtrl/ContentsCtrl/Ordinarium.
         """
         if self.dao is None:
-            return {}
+            return None
         fiche = self.dao.get_by_date(day)
         if fiche is None:
-            return {}
+            return None
         # helper to safely access attributes
         def ga(name, default=None):
             return getattr(fiche, name, default)

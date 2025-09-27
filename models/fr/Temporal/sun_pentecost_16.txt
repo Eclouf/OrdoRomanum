@@ -19,7 +19,7 @@
     ##compline:
 
 
-#messe: Propre:
+#messe: Propre: Miserere
     ##commemoration:
     ##gloria: oui
     ##credo:

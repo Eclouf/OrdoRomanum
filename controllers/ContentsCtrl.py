@@ -40,7 +40,6 @@ class ContentsCtrl:
         else:
             first = day0
             second = day1
-            
         # Search competition: normalize codes and guard against unknowns
         x = (str(first.get('con') or '')).strip()
         y = (str(second.get('con') or '')).strip()
@@ -52,15 +51,15 @@ class ContentsCtrl:
     
         if competition == 1:
             result = day0
-            result['office'] = (result.get('office') or '') + f"commemoraison aux vêpres des premières vêpres de {day1['title']}" # exception
+            result['vespers'] = (result.get('vespers') or '') + f"commemoraison aux vêpres des premières vêpres de {day1['title']}" # exception
             
         elif competition == 2:
             result = day0
-            result['office'] = (result.get('office') or '') + f"première vêpres de {day1['title']} et commémoraison de {day0['title']}" # exception
+            result['vespers'] = (result.get('vespers') or '') + f"première vêpres de {day1['title']} et commémoraison de {day0['title']}" # exception
             
         elif competition == 3:
             result = day0
-            result['office'] = (result.get('office') or '') + f"première vêpres : {day1['title']}" # exception
+            result['vespers'] = (result.get('vespers') or '') + f"première vêpres : {day1['title']}" # exception
             
         else:
             pass
