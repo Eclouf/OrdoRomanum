@@ -1,8 +1,8 @@
 #title: Samedi des Quatre Temps de Septembre
 #degree: 2
 #category: 
-#occ: F2U
-#con: F2
+#occ: f2
+#con: f2
 #rank: 
 #type: Temporal
 #color: 3
