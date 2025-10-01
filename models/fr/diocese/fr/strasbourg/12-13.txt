@@ -1,9 +1,35 @@
-#office:
-    ##matins:
-    ##laudes:
-    ##prime:
-    ##littlehours:
-    ##vespers:
-    ##compline:
-    ##common:
-#
+﻿#title: Sainte Odile, Vierge, Patronne de l'Alsace
+#date: 
+    ##day: 13
+    ##month: 12
+#degree: 1
+#category: 
+#rank: 
+#type: Sanctoral
+#color: blanc
+
+
+#martirologe:
+À compléter avec le texte du martyrologe romain
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: 
+    ##credo:
+    
+#notes:
+
+

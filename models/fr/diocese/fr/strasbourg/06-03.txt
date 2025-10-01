@@ -1,4 +1,4 @@
-#title: Saint Morand, Confesseur
+﻿#title: Saint Morand, Confesseur
 #date: 
     ##day: 3
     ##month: 6
@@ -8,18 +8,22 @@
 #type: Sanctoral
 #color: blanc
 
+
 #martirologe:
 À compléter avec le texte du martyrologe romain
 
-#office:
-    ##matins:
-    ##laudes:
-    ##prime:
-    ##vespers:
-    ##compline:
-#messe:
-    ##littlehours:    ##vespers: 
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
     ##compline: 
+
 
 #messe: 
     ##commemoration: 
@@ -27,4 +31,5 @@
     ##credo:
     
 #notes:
+
 

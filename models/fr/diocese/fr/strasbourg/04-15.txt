@@ -1,9 +1,35 @@
-#office:
-    ##matins:
-    ##laudes:
-    ##prime:
-    ##littlehours:
-    ##vespers:
-    ##compline:
-    ##common:
-#
+﻿#title: Sainte Hune, Veuve
+#date: 
+    ##day: 15
+    ##month: 4
+#degree: 3
+#category: 
+#rank: 
+#type: Sanctoral
+#color: blanc
+
+
+#martirologe:
+À compléter avec le texte du martyrologe romain
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: 
+    ##credo:
+    
+#notes:
+
+
