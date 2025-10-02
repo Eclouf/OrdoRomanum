@@ -1,4 +1,4 @@
-﻿#title: Saint Adelphe de Metz, Évêque et Confesseur
+#title: Saint Adelphe de Metz, Évêque et Confesseur
 #date: 
     ##day: 16
     ##month: 5

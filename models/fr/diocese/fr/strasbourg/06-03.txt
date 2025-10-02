@@ -1,4 +1,4 @@
-﻿#title: Saint Morand, Confesseur
+#title: Saint Morand, Confesseur
 #date: 
     ##day: 3
     ##month: 6

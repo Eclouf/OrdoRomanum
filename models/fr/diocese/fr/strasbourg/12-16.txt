@@ -1,4 +1,4 @@
-﻿#title: Sainte Adélaïde, Impératrice, Veuve
+#title: Sainte Adélaïde, Impératrice, Veuve
 #date: 
     ##day: 16
     ##month: 12

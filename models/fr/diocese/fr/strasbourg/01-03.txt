@@ -1,4 +1,4 @@
-﻿#title: Sainte Geneviève, Vierge
+#title: Sainte Geneviève, Vierge
 #date: 
     ##day: 3
     ##month: 1

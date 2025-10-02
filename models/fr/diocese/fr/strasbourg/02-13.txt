@@ -1,4 +1,4 @@
-﻿#title: Saint Benoît d'Aniane, Abbé
+#title: Saint Benoît d'Aniane, Abbé
 #date: 
     ##day: 13
     ##month: 2

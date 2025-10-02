@@ -1,4 +1,4 @@
-﻿#title: Saint Ludan de Nordhouse, Confesseur
+#title: Saint Ludan de Nordhouse, Confesseur
 #date: 
     ##day: 16
     ##month: 2

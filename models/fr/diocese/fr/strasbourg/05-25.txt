@@ -1,4 +1,4 @@
-﻿#title: Sainte Madeleine-Sophie Barat, Vierge
+#title: Sainte Madeleine-Sophie Barat, Vierge
 #date: 
     ##day: 25
     ##month: 5

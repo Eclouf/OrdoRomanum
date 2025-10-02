@@ -1,4 +1,4 @@
-﻿#title: Sainte Attale, Vierge
+#title: Sainte Attale, Vierge
 #date: 
     ##day: 5
     ##month: 12

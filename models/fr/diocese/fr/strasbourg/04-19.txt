@@ -1,4 +1,4 @@
-﻿#title: Saint Léon IX, Pape
+#title: Saint Léon IX, Pape
 #date: 
     ##day: 19
     ##month: 4

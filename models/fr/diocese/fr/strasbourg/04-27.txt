@@ -1,4 +1,4 @@
-﻿#title: Saint Pierre Canisius, Confesseur et Docteur de l'Église
+#title: Saint Pierre Canisius, Confesseur et Docteur de l'Église
 #date: 
     ##day: 27
     ##month: 4

@@ -1,4 +1,4 @@
-﻿#title: Saints Prict de Clermont, Évêque, Amarin de Doroang, Abbé et Élide, Acolyte, Martyrs
+#title: Saints Prict de Clermont, Évêque, Amarin de Doroang, Abbé et Élide, Acolyte, Martyrs
 #date: 
     ##day: 15
     ##month: 2

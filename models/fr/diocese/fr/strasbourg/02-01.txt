@@ -1,4 +1,4 @@
-﻿#title: Sainte Brigide d'Irlande, Vierge
+#title: Sainte Brigide d'Irlande, Vierge
 #date: 
     ##day: 1
     ##month: 2

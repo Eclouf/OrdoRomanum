@@ -1,4 +1,4 @@
-﻿#title: Sainte Odile, Vierge, Patronne de l'Alsace
+#title: Sainte Odile, Vierge, Patronne de l'Alsace
 #date: 
     ##day: 13
     ##month: 12

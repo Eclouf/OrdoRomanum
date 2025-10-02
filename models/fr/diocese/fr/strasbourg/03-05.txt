@@ -1,4 +1,4 @@
-﻿#title: Saint Fridolin de Säckingen, Abbé
+#title: Saint Fridolin de Säckingen, Abbé
 #date: 
     ##day: 5
     ##month: 3
