@@ -116,7 +116,7 @@ class Ordination:
                     day1 = self.office(country, diocese, congregation, next_day, cont=1)
                     
                     # Si on a un jour suivant, faire une copie avant de l'utiliser
-                    if day1:
+                    if day1.get('con') in ['F1', 'D2', 'D1']:
                         day1_copy = {k: v for k, v in day1.items()}
                         result = self.contents_ctrl.search(fest_copy, day1_copy)
                         # Retourner une copie du résultat

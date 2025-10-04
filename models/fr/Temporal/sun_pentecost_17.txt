@@ -19,12 +19,10 @@
     ##compline:
 
 
-#messe: Propre:
+#messe: Propre: Justus est
     ##commemoration:
     ##gloria: oui
     ##credo:
     ##preface: de la Très Sainte Trinité
 
 #notes:
-
-.

@@ -15,6 +15,7 @@ if STORAGE_BACKEND == 'sqlite':
     from models.utils.Base import Base
 else:
     # File-based DAOs
+    from models.DAO_File.DioceseFileDAO import DioceseFileDAO
     from models.DAO_File.CategoryFileDAO import CategoryFileDAO
     from models.DAO_File.ColorsFileDAO import ColorsFileDAO
     from models.DAO_File.SanctoralFileDAO import SanctoralFileDAO
@@ -107,3 +108,9 @@ class ModelManager(metaclass=Singleton):
             else:
                 ModelManager._exceptions_dao = None
         return ModelManager._exceptions_dao
+
+    def get_diocese_dao(self):
+        if not ModelManager._diocese_dao:
+           ModelManager._diocese_dao = DioceseFileDAO(self)
+        return ModelManager._diocese_dao
+        

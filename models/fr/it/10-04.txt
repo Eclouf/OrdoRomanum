@@ -2,10 +2,10 @@
 #date: 
     ##day: 4
     ##month: 10
-#degree: 3
+#degree: 1
 #category: 15
-#occ: F3
-#con: F3
+#occ: F1
+#con: F1
 #rank: 
 #type: Sanctoral
 #color: 0
@@ -23,7 +23,7 @@ En Égypte, les saints frères Marc et Marcien, (en 304), ainsi qu'une multitude
 
 
 #office: 
-    ##common: 9
+    ##common: Propre
     ##matins: 
     ##laudes: 
     ##prime: 
@@ -34,10 +34,10 @@ En Égypte, les saints frères Marc et Marcien, (en 304), ainsi qu'une multitude
     ##compline: 
 
 
-#messe: 
+#messe: Propre: Mihi autem
     ##commemoration: 
     ##gloria: oui
-    ##credo:
+    ##credo: oui
     
 #notes:
 
