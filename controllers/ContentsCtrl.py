@@ -15,10 +15,10 @@ class ContentsCtrl:
         self.__data__ = [
             [1,0,0],
             [2,0,0],
-            [1,0,0],
-            [2,0,0],
-            [2,0,0],
-            [3,0,0],
+            [1,4,0],
+            [2,4,0],
+            [2,4,0],
+            [3,4,0],
             [1,1,1],
             [3,1,3],
             [3,3,3],
@@ -31,6 +31,8 @@ class ContentsCtrl:
         
     def search(self, day0: dict, day1: dict):
         # Determination of festivities on the x-axis and y-axis for self._table_competition_
+        print("debug", day0.get('con'))
+        print("debug", day1.get('con'))
         if day0['con'] in self.__only__:
             first = day0   # y-axis
             second = day1  # x-axis
@@ -61,7 +63,11 @@ class ContentsCtrl:
             result = day0
             result['vespers'] = (result.get('vespers') or '') + f"première vêpres : {day1['title']}" # exception
             
+        elif competition == 4:
+            result = day0
+            result['vespers'] = f"première vêpres du {day1['title']}" # exception 1er vespers sunday
+            
         else:
-            pass
+            result = day0
         
         return result

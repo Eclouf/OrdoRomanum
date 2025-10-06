@@ -107,6 +107,7 @@ class Ordination:
         def get_contents(current_fest: dict | None) -> dict | None:
                 if not current_fest:
                     return None
+                
                 try:
                     # Créer une copie profonde du jour actuel
                     fest_copy = {k: v for k, v in current_fest.items()}
@@ -119,12 +120,17 @@ class Ordination:
                     if day1.get('con') in ['F1', 'D2', 'D1']:
                         day1_copy = {k: v for k, v in day1.items()}
                         result = self.contents_ctrl.search(fest_copy, day1_copy)
-                        # Retourner une copie du résultat
-                        return {k: v for k, v in result.items()} if result else None
+                    # Retourner une copie du résultat si disponible, sinon retourner la copie originale
+                    if result and isinstance(result, dict):
+                        return {k: v for k, v in result.items()}
+                
+                # Retourner la copie originale si aucune condition n'est remplie
                     return fest_copy
+                
                 except Exception as e:
                     print(f"Erreur dans get_contents: {e}")
-                    return current_fest
+                # En cas d'erreur, retourner une copie du festival actuel
+                return {k: v for k, v in current_fest.items()} if current_fest else {}
         
         # Get contents
         if cont is None:

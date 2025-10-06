@@ -10,7 +10,7 @@
 #office: 
     ##common: Per Annum
     ##matins: 1 Nocturne, 9 psaumes, 3 leçons de l'Homelie.
-    ##laudes: Laudes II, Antinne de Benedictus propre 
+    ##laudes: Laudes II, Antienne de Benedictus propre 
     ##prime: 
     ##terce: 
     ##sext: 

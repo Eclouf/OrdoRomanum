@@ -80,7 +80,7 @@ class ControllerManager:
     def get_diocese_ctrl():
         cm = ControllerManager
         if not cm._diocese_ctrl:
-            cm._diocese_ctrl = DioceseCtrl()
+            cm._diocese_ctrl = DioceseCtrl(cm._model)
         return cm._diocese_ctrl
     
     @staticmethod

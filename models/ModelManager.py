@@ -100,6 +100,18 @@ class ModelManager(metaclass=Singleton):
             else:
                 ModelManager._office_dao = OfficeFileDAO(self)
         return ModelManager._office_dao
+        
+    def get_diocese_dao(self):
+        if not hasattr(ModelManager, '_diocese_dao') or not ModelManager._diocese_dao:
+            if STORAGE_BACKEND == 'sqlite':
+                # Si vous avez un DAO SQL pour les diocèses, ajoutez-le ici
+                # from models.DAO.DioceseDAO import DioceseDAO
+                # ModelManager._diocese_dao = DioceseDAO(self)
+                pass
+            else:
+                from models.DAO_File.DioceseFileDAO import DioceseFileDAO
+                ModelManager._diocese_dao = DioceseFileDAO(self)
+        return ModelManager._diocese_dao
     
     def get_exceptions_dao(self):
         if not ModelManager._exceptions_dao:
@@ -108,9 +120,4 @@ class ModelManager(metaclass=Singleton):
             else:
                 ModelManager._exceptions_dao = None
         return ModelManager._exceptions_dao
-
-    def get_diocese_dao(self):
-        if not ModelManager._diocese_dao:
-           ModelManager._diocese_dao = DioceseFileDAO(self)
-        return ModelManager._diocese_dao
         

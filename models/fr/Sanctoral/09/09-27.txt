@@ -28,7 +28,7 @@ Dans le Hainaut, (vers la fin du huitième siècle), la sainte vierge Hiltrude.
 #office: 
     ##common: 5
     ##matins: 
-    ##laudes: Commémoration: Saints Côme et Damien, Martyrs
+    ##laudes: 
     ##prime: 
     ##terce: 
     ##sext: 

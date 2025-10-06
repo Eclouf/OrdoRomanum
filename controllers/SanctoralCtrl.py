@@ -1,6 +1,7 @@
 # -*- encoding:utf-8 -*-
 from datetime import datetime
 from models.ModelManager import ModelManager
+from .BaseFestivalCtrl import BaseFestivalCtrl
 
 
 """
@@ -9,12 +10,10 @@ from models.ModelManager import ModelManager
 """
 
 
-class SanctoralCtrl:
+class SanctoralCtrl(BaseFestivalCtrl):
     def __init__(self, model: ModelManager):
+        super().__init__(model)
         self.dao = model.get_sanctoral_dao()
-        self.category_dao = model.get_category_dao()
-        self.color_dao = model.get_colors_dao()
-        self.office_dao = model.get_office_dao()
 
     def get_all_fest(self):
         pass
@@ -28,56 +27,47 @@ class SanctoralCtrl:
         day = day.day
         fest = self.dao.get_by_id(month, day)
         if fest is not None:
-            raw_office_id = fest.office  # keep numeric/string id before resolution
-            raw_mass = fest.mass
-            fest = {
-                'title': fest.title,
-                'category': self.category_dao.get_by_id(fest.category),
-                'color': self.color_dao.get_by_id(fest.color),
-                'office': self.office_dao.get_office(raw_office_id),
-                'matins': self.office_dao.get_matins(fest.matins),
-                'lauds': self.office_dao.get_lauds(fest.lauds),
-                'prime': self.office_dao.get_prime(fest.prime),
-                'little_hours': self.office_dao.get_little_hours(fest.little_hours),
-                'vespers': self.office_dao.get_vespers(fest.vespers),
-                'compline': self.office_dao.get_compline(fest.compline),
-                'mass': fest.mass,
-                'com': fest.com,
-                'note': fest.note,
-                'degree': fest.degree,
-                'rank': fest.rank,
-                'occ': fest.occ,
-                'con': fest.con,
+            return self._format_fest(fest)
+        return None
+        
+    def _format_fest(self, fest):
+        """Format a festival for output"""
+        if not fest:
+            return None
+            
+        try:
+            raw_office_id = getattr(fest, 'office', None)
+            raw_mass = getattr(fest, 'mass', None)
+            
+            # Initialize basic data
+            fest_data = {
+                'title': getattr(fest, 'title', ''),
+                'category': self._get_category(fest),
+                'color': self._get_color(fest),
+                'office': self._get_office(fest),
+                'com': getattr(fest, 'com', ''),
+                'note': getattr(fest, 'note', ''),
+                'degree': getattr(fest, 'degree', None),
+                'rank': getattr(fest, 'rank', None),
+                'occ': getattr(fest, 'occ', None),
+                'con': getattr(fest, 'con', None),
                 'martyrology': fest.martyrology,
             }
-            # Merge inline defaults from Common.txt for the given 'common' id
-            inline = self.office_dao.get_common_inline_details(raw_office_id) if hasattr(self.office_dao, 'get_common_inline_details') else {}
-            inline_mass = inline.get('mass') if isinstance(inline, dict) else None
-            if inline_mass:
-                if not isinstance(fest.get('mass'), dict) or not fest['mass']:
-                    fest['mass'] = dict(inline_mass)
-                else:
-                    for k, v in inline_mass.items():
-                        fest['mass'].setdefault(k, v)
-
-            # If mass references a specific common id (e.g., '#messe: 8'), merge its defaults too
-            mass_common_id = None
-            if isinstance(raw_mass, dict):
-                mass_common_id = raw_mass.get('common_id')
-            if mass_common_id is not None:
-                inline2 = self.office_dao.get_common_inline_details(mass_common_id) if hasattr(self.office_dao, 'get_common_inline_details') else {}
-                inline_mass2 = inline2.get('mass') if isinstance(inline2, dict) else None
-                if inline_mass2:
-                    if not isinstance(fest.get('mass'), dict) or not fest['mass']:
-                        fest['mass'] = dict(inline_mass2)
-                    else:
-                        for k, v in inline_mass2.items():
-                            fest['mass'].setdefault(k, v)
-                        # If title remains a numeric placeholder, replace it with the inline title
-                        t = fest['mass'].get('title')
-                        if isinstance(t, str) and t.strip().isdigit() and inline_mass2.get('title'):
-                            fest['mass']['title'] = inline_mass2['title']
-        else:
-            fest = {}
-        return fest
-        
+            
+            # Add office fields
+            office_fields = [
+                'matins', 'lauds', 'prime', 'little_hours', 
+                'vespers', 'compline'
+            ]
+            
+            for field in office_fields:
+                fest_data[field] = self._get_office_field(fest, field)
+            
+            # Format mass data using the base class method
+            self._format_mass(fest_data, fest, raw_office_id, raw_mass)
+            
+            return fest_data
+            
+        except Exception as e:
+            print(f"Error formatting festival: {e}")
+            return None
