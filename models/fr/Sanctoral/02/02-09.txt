@@ -1,0 +1,34 @@
+#title: Saint Cyrille d'Alexandrie, Évêque, Confesseur et Docteur de l'Église
+#date: 
+    ##day: 9
+    ##month: 2
+#degree: 2
+#category: 11
+#rank: 3
+#type: Sanctoral
+#color: 0
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 7
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: antienne de Magnificat : O Doctor
+    ##compline: 
+
+
+#messe: 8
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

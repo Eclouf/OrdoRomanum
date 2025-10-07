@@ -1,0 +1,34 @@
+#title: Jeudi Saint
+#date: 
+    ##day: 17
+    ##month: 4
+#degree: 1
+#category: 
+#rank: 1
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Anicet, Pape et Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Anicet, Pape et Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

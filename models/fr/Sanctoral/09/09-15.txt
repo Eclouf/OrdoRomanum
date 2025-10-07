@@ -1,0 +1,34 @@
+#title: Notre-Dame des Sept Douleurs
+#date: 
+    ##day: 15
+    ##month: 9
+#degree: 2
+#category: 
+#rank: 2
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Nicomède, Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Nicomède, Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

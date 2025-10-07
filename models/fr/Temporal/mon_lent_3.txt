@@ -1,0 +1,28 @@
+#title: Lundi de la 3e semaine de Carême
+#degree: 3
+#category:
+#occ: f3
+#con: f3
+#rank:
+#type: Temporal
+#color: 3
+
+#office:
+    ##common: Du temps de Carême.
+    ##matins:
+    ##laudes: Laudes II
+    ##prime:
+    ##terce:
+    ##sext:
+    ##none:
+    ##vespers:
+    ##compline:
+
+
+#messe: Propre:
+    ##commemoration:
+    ##gloria:
+    ##credo:
+    ##preface: du Carême
+
+#notes:

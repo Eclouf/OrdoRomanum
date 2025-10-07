@@ -1,0 +1,34 @@
+#title: Deuxième Dimanche de l'Avent
+#date: 
+    ##day: 7
+    ##month: 12
+#degree: 1
+#category: 
+#rank: 1
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Ambroise, Évêque, Confesseur et Docteur de l'Église
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Ambroise, Évêque, Confesseur et Docteur de l'Église
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

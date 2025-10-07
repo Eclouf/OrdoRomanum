@@ -1,0 +1,34 @@
+#title: Saints Cyrille et Méthode, Évêques et Confesseurs
+#date: 
+    ##day: 7
+    ##month: 7
+#degree: 3
+#category: 16
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des confesseurs pontifes
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

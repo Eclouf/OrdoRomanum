@@ -1,0 +1,34 @@
+#title: Férie
+#date: 
+    ##day: 6
+    ##month: 11
+#degree: 4
+#category: 
+#rank: 4
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: 
+    ##credo:
+    
+#notes:
+

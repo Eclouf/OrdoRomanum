@@ -1,0 +1,34 @@
+#title: Dimanche dans l'Octave de la Nativité
+#date: 
+    ##day: 28
+    ##month: 12
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Quatrième jour dans l'Octave de Noël; Les Saints Innocents
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Quatrième jour dans l'Octave de Noël; Les Saints Innocents
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

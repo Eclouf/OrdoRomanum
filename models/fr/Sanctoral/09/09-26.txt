@@ -1,0 +1,34 @@
+#title: Vendredi des Quatre-Temps de Septembre
+#date: 
+    ##day: 26
+    ##month: 9
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saints Cyprien et Justine, Vierge, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Cyprien et Justine, Vierge, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

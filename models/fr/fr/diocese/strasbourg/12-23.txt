@@ -1,0 +1,35 @@
+#title: Saint Dagobert, Roi et Martyr
+#date: 
+    ##day: 23
+    ##month: 12
+#degree: 5
+#category: 
+#rank: 
+#type: Sanctoral
+#color: rouge
+
+
+#martirologe:
+À compléter avec le texte du martyrologe romain
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: 
+    ##credo:
+    
+#notes:
+
+

@@ -1,0 +1,34 @@
+#title: Saints Nérée, Achille et Domitille, Vierge, ainsi que Pancrace, Martyrs
+#date: 
+    ##day: 12
+    ##month: 5
+#degree: 3
+#category: 8
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des martyrs
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

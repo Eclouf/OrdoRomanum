@@ -1,0 +1,34 @@
+#title: Fête du Très Saint Cur de Jésus
+#date: 
+    ##day: 27
+    ##month: 6
+#degree: 1
+#category: 
+#rank: 1
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

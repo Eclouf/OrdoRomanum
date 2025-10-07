@@ -1,0 +1,34 @@
+#title: Férie
+#date: 
+    ##day: 11
+    ##month: 7
+#degree: 4
+#category: 
+#rank: 4
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Pie Premier, Pape et Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Pie Premier, Pape et Martyr
+    ##gloria: 
+    ##credo:
+    
+#notes:
+

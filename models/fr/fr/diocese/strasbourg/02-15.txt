@@ -1,0 +1,35 @@
+#title: Saints Prict de Clermont, Évêque, Amarin de Doroang, Abbé et Élide, Acolyte, Martyrs
+#date: 
+    ##day: 15
+    ##month: 2
+#degree: 3
+#category: 
+#rank: 
+#type: Sanctoral
+#color: rouge
+
+
+#martirologe:
+À compléter avec le texte du martyrologe romain
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: 
+    ##credo:
+    
+#notes:
+
+

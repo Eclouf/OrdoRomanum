@@ -1,0 +1,34 @@
+#title: Saint Valentin, Prêtre et Martyr
+#date: 
+    ##day: 14
+    ##month: 2
+#degree: 0
+#category: Prêtre et Martyr
+#rank: 
+#type: Sanctoral
+#color: 1
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Mémoire: Saint Valentin, Prêtre et Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: Propre: In Virtute
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

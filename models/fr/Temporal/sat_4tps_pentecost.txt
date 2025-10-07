@@ -1,0 +1,30 @@
+#title: Samedi des Quatre Temps de Septembre
+#degree: 2
+#category: 
+#occ: f2
+#con: f2
+#rank: 
+#type: Temporal
+#color: 3
+
+#office: 
+    ##common: Per Annum
+    ##matins: 1 Nocturne, 9 psaumes, 3 leçons de l'Homelie.
+    ##laudes: Laudes II, Antienne de Benedictus propre 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: Propre: Venite
+    ##commemoration: 
+    ##gloria: 
+    ##credo:
+    ##preface:
+    
+#notes:
+On ne porte pas les dalmatique et tunique.
+Pas de fleurs ni de reliques sur l’autel.

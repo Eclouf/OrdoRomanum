@@ -1,0 +1,29 @@
+#title: Dimanche de la Passion
+#degree: 1
+#category:
+#occ: D1
+#con: D1
+#rank:
+#type: Temporal
+#color: 3
+
+#office:
+    ##common: du Carême.
+    ##matins:
+    ##laudes: Laudes II. Ant. propres
+    ##prime: Psaume 53
+    ##terce: Ant. propres
+    ##sext:
+    ##none:
+    ##vespers:
+    ##compline:
+
+
+#messe: Propre: Judica me
+    ##commemoration:
+    ##gloria:
+    ##credo: oui
+    ##preface: de la Sainte Croix
+
+#notes:
+Messe des Funérailles interdite.

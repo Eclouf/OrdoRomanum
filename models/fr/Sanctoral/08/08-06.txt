@@ -1,0 +1,34 @@
+#title: Transfiguration de Notre Seigneur Jésus Christ
+#date: 
+    ##day: 6
+    ##month: 8
+#degree: 2
+#category: 
+#rank: 2
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saints Sixte II, Pape, Félicissime et Agapit, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Sixte II, Pape, Félicissime et Agapit, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

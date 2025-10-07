@@ -1,0 +1,30 @@
+#title: 4e Dimanche de Carême
+#degree: 1
+#category:
+#occ: D1
+#con: D1
+#rank:
+#type: Temporal
+#color: 5
+
+#office:
+    ##common: du Carême.
+    ##matins:
+    ##laudes: Laudes II. Ant. propres
+    ##prime: Psaume 53
+    ##terce: Ant. propres
+    ##sext:
+    ##none:
+    ##vespers:
+    ##compline:
+
+
+#messe: Propre: Lætare, Jerusalem
+    ##commemoration:
+    ##gloria:
+    ##credo: oui
+    ##preface: du Carême
+
+#notes:
+Orgues & fleurs permises (pas de reliques néanmoins).
+Bénédiction de la Rose d’or par le Pape.

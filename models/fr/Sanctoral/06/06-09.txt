@@ -1,0 +1,34 @@
+#title: Lundi de la Pentecôte
+#date: 
+    ##day: 9
+    ##month: 6
+#degree: 1
+#category: 
+#rank: 1
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saints Prime et Félicien, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saints Prime et Félicien, Martyrs
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

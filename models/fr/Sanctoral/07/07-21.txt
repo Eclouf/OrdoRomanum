@@ -1,0 +1,34 @@
+#title: Saint Laurent de Brindes, Confesseur et Docteur de l'Église
+#date: 
+    ##day: 21
+    ##month: 7
+#degree: 3
+#category: 14
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des docteurs
+    ##matins: 
+    ##laudes: Commémoration: Sainte Praxède, Vierge
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Sainte Praxède, Vierge
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

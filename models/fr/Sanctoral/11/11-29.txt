@@ -1,0 +1,34 @@
+#title: Férie
+#date: 
+    ##day: 29
+    ##month: 11
+#degree: 4
+#category: 
+#rank: 4
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Saturnin, Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Saturnin, Martyr
+    ##gloria: 
+    ##credo:
+    
+#notes:
+

@@ -1,0 +1,34 @@
+#title: Mercredi des Quatre-Temps de Septembre
+#date: 
+    ##day: 24
+    ##month: 9
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Notre-Dame de la Merci
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Notre-Dame de la Merci
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

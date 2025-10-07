@@ -1,0 +1,34 @@
+#title: Dédicace des Basiliques Saint-Pierre et Saint-Paul, Apôtres
+#date: 
+    ##day: 18
+    ##month: 11
+#degree: 3
+#category: 1
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des apôtres
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

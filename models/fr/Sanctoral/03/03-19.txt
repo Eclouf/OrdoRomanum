@@ -1,0 +1,34 @@
+#title: Saint Joseph, Époux de la Bienheureuse Vierge Marie, Confesseur
+#date: 
+    ##day: 19
+    ##month: 3
+#degree: 1
+#category: 15
+#rank: 1
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des vierges
+    ##matins: 
+    ##laudes: Commémoration: Mercredi de la deuxième semaine de Carême
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Mercredi de la deuxième semaine de Carême
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

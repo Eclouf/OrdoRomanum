@@ -1,0 +1,35 @@
+#title: Saint Pierre Canisius, Confesseur et Docteur de l'Église
+#date: 
+    ##day: 27
+    ##month: 4
+#degree: 3
+#category: 
+#rank: 
+#type: Sanctoral
+#color: blanc
+
+
+#martirologe:
+À compléter avec le texte du martyrologe romain
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: 
+    ##credo:
+    
+#notes:
+
+

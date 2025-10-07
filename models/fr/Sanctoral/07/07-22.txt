@@ -1,0 +1,34 @@
+#title: Sainte Marie-Madeleine, Pénitente
+#date: 
+    ##day: 22
+    ##month: 7
+#degree: 3
+#category: 26
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

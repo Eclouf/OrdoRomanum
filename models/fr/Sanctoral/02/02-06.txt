@@ -1,0 +1,34 @@
+#title: Saint Tite, Évêque et Confesseur
+#date: 
+    ##day: 6
+    ##month: 2
+#degree: 3
+#category: 9
+#rank: 
+#type: Sanctoral
+#color: 0
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 7
+    ##matins: 
+    ##laudes: Mémoire: Sainte Dorothée, Vierge et Martyre
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 7
+    ##commemoration: Sainte Dorothée, Vierge et Martyre
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

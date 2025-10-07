@@ -1,0 +1,30 @@
+0	Âpotre
+1	Âpotres
+2	Évangéliste
+3	Pape
+4	Pape & Martyr
+5	Papes & Martyrs
+6	Pape & Confesseur
+7	Martyr
+8	Martyrs
+9	Évêque & Confesseur
+10	Évêques & Confesseurs
+11	Évêque, Confesseur & Docteur de l'Église
+12	Évêque & Martyr
+13	Confesseur & Docteur de l'Église
+14	Docteur de l'Église
+15	Confesseur
+16	Confesseurs
+17	Diacre, Confesseur et Docteur de l'Église
+18	Vierge
+19	Vierges
+20	Vierge & Martyr
+21	Vierges & Martyrs
+22	Veuve
+23	Veuves
+24	Reine & Veuve
+25	Empereur & Confesseur
+26	Pénitente
+27	Abbé
+28  de Notre Seigneur Jésus-Christ
+29  de Notre-Dame

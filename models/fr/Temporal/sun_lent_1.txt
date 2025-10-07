@@ -1,0 +1,29 @@
+#title: 1e Dimanche de Carême
+#degree: 1
+#category:
+#occ: D1
+#con: D1
+#rank:
+#type: Temporal
+#color: 3
+
+#office:
+    ##common: du Carême.
+    ##matins:
+    ##laudes: Laudes II. Ant. propres
+    ##prime: Psaume 53
+    ##terce: Ant. propres
+    ##sext:
+    ##none:
+    ##vespers:
+    ##compline:
+
+
+#messe: Propre: Invocabit me
+    ##commemoration:
+    ##gloria:
+    ##credo: oui
+    ##preface: du Carême
+
+#notes:
+Imposition des Cendres possible (après la messe).

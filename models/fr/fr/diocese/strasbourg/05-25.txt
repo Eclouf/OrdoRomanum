@@ -1,0 +1,35 @@
+#title: Sainte Madeleine-Sophie Barat, Vierge
+#date: 
+    ##day: 25
+    ##month: 5
+#degree: 5
+#category: 
+#rank: 
+#type: Sanctoral
+#color: blanc
+
+
+#martirologe:
+À compléter avec le texte du martyrologe romain
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: 
+    ##credo:
+    
+#notes:
+
+

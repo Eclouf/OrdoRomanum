@@ -1,0 +1,26 @@
+0   Des Apôtres hors Temps Pascal
+1   Des Apôtres au Temps Pascal
+2   Des Evangelistes au Temps Pascal -> 1
+3   d'un ou plusieurs Souverains Pontifes -> 6 ou 7
+    -messe: Si diligis me
+4   d'un Martyr hors Temps Pascal
+    -messe: a determiner
+5   de plusieurs Martyrs hors Temps Pascal
+    -messe: Intret
+6   d'un ou plusieurs Martyrs au Temps Pascal
+7   des Confesseurs Pontifes
+    -messe: Statuit
+8   des Docteurs -> 7 ou 9 
+    -messe: In medio
+9   des Confesseurs non Pontifes
+    -messe: Os justi
+10  d'un Abbé -> 9
+    -messe: a determiner
+11  des Vierges
+    -messe(martyr): Loquebar
+    -messe(non martyr): Dilexisti
+12  des Saintes Femmes
+13  de la Dédicace des Eglises
+14  des fêtes de la Sainte Vierge Marie
+15  de la Sainte Vierge au Samedi
+16  de la férie

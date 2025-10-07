@@ -1,0 +1,35 @@
+#title: Saint Léon IX, Pape
+#date: 
+    ##day: 19
+    ##month: 4
+#degree: 2
+#category: 
+#rank: 
+#type: Sanctoral
+#color: blanc
+
+
+#martirologe:
+À compléter avec le texte du martyrologe romain
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: 
+    ##credo:
+    
+#notes:
+
+

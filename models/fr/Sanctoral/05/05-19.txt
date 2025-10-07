@@ -1,0 +1,34 @@
+#title: Saint Pierre Célestin, Pape et Confesseur
+#date: 
+    ##day: 19
+    ##month: 5
+#degree: 3
+#category: 15
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des confesseurs pontifes
+    ##matins: 
+    ##laudes: Commémoration: Sainte Pudentienne, Vierge
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Sainte Pudentienne, Vierge
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

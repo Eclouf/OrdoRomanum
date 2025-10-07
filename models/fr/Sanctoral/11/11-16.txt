@@ -1,0 +1,34 @@
+#title: Vingt-troisième Dimanche après la Pentecôte
+#date: 
+    ##day: 16
+    ##month: 11
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Sainte Gertrude, Vierge
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Sainte Gertrude, Vierge
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

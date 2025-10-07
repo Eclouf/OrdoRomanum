@@ -1,0 +1,34 @@
+#title: Sainte Agathe, Vierge et Martyre
+#date: 
+    ##day: 5
+    ##month: 2
+#degree: 3
+#category: 20
+#rank: 
+#type: Sanctoral
+#color: 1
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: Propre
+    ##matins: Psaumes propres
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: Propre: Gaudeamus
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

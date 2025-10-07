@@ -1,0 +1,34 @@
+#title: Quatrième Dimanche après Pâques
+#date: 
+    ##day: 18
+    ##month: 5
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Venant, Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Venant, Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

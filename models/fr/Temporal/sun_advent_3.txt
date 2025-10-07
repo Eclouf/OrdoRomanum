@@ -1,0 +1,30 @@
+#title: 3e DIMANCHE DE L'AVENT
+#degree: 1
+#category:
+#occ: D1
+#con: D1
+#rank:
+#type: Temporal
+#color: 5
+
+#office:
+    ##common: Du temps de l'Avent. Ant. & Capitules propres.
+    ##matins: 1 Noct., 9 Pss.
+    ##laudes: Laudes I
+    ##prime: Psaume 117
+    ##terce:
+    ##sext:
+    ##none:
+    ##vespers:
+    ##compline:
+
+
+#messe: Propre:
+    ##commemoration:
+    ##gloria:
+    ##credo: oui
+    ##preface: de la Très Sainte Trinité
+
+#notes:
+
+.

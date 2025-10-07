@@ -1,0 +1,34 @@
+#title: Nativité du Seigneur
+#date: 
+    ##day: 25
+    ##month: 12
+#degree: 1
+#category: 
+#rank: 1
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Sainte Anastasie, Martyre
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Sainte Anastasie, Martyre
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

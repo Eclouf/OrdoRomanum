@@ -1,0 +1,34 @@
+#title: Férie
+#date: 
+    ##day: 18
+    ##month: 8
+#degree: 4
+#category: 
+#rank: 4
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Agapit, Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Agapit, Martyr
+    ##gloria: 
+    ##credo:
+    
+#notes:
+

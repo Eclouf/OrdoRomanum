@@ -1,0 +1,30 @@
+#title: 5E DIMANCHE APRÈS L'ÉPIPHANIE
+#degree: 2
+#category:
+#occ: D2
+#con: D2
+#rank:
+#type: Temporal
+#color: 2
+
+#office:
+    ##common: per annum
+    ##matins:
+    ##laudes: Antienne de Benedictus propre.
+    ##prime: Psaume 117
+    ##terce:
+    ##sext:
+    ##none:
+    ##vespers: Antienne de Magnificat propre.
+    ##compline:
+
+
+#messe: Propre:
+    ##commemoration:
+    ##gloria: oui
+    ##credo: oui
+    ##preface: de la Très Sainte Trinité
+
+#notes:
+
+.

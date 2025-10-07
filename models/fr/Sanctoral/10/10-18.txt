@@ -1,0 +1,34 @@
+#title: Saint Luc, Évangéliste
+#date: 
+    ##day: 18
+    ##month: 10
+#degree: 2
+#category: 2
+#rank: 2
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des apôtres
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

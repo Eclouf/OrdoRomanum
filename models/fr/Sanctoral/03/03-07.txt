@@ -1,0 +1,34 @@
+#title: Vendredi après les Cendres
+#date: 
+    ##day: 7
+    ##month: 3
+#degree: 3
+#category: 
+#rank: 3
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Thomas d'Aquin, Confesseur et Docteur de l'Église
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Thomas d'Aquin, Confesseur et Docteur de l'Église
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

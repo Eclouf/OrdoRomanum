@@ -1,0 +1,34 @@
+#title: Ascension du Seigneur
+#date: 
+    ##day: 29
+    ##month: 5
+#degree: 1
+#category: 
+#rank: 1
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Sainte Marie-Madeleine de Pazzi, Vierge
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Sainte Marie-Madeleine de Pazzi, Vierge
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

@@ -1,0 +1,34 @@
+#title: Dédicace de l'Archibasilique du Très Saint Sauveur
+#date: 
+    ##day: 9
+    ##month: 11
+#degree: 2
+#category: 
+#rank: 2
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Vingt-deuxième Dimanche après la Pentecôte; Saint Théodore, Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Vingt-deuxième Dimanche après la Pentecôte; Saint Théodore, Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

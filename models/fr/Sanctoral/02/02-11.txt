@@ -1,0 +1,35 @@
+#title: Apparition de la Bienheureuse Vierge Marie
+#date: 
+    ##day: 11
+    ##month: 2
+#degree: 3
+#category: 29
+#rank: 
+#type: Sanctoral
+#color: 0
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: Propre
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: Propre : Vidi civitatem
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    ##preface: de la T. Ste Vierge (Et te in Conceptione immaculata).
+    
+#notes:
+

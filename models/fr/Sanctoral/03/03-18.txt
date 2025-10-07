@@ -1,0 +1,34 @@
+#title: Mardi de la deuxième semaine de Carême
+#date: 
+    ##day: 18
+    ##month: 3
+#degree: 3
+#category: 
+#rank: 3
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Cyrille de Jérusalem, Évêque de Jérusalem, Confesseur et Docteur de l'Église
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Cyrille de Jérusalem, Évêque de Jérusalem, Confesseur et Docteur de l'Église
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

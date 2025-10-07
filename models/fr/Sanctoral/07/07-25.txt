@@ -1,0 +1,34 @@
+#title: Saint Jacques, Apôtre
+#date: 
+    ##day: 25
+    ##month: 7
+#degree: 2
+#category: 0
+#rank: 2
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des apôtres
+    ##matins: 
+    ##laudes: Commémoration: Saint Christophe, Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Christophe, Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

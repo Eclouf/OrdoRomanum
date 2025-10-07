@@ -1,0 +1,38 @@
+#title: Dédicace de Saint Michel Archange
+#date: 
+    ##day: 29
+    ##month: 9
+#degree: 1
+#category: 
+#occ: F1U
+#con: F1
+#rank: 
+#type: Sanctoral
+#color: 0
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: Propre
+    ##matins: 
+    ##laudes: 
+    ##prime: psaume 53
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: Propre: Benedicite
+    ##commemoration: 
+    ##gloria: oui
+    ##credo: oui
+    ##preface: commune
+    
+#notes:
+Protecteur de l’Église universelle & de nombreux pays.
+Messes des Défunts interdites, Funérailles autorisées seulement si la fête n’est pas de précepte.

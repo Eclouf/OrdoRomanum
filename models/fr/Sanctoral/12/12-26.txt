@@ -1,0 +1,34 @@
+#title: Saint Étienne, protomartyr
+#date: 
+    ##day: 26
+    ##month: 12
+#degree: 2
+#category: 7
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des martyrs
+    ##matins: 
+    ##laudes: Commémoration: Deuxième jour dans l'Octave de Noël
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Deuxième jour dans l'Octave de Noël
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

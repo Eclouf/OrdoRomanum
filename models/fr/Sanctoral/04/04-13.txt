@@ -1,0 +1,34 @@
+#title: Deuxième dimanche de la Passion, ou des Rameaux
+#date: 
+    ##day: 13
+    ##month: 4
+#degree: 1
+#category: 
+#rank: 1
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Saint Herménégilde, Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Saint Herménégilde, Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

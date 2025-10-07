@@ -1,9 +1,11 @@
 # -*- encoding:utf-8 -*-
 
+
 """
     translation management
 """
 
-class TranslationCtrl():
+
+class TranslationCtrl:
     def __init__(self):
         pass

@@ -1,0 +1,35 @@
+#title: Saint Fidèle de Sigmaringen, Martyr
+#date: 
+    ##day: 24
+    ##month: 4
+#degree: 3
+#category: 
+#rank: 
+#type: Sanctoral
+#color: rouge
+
+
+#martirologe:
+À compléter avec le texte du martyrologe romain
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: 
+    ##credo:
+    
+#notes:
+
+

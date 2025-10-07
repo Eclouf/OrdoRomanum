@@ -1,0 +1,34 @@
+#title: Sainte Lucie, Vierge et Martyre
+#date: 
+    ##day: 13
+    ##month: 12
+#degree: 3
+#category: 7
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des martyrs
+    ##matins: 
+    ##laudes: Commémoration: Samedi de la deuxième semaine de l'Avent
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Samedi de la deuxième semaine de l'Avent
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

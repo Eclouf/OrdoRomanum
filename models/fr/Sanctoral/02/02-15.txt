@@ -1,0 +1,34 @@
+#title: Saint Faustin et Jovite, Martyrs
+#date: 
+    ##day: 15
+    ##month: 2
+#degree: 0
+#category: 8
+#rank: 
+#type: Sanctoral
+#color: 1
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Mémoire: Saints Faustin et Jovite, Martyrs
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 5
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

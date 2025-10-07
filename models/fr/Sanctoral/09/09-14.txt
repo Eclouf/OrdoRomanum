@@ -1,0 +1,34 @@
+#title: Quatorzième Dimanche après la Pentecôte
+#date: 
+    ##day: 14
+    ##month: 9
+#degree: 2
+#category: 
+#rank: 2
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Exaltation de la Sainte Croix
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Exaltation de la Sainte Croix
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

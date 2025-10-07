@@ -1,0 +1,34 @@
+#title: Saint Albert le Grand, Évêque, Confesseur et Docteur de l'Église
+#date: 
+    ##day: 15
+    ##month: 11
+#degree: 3
+#category: 14
+#rank: 3
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: commun des confesseurs pontifes
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: 
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

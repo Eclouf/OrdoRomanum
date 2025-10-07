@@ -1,0 +1,34 @@
+#title: Notre-Seigneur Jésus-Christ Roi
+#date: 
+    ##day: 26
+    ##month: 10
+#degree: 1
+#category: 
+#rank: 1
+#type: Sanctoral
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Vingtième Dimanche après la Pentecôte; Saint Évariste, Pape et Martyr
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Vingtième Dimanche après la Pentecôte; Saint Évariste, Pape et Martyr
+    ##gloria: oui
+    ##credo:
+    
+#notes:
+

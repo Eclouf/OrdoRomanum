@@ -1,0 +1,39 @@
+#title: La Purification de la Sainte Vierge Marie
+#date: 
+    ##day: 2
+    ##month: 2
+#degree: 2
+#category: 28
+#rank: 
+#type: Sanctoral
+#color: 0
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: Propre
+    ##matins: 
+    ##laudes:
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: Ant. mariale Ave Regina Coelorum.
+
+
+#messe: Propre: Suscepimus 
+    ##commemoration: 
+    ##gloria: oui
+    ##credo: oui
+    
+#notes:
+Avant la Grand’Messe : Bénédiction des cierges & Procession (Violet).
+Rangement des crèches.
+La Bénédiction des cierges doit être suivie de la Procession et de la Messe.
+Les cierges sont allumés pendant la Procession, pendant l’Évangile, puis de la Préface à la Communion.
+À la bénédiction des cierges et à la Procession, on ne porte pas les dalmatique et tunique.
+Messe des Funérailles interdite après la Procession.

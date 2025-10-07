@@ -1,0 +1,28 @@
+#title: 17e Dimanche après la Pentecôte
+#degree: 2
+#category:
+#occ: D2
+#con: D2
+#rank:
+#type: Temporal
+#color: 2
+
+#office:
+    ##common: per Annunm
+    ##matins:
+    ##laudes:
+    ##prime: Psaume 117
+    ##terce:
+    ##sext:
+    ##none:
+    ##vespers:
+    ##compline:
+
+
+#messe: Propre: Justus est
+    ##commemoration:
+    ##gloria: oui
+    ##credo:
+    ##preface: de la Très Sainte Trinité
+
+#notes:

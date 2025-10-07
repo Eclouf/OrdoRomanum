@@ -1,0 +1,34 @@
+#title: Férie
+#date: 
+    ##day: 17
+    ##month: 9
+#degree: 4
+#category: 
+#rank: 4
+#type: Temporal
+#color: 
+
+
+#martirologe:
+À compléter avec le texte du martyrologe.
+
+
+#office: 
+    ##common: 
+    ##matins: 
+    ##laudes: Commémoration: Impression des Saints Stigmates de Saint François
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: 
+    ##commemoration: Impression des Saints Stigmates de Saint François
+    ##gloria: 
+    ##credo:
+    
+#notes:
+
