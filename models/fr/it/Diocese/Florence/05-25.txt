@@ -1,0 +1,35 @@
+#title: Saint Zenobius
+#date: 
+    ##day: 25
+    ##month: 05
+#degree: 1
+#category: 9
+#occ: F1P
+#con: F1
+#rank: 
+#type: Sanctoral
+#color: 0
+
+
+#martirologe:
+
+
+#office: 
+    ##common: Propre
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: Propre:
+    ##commemoration: 
+    ##gloria: oui
+    ##credo: oui
+    
+#notes:
+Patron principal de l'Archodiocèse de Florence

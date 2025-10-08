@@ -1,0 +1,35 @@
+#title: Dedicase de l'Eglise Metropolitaine de Florence
+#date: 
+    ##day: 26
+    ##month: 03
+#degree: 1
+#category: 30
+#occ: F1P
+#con: F1
+#rank: 
+#type: Sanctoral
+#color: 0
+
+
+#martirologe:
+
+
+#office: 
+    ##common: Propre
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: Propre:
+    ##commemoration: 
+    ##gloria: oui
+    ##credo: oui
+    
+#notes:
+

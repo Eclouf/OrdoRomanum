@@ -1,0 +1,35 @@
+#title: Sainte Catherine de Sienne
+#date: 
+    ##day: 30
+    ##month: 04
+#degree: 1
+#category: 18
+#occ: F1P
+#con: F1
+#rank: 
+#type: Sanctoral
+#color: 0
+
+
+#martirologe:
+
+
+#office: 18
+    ##common:
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: Propre
+    ##commemoration: 
+    ##gloria: oui
+    ##credo: oui
+    
+#notes:
+Patronne principale d'Italie

@@ -1,0 +1,35 @@
+#title: Notre Dame de Montenero
+#date: 
+    ##day: 15
+    ##month: 05
+#degree: 1
+#category: 29
+#occ: F1P
+#con: F1
+#rank: 
+#type: Sanctoral
+#color: 0
+
+
+#martirologe:
+
+
+#office: 
+    ##common: Propre
+    ##matins: 
+    ##laudes: 
+    ##prime: 
+    ##terce: 
+    ##sext: 
+    ##none: 
+    ##vespers: 
+    ##compline: 
+
+
+#messe: Propre:
+    ##commemoration: 
+    ##gloria: oui
+    ##credo: oui
+    
+#notes:
+Patrone principale de la Toscane

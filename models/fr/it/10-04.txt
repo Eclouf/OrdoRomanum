@@ -4,7 +4,7 @@
     ##month: 10
 #degree: 1
 #category: 15
-#occ: F1
+#occ: F1P
 #con: F1
 #rank: 
 #type: Sanctoral
@@ -40,4 +40,4 @@ En Égypte, les saints frères Marc et Marcien, (en 304), ainsi qu'une multitude
     ##credo: oui
     
 #notes:
-
+Patron principal d'Italie
